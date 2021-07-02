@@ -1,0 +1,67 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "IdentityPass" : {
+                "@id": "https://credential-portfolio.readthedocs.io/en/latest/contents.html",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "expires" : "schema:expires",
+                    "recipient" : {
+                        "@id" : "schema:recipient",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "schema" : "https://schema.org/",
+                            "email" : "schema:email",
+                            "image": "schema:image",
+                            "telephone" : "schema:telephone",
+                            "givenName" : "schema:givenName",
+                            "familyName" : "schema:familyName",
+                            "gender" : "schema:gender",
+                            "address" : "schema:address",
+                            "birthDate" : "schema:birthDate"
+                        }
+                    },
+                    "author": {
+                        "@id": "schema:author",
+                        "@context": {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "schema" : "https://schema.org/",
+                            "name" :  "schema:name",
+                            "logo" : "schema:logo"
+                        }
+                    }
+                }
+              }
+            }
+        ],
+        "id": "",
+        "type": ["VerifiableCredential", "IdentityPass"],
+        "issuer": "",
+        "issuanceDate": "",
+        "credentialSubject" : {
+            "id": "",
+            "type" : "IdentityPass",
+            "recipient" : {
+                "email" : "",
+                "image" : "",
+                "telephone" : "",
+                "familyName" : "",
+                "address" : "",
+                "birthDate" : "",
+                "givenName" : "",
+                "gender" :  ""
+                },
+            "expires" : "",
+            "author" : {
+                "name" : "",
+                "logo" : ""
+                  }
+        }
+}
