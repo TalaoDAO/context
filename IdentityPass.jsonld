@@ -18,13 +18,14 @@
                             "@protected": true,
                             "schema" : "https://schema.org/",
                             "email" : "schema:email",
-                            "image": "schema:image",
+                            "image": {"@id" : "schema:image", "@type" : "@id"},
                             "telephone" : "schema:telephone",
                             "givenName" : "schema:givenName",
                             "familyName" : "schema:familyName",
                             "gender" : "schema:gender",
                             "address" : "schema:address",
-                            "birthDate" : "schema:birthDate"
+                            "birthDate" : "schema:birthDate",
+                            "jobTitle" : "schema:jobTitle"
                         }
                     },
                     "author": {
@@ -34,7 +35,7 @@
                             "@protected": true,
                             "schema" : "https://schema.org/",
                             "name" :  "schema:name",
-                            "logo" : "schema:logo"
+                            "logo" : { "@id" : "schema:logo", "@type" : "@id"}
                         }
                     }
                 }
@@ -56,7 +57,8 @@
                 "address" : "",
                 "birthDate" : "",
                 "givenName" : "",
-                "gender" :  ""
+                "gender" :  "",
+                "jobTitle" : ""
                 },
             "expires" : "",
             "author" : {
