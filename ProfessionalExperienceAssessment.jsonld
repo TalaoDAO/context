@@ -13,8 +13,8 @@
                         "@context": {
                             "@version": 1.1,
                             "@protected": true,
-                            "name" :  "schema:name",
-                            "logo" : "schema:image"
+                            "name" :   "schema:name",
+                            "logo" : {"@id" : "schema:image", "@type" : "@id"}
                         }
                     },
                     "recipient" : {
@@ -22,14 +22,9 @@
                         "@context" : {
                             "@version": 1.1,
                             "@protected": true,
-                            "email" : "schema:email",
-                            "identifier": "schema:identifier",
-                            "image": "schema:image",
+                            "image": {"@id" : "schema:image", "@type" : "@id"},
                             "givenName" : "schema:givenName",
-                            "familyName" : "schema:familyName",
-                            "gender" : "schema:gender",
-                            "address" : "schema:address",
-                            "birthDate" : "schema:birthDate"
+                            "familyName" : "schema:familyName"
                         }
                     },
                  
@@ -41,7 +36,7 @@
                                 "schema" : "https://schema.org/",
                                 "name" :  "schema:name",
                                 "jobTitle" :"schema:jobTitle",
-                                "image" : "schema:image"
+                                "image" : {"@id" : "schema:image", "@type" : "@id"}
                                 }
                             },
                     "review" : "schema:review",
