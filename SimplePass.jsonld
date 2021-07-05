@@ -1,13 +1,8 @@
 {
-    "@context": ["https://www.w3.org/2018/credentials/v1",
-        {"SimplePass" : "https://credential-portfolio.readthedocs.io/en/latest/contents.html"}
-    ],
+    "@context": ["https://www.w3.org/2018/credentials/v1"],
     "id": "",
     "type": ["VerifiableCredential"],
     "issuer": "",
     "issuanceDate": "",
-    "credentialSubject" : {
-        "type" : "SimplePass",
-        "id": ""
-        }
+    "credentialSubject" : {}
 }
