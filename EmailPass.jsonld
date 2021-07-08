@@ -1,7 +1,7 @@
 {
     "@context": ["https://www.w3.org/2018/credentials/v1",
         {"EmailPass" : {
-            "@id": "https://talao.co/vocab.html",
+            "@id": "https://github.com/TalaoDAO/context/blob/main/vocab.md",
             "@context": {
                 "@version": 1.1,
                 "@protected": true,
