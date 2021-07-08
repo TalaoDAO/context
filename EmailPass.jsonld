@@ -1,0 +1,25 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {"EmailPass" : {
+            "@id": "https://talao.co/vocab.html",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "schema" : "https://schema.org/",
+                "id": "@id",
+                "type": "@type",
+                "expires" : "schema:expires",
+                "email": "schema:email"}
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "EmailPass",
+        "email" : "",
+        "expires" : ""
+    }
+}
