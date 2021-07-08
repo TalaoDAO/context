@@ -1,1 +1,1 @@
- # Descriotion du vocab Talao
+ # Vocab Talao
