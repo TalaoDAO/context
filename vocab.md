@@ -8,9 +8,9 @@ This a Pass delivered by a company, it can be used for authentication.
 Specific person properties as givenName, familyName, email, jobTitle and image are required.
 Author are organizations, logo and name properties are required.
 
-fr : Pass d'identité.
+fr : Pass d'identité
 
-en : Identity pass.
+en : Identity pass
  
 ### Example
   
@@ -56,6 +56,13 @@ en : Identity pass.
 ```
 
 
- ## CertificateOfEmployment
- 
+## CertificateOfEmployment
+
+# Description
+
+fr : Attestation employeur
+
+en : Certificate of employment
+
+# Example
  ## ProfessionbalExperienceAssessment
