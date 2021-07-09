@@ -9,6 +9,7 @@ Specific person properties as givenName, familyName, email, jobTitle and image a
 Author are organizations, logo and name properties are required.
 
 fr : Pass d'identité.
+
 en : Identity pass.
  
 ### Example
