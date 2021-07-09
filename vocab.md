@@ -4,7 +4,7 @@
   ## IdentityPass
   
   This a Pass delivered by a company, it can be used for authentication.
-  Specific properties as givenName, familyName, email, jobTitel, image er required.
+  Specific person properties as givenName, familyName, email, jobTitle and image are required.
   Author are organizations, logo and name properties are required.
   
   ### Example
