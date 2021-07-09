@@ -4,9 +4,9 @@
 ## IdentityPass
   
  
-This a Pass delivered by a company, it can be used for authentication.
+This a pass delivered by a company, it can be used for authentication.
 Specific person properties as givenName, familyName, email, jobTitle and image are required.
-Author are organizations, logo and name properties are required.
+Author are companies or organizations, logo and name properties are required.
 
 fr : Pass d'identité
 
