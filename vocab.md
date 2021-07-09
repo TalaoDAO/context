@@ -114,6 +114,28 @@ en : Certificate of employment
 This VC is used only for authentication by email. All properties are required.
 
 ### Example
-
+``javascript
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",.....
+       
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1Yj23Pmn4bAxXe5vWDVEMocrgeWzWEMShE",
+        "type": "EmailPass",
+        "email": "thierry.thevenet@talao.io",
+        "expires": "2022-07-09T14:55:19Z"
+    },
+    "issuer": "did:web:talao.co",
+    "issuanceDate": "2021-07-09T14:55:19Z",
+    "proof": {
+        "type": "EcdsaSecp256k1Signature2019",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:talao.co#key-1",
+        "created": "2021-07-09T14:55:20.820Z",
+        "jws": "eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..0XsROuEk82AEM_rmYvv9Jq1rWgyDTTBRv_GhQCZHwtcsVhzBJvcC9GK-gpU1eKf56x16CSa4fZZzZ2_JCKUyBgA"
+    }
+}
+``
 
 ## ProfessionbalExperienceAssessment
