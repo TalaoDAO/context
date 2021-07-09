@@ -15,6 +15,7 @@ en : Identity pass
 ### Example
   
   ```javascript
+{
         "@context" : [......],
         "id": "data:a59fbd98-d759-11eb-a013-6d473111f79f",
         "type": ["VerifiableCredential", "IdentityPass"],
@@ -51,7 +52,7 @@ en : Identity pass
             "verificationMethod": "did:web:talao.co#key-1",
             "created": "2021-06-27T15:09:40.230Z",
             "jws": "eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..iUsZzBOc7ZVZosnJnhInpuJ4xVkTClmtSUGpkGSwn2wtGLpPN0vMhN_7-99W_7WQnawe0TyXS3N66b07h-b8yAE"
-    }
+        }
 }
 ```
 
