@@ -114,10 +114,11 @@ en : Certificate of employment
 This VC is used only for authentication by email. All properties are required.
 
 ### Example
+
 ``javascript
 {
     "@context": [
-        "https://www.w3.org/2018/credentials/v1",.....
+        "https://www.w3.org/2018/credentials/v1",
        
     ],
     "credentialSubject": {
