@@ -25,10 +25,10 @@
                 "telephone" : "+33608182594",
                 "familyName" : "Doe",
                 // address is optional
-                "address" : "14 av de FRance, 75013 Paris",
+                "address" : "14 av de France, 75013 Paris",
                 // bitthDate is optional
                 "birthDate" : "13/09/1989",
-                "givenName" : "",
+                "givenName" : "John",
                 // gender is optional
                 "gender" :  "Male",
                 "jobTitle" : "Director"
