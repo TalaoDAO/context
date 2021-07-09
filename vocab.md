@@ -107,5 +107,13 @@ en : Certificate of employment
     }
 }
 ```
+## EmailPass
+
+### Description
+
+This VC is used only for authentication by email. All properties are required.
+
+### Example
+
 
 ## ProfessionbalExperienceAssessment
