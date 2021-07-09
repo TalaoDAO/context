@@ -136,6 +136,6 @@ This VC is used only for authentication by email. All properties are required.
         "created": "2021-07-09T14:55:20.820Z",
         "jws": "eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..0XsROuEk82AEM_rmYvv9Jq1rWgyDTTBRv_GhQCZHwtcsVhzBJvcC9GK-gpU1eKf56x16CSa4fZZzZ2_JCKUyBgA"
         }}}
-``
+```
 
 ## ProfessionbalExperienceAssessment
