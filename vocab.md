@@ -67,4 +67,40 @@ en : Certificate of employment
 
 ### Example
 
+```javascript
+{
+    "@context": [ "https://www.w3.org/2018/credentials/v1",........],
+    "id": "urn:uuid:2d9022d0-e0ae-11eb-898b-61ecf44705c0",
+    "type": [
+        "VerifiableCredential",
+        "CertificateOfEmployment"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz2HXRc2HaBX7HEUMRn3CZNbgCpVYJJA752D",
+        "type": "CertificateOfEmployment",
+        "familyName": "Thevenet",
+        "givenName": "Thierry",
+        "startDate": "2021-07-15",
+        "workFor": {
+            "address": "16 rue de Wattignies, 75012 Paris, France",
+            "logo": "https://gateway.pinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        },
+        "signatureLines": {
+            "image": "https://gateway.pinata.cloud/ipfs/Qmac6K4suXyYaouFXxeBzDTr7XivTiq6cLWPh1puS6L7Kt"
+        },
+        "employmentType": "cdi"
+    },
+    "issuer": "did:web:talao.co",
+    "issuanceDate": "2021-07-09T12:07:24Z",
+    "proof": {
+        "type": "EcdsaSecp256k1Signature2019",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:talao.co#key-1",
+        "created": "2021-07-09T12:07:24.556Z",
+        "jws": "eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..A2GiN1w1X8ibsa3AcTgrgOPYuk0j5KUa7uZIpLnNSdBfzMPvtD1HtRAv2whZ96maQgqVgeAked3YtttDo0GktQE"
+    }
+}
+```
+
 ## ProfessionbalExperienceAssessment
