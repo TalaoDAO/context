@@ -89,7 +89,12 @@ en : Certificate of employment
         "signatureLines": {
             "image": "https://gateway.pinata.cloud/ipfs/Qmac6K4suXyYaouFXxeBzDTr7XivTiq6cLWPh1puS6L7Kt"
         },
-        "employmentType": "cdi"
+        // employmebType is optional
+        "employmentType": "cdi",
+        // jobTitle is optional
+        "jobTitle" : "Concepteur",
+        // baseSalary is optional
+        "baseSalary" : "100000"
     },
     "issuer": "did:web:talao.co",
     "issuanceDate": "2021-07-09T12:07:24Z",
