@@ -3,11 +3,15 @@
  
   ## IdentityPass
   
+ 
   This a Pass delivered by a company, it can be used for authentication.
   Specific person properties as givenName, familyName, email, jobTitle and image are required.
   Author are organizations, logo and name properties are required.
-  
-  ### Example
+ 
+ fr : Pass d'identité
+ en : Identity pass
+ 
+ ### Example
   
   ```javascript
         "@context" : [......],
