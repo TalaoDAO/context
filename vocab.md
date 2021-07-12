@@ -144,7 +144,7 @@ This VC is used only for authentication by email. All properties are required.
 
 ### Description
 
-This is a pass delivered by a company for a project or job assessmment. 
+This is a pass delivered by a company for a project or job assessment. 
 
 fr : Attestation d'expérience professionnelle
 
