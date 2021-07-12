@@ -139,3 +139,107 @@ This VC is used only for authentication by email. All properties are required.
 ```
 
 ## ProfessionbalExperienceAssessment
+
+### Description
+
+### Example
+
+```javascript
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",...],
+    
+    "id": "data:28c9c084-d4cf-11eb-b332-02429c147bd7",
+    "type": [
+        "VerifiableCredential",
+        "ProfessionalExperienceAssessment"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz2HXRc2HaBX7HEUMRn3CZNbgCpVYJJA752D",
+        "skills": [
+            {
+                "@type": "DefinedTerm",
+                "description": "JSON-LD"
+            },
+            {
+                "@type": "DefinedTerm",
+                "description": " Verifiable Credential"
+            }
+        ],
+        "title": "Développement d'un contaxt JSON-LD",
+        "endDate": "2021-06-22",
+        "startDate": "2021-06-17",
+        "author": {
+            "logo": "QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao",
+            "type": "Organization"
+        },
+        "recipient": {
+            "name": "Thierry Thevenet",
+            "type": "Person"
+        },
+        "review": [
+            {
+                "name": "reviewRecommendation",
+                "reviewBody": "How likely are you to recommend this talent to others ?",
+                "reviewRating": {
+                    "bestRating": "5",
+                    "ratingValue": "3",
+                    "type": "Rating",
+                    "worstRating": "1"
+                },
+                "type": "Review"
+            },
+            {
+                "name": "reviewDelivery",
+                "reviewBody": "How satisfied are you with the overall delivery ?",
+                "reviewRating": {
+                    "bestRating": "5",
+                    "ratingValue": "3",
+                    "type": "Rating",
+                    "worstRating": "1"
+                },
+                "type": "Review"
+            },
+            {
+                "name": "reviewSchedule",
+                "reviewBody": "How would you rate his or her ability to deliver to schedule ?",
+                "reviewRating": {
+                    "bestRating": "5",
+                    "ratingValue": "3",
+                    "type": "Rating",
+                    "worstRating": "1"
+                },
+                "type": "Review"
+            },
+            {
+                "name": "reviewCommunication",
+                "reviewBody": "How would you rate his or her overall communication skills ?",
+                "reviewRating": {
+                    "bestRating": "5",
+                    "ratingValue": "3",
+                    "type": "Rating",
+                    "worstRating": "1"
+                },
+                "type": "Review"
+            }
+        ],
+        "description": "Conception et test d'un verifiable credential pour les évaluations de projet. ",
+        "signatureLines": {
+            "image": "Qmac6K4suXyYaouFXxeBzDTr7XivTiq6cLWPh1puS6L7Kt",
+            "jobTitle": "Director",
+            "name": "",
+            "type": "SignatureLine"
+        }
+    },
+    "issuer": "did:web:talao.co",
+    "issuanceDate": "2021-06-24T10:55:55Z",
+    "proof": {
+        "type": "EcdsaSecp256k1Signature2019",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:talao.co#key-1",
+        "created": "2021-06-24T10:55:55.327Z",
+        "jws": "eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..rTfDmiRP8K-IfrXmL8kaK-kgP9PkuCjbZzoUJbVrTQgcKJjrl_oXDaVd6vEQtGy5xfPIZrSp4-KAs_QTmP_T-w"
+    }
+}
+```
