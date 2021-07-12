@@ -4,7 +4,7 @@
 ## IdentityPass
   
  
-This a pass delivered by a company, it can be used for authentication.
+This is a pass delivered by a company, it can be used for authentication.
 Specific person properties as givenName, familyName, email, jobTitle and image are required.
 Author are companies or organizations, logo and name properties are required.
 
@@ -60,6 +60,8 @@ en : Identity pass
 ## CertificateOfEmployment
 
 ### Description
+
+This is a legal certificate issued by a company at employee request.
 
 fr : Attestation employeur
 
@@ -138,9 +140,15 @@ This VC is used only for authentication by email. All properties are required.
         }}}
 ```
 
-## ProfessionbalExperienceAssessment
+## ProfessionalExperienceAssessment
 
 ### Description
+
+This is a pass delivered by a company for a project or job assessmment. 
+
+fr : Attestation d'expérience professionnelle
+
+en : Professional experience assessment
 
 ### Example
 
@@ -156,6 +164,7 @@ This VC is used only for authentication by email. All properties are required.
     ],
     "credentialSubject": {
         "id": "did:tz:tz2HXRc2HaBX7HEUMRn3CZNbgCpVYJJA752D",
+        // skills are optional
         "skills": [
             {
                 "@type": "DefinedTerm",
