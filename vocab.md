@@ -120,9 +120,11 @@ This VC is used only for authentication by email. All properties are required.
 ``` javascript
 {
     "@context": [
-        "https://www.w3.org/2018/credentials/v1",
+        "https://www.w3.org/2018/credentials/v1",...
        
     ],
+    "id": "urn:uuid:2d9022d0-e0ae-11eb-898b-61ecf44705c2",
+    "type": ["VerifiableCredential", "IdentityPass"],
     "credentialSubject": {
         "id": "did:tz:tz1Yj23Pmn4bAxXe5vWDVEMocrgeWzWEMShE",
         "type": "EmailPass",
