@@ -1,0 +1,42 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "EmailPass": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "email": "schema:email",
+                    "expires": "schema:expires",
+                    "id": "@id",
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context/blob/main/vocab.md#emailpass"
+            }
+        }
+    ],
+    "id": "urn:uuid:ed619ec2-e581-11eb-bf63-c3e2da761665",
+    "type": [
+        "VerifiableCredential"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1UYjHe2Rwu8R8sjqyzJPWNQp6rQHjKPj7H",
+        "expires": "2022-07-15T17:32:56Z",
+        "type": "EmailPass",
+        "email": "thevenet_thierry@yahoo.fr"
+    },
+    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuanceDate": "2021-07-15T15:32:56Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
+        "created": "2021-07-15T15:32:57.041Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..D4CdZqGlxtiEyn6TW8-V-4ltvhJwWWBTGXQrJbTuel4TQP5yWSg2xRaHa1mbu5DeOKG1b3LS7FM6ioy8So-ojAE"
+    }
+}

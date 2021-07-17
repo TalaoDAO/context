@@ -1,0 +1,85 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "IdentityPass": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "author": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:logo",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "schema:author"
+                    },
+                    "expires": "schema:expires",
+                    "id": "@id",
+                    "recipient": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "address": "schema:address",
+                            "birthDate": "schema:birthDate",
+                            "email": "schema:email",
+                            "familyName": "schema:familyName",
+                            "gender": "schema:gender",
+                            "givenName": "schema:givenName",
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "jobTitle": "schema:jobTitle",
+                            "schema": "https://schema.org/",
+                            "telephone": "schema:telephone"
+                        },
+                        "@id": "schema:recipient"
+                    },
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context/blob/main/vocab.md#identitypass"
+            }
+        }
+    ],
+    "id": "urn:uuid:29513f58-e322-11eb-97a4-5fbf2002c7f7",
+    "type": [
+        "VerifiableCredential",
+        "IdentityPass"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1YV2guqiJFAirnxcwMM1kD9FxNuJKqvBJP",
+        "recipient": {
+            "email": "thevenet_thierry@yahoo.fr",
+            "familyName": "Delmain",
+            "givenName": "Marc",
+            "image": "https://talao.mypinata.cloud/ipfs/QmRPGGnVSa6jpaDSYnfk1v2bRZ2kkTML2aapU9cqzVRqXN",
+            "jobTitle": "Chef de projet",
+            "telephone": "None"
+        },
+        "type": "IdentityPass",
+        "author": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        }
+    },
+    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuanceDate": "2021-07-12T15:02:45Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
+        "created": "2021-07-12T15:02:45.426Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..wm1SapgP0XP0O5Al_kbGOzExqXzHMxyFKa7EhRfYEwN05LF4UXPHw0f9kzIVurf10A8v9TpRAMHj1yctroOMWgA"
+    }
+}
