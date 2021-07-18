@@ -3,10 +3,7 @@
  
 ## IdentityPass
   
- 
-This is a pass delivered by a company, it can be used for authentication.
-Specific person properties as givenName, familyName, email, jobTitle and image are required.
-Author are companies or organizations, logo and name properties are required.
+It is a certificate issued by a company or an organization. It can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees (collective restaurant in an industrial zone, delivery to distributors for group purchases ...). The data contained on this credential is identical to that of a traditional identity card. This credential can be accepted by the company's partners with the same legitimacy as an identity card. 
 
 fr : Pass d'identité
 
