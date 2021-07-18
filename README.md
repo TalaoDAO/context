@@ -143,7 +143,7 @@ This VC is used only for authentication by email. All properties are required.
 
 ### Description
 
-This is a pass delivered by a company for a project or job assessment. 
+It is a credential issued by a company to its employees, service providers or freelancers. This certificate is produced at the request of a Talent to prove the skills and know-how implemented during a project or a mission. It is generally produced after review and validation by the manager of the company. This certificate is most often offered in the form of a draft by the Talent then it is then completed by the company which adds an assessment on 4 particular themes which are communication, quality, respect for deadlines and a recommendation. .
 
 fr : Attestation d'expérience professionnelle
 
