@@ -3,7 +3,7 @@
  
 ## IdentityPass
   
-It is a certificate issued by a company or an organization. It can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees (collective restaurant in an industrial zone, delivery to distributors for group purchases ...). The data contained on this credential is identical to that of a traditional identity card. This credential can be accepted by the company's partners with the same legitimacy as an identity card. 
+It is a credential issued by a company or an organization. It can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees (collective restaurant in an industrial zone, delivery to distributors for group purchases ...). The data contained on this credential is identical to that of a traditional identity card. This credential can be accepted by the company's partners with the same legitimacy as an identity card. 
 
 fr : Pass d'identité
 
@@ -58,7 +58,7 @@ en : Identity pass
 
 ### Description
 
-This is a legal certificate issued by a company at employee request.
+This is the legal certificate of employment issued by a company at employee request.
 
 fr : Attestation employeur
 
@@ -110,7 +110,7 @@ en : Certificate of employment
 
 ### Description
 
-This VC is used only for authentication by email. All properties are required.
+This credential is used only for authentication by email. All properties are required.
 
 ### Example
 
