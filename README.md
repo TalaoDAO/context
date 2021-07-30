@@ -139,6 +139,47 @@ This credential is used only for authentication by email. All properties are req
         }}}
 ```
 
+`
+## PhonePass
+
+### Description
+
+This credential is used only for authentication by phone number. All properties are required.
+
+### Example
+
+``` javascript
+
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",...],
+    "id": "urn:uuid:c0199ede-f124-11eb-a8c5-998ebaeab1ab",
+    "type": [
+        "VerifiableCredential",
+        "PhonePass"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1arG68pnzkyomXPyKcFWq8ZeTpGf2aFoV1",
+        "phone": "+33607182594",
+        "expires": "2022-07-30T12:56:10Z",
+        "type": "PhonePass"
+    },
+    "issuer": "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk",
+    "issuanceDate": "2021-07-30T10:56:10Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk#blockchainAccountId",
+        "created": "2021-07-30T10:56:11.488Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..WYaGMvMv68GhNHRF78rvwUDazDFDQ5GQyyx_8hG6ToRSrqJq1y_1NU9aPgMibjjBfuomdeBTWy1DwMnaylSMzAA"
+    }
+}
+```
+
 ## ProfessionalExperienceAssessment
 
 ### Description
