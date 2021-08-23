@@ -61,7 +61,7 @@
         "ResidentCard"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "familyName": "Doe",
         "type": "ResidentCard",
         "birthDate": "16/10/1995",
