@@ -1,0 +1,71 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "CertificateOfEmployment": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "baseSalary": "schema:baseSalary",
+                    "employmentType": "schema:employmentType",
+                    "familyName": "schema:familyName",
+                    "givenName": "schema:givenName",
+                    "id": "@id",
+                    "jobTitle": "schema:jobTitle",
+                    "schema": "https://schema.org/",
+                    "signatureLines": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "https://github.com/blockchain-certificates/cert-schema/blob/master/docs/signatureLineExtension_schema.md"
+                    },
+                    "startDate": "schema:startDate",
+                    "type": "@type",
+                    "workFor": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "address": "schema:address",
+                            "logo": {
+                                "@id": "schema:logo",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "schema:workFor"
+                    }
+                },
+                "@id": "https://github.com/TalaoDAO/context/blob/main/vocab.md"
+            }
+        }
+    ],
+    "id": "urn:uuid:2d9022d0-e0ae-11eb-898b-61ecf44705c0",
+    "type": [
+        "VerifiableCredential",
+        "CertificateOfEmployment"
+    ],
+    "credentialSubject": {
+        "id": "",
+        "type": "CertificateOfEmployment",
+        "familyName": "Thevenet",
+        "givenName": "Thierry",
+        "startDate": "2021-07-15",
+        "workFor": {
+            "address": "16 rue de Wattignies, 75012 Paris, France",
+            "logo": "https://gateway.pinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        },
+        "signatureLines": {
+            "image": "https://gateway.pinata.cloud/ipfs/Qmac6K4suXyYaouFXxeBzDTr7XivTiq6cLWPh1puS6L7Kt"
+        },
+        "employmentType": "cdi"
+    },
+    "issuer": ""
+}
