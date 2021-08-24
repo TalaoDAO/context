@@ -22,7 +22,7 @@
         "EmailPass"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "type": "EmailPass",
         "email": "thierry.thevenet@talao.io",
         "expires": "2022-08-04T19:53:40Z"
