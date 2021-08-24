@@ -69,6 +69,6 @@
             "name": "Talao"
         }
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuer": "",
     "issuanceDate": ""
 }
