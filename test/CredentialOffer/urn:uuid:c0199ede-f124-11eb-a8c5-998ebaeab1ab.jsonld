@@ -1,0 +1,31 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "PhonePass": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "expires": "schema:expires",
+                    "id": "@id",
+                    "phone": "schema:phone",
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#phonepass"
+            }
+        }
+    ],
+    "id": "urn:uuid:c0199ede-f124-11eb-a8c5-998ebaeab1ab",
+    "type": [
+        "VerifiableCredential",
+        "PhonePass"
+    ],
+    "credentialSubject": {
+        "id": "",
+        "phone": "+33607182594",
+        "expires": "2022-07-30T12:56:10Z",
+        "type": "PhonePass"
+    },
+    "issuer": ""
+}
