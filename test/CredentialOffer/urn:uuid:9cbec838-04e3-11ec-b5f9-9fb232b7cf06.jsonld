@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "RevocationList2020Status": {
+                "@context": {
+                    "@protected": true,
+                    "id": "@id",
+                    "revocationListCredential": {
+                        "@id": "https://w3id.org/vc-revocation-list-2021#revocationListCredential",
+                        "@type": "@id"
+                    },
+                    "revocationListIndex": "https://w3id.org/vc-revocation-list-2021#revocationListIndex",
+                    "type": "@type"
+                },
+                "@id": "https://w3id.org/vc-revocation-list-2021#RevocationList2020Status"
+            }
+        },
+        {
+            "Authentication": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "id": "@id",
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#authentication"
+            }
+        }
+    ],
+    "id": "urn:uuid:9cbec838-04e3-11ec-b5f9-9fb232b7cf06",
+    "type": [
+        "VerifiableCredential",
+        "Authentication"
+    ],
+    "credentialSubject": {
+        "id": ""
+    },
+    "issuer": "",
+    "credentialStatus": {
+        "id": "https://github.com/TalaoDAO/TrustMyData-proto/blob/main/credential/status/1#1234",
+        "type": "RevocationList2020Status",
+        "revocationListCredential": "https://github.com/TalaoDAO/TrustMyData-proto/blob/main/credential/status/1",
+        "revocationListIndex": "1234"
+    }
+}
