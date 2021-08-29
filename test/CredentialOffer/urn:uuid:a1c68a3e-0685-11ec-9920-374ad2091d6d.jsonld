@@ -52,7 +52,7 @@
     "id": "urn:uuid:a1c68a3e-0685-11ec-9920-374ad2091d6d",
     "type": [
         "VerifiableCredential",
-        "ResidentCard"
+        "DriverLicense"
     ],
     "credentialSubject": {
         "id": "",
