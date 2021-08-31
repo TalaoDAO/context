@@ -8,5 +8,10 @@
     "did": "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk",
      "name": "Talao SAS",
      "callback" : [ "talao.co" , "192.168.0.8"]
+   },
+   {
+    "did": "did:web:talao.co",
+     "name": "Talao SAS",
+     "callback" : [ "talao.co" , "192.168.0.8"]
    }
  ]
