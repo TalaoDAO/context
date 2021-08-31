@@ -1,12 +1,12 @@
 [
   {
     "did": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-     "name": "Talao SAS",
-      "callback" : ["talao.co”,”192.168.0.8”]
+     "name" : "Talao SAS",
+      "callback" : [ "talao.co" , "192.168.0.8"]
    },
    {
     "did": "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk",
      "name": "Talao SAS",
-     "callback" : ["talao.co”,”192.168.0.8”]
+     "callback" : [ "talao.co" , "192.168.0.8"]
    }
  ]
