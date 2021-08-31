@@ -56,12 +56,14 @@
     "credentialSubject": {
         "id": "",
         "recipient": {
-            "email": "thevenet_thierry@yahoo.fr",
+            "email": "marc.delmain@yahoo.fr",
             "familyName": "Delmain",
             "givenName": "Marc",
-            "image": "https://talao.mypinata.cloud/ipfs/QmRPGGnVSa6jpaDSYnfk1v2bRZ2kkTML2aapU9cqzVRqXN",
-            "jobTitle": "Developpeur",
-            "telephone": "None"
+            "image": "https://talao.mypinata.cloud/ipfs/QmejpQ1ns8J1n8aBCRx16BcEKQ1Z66dEK2RnQV55ajkyJF",
+            "jobTitle": "Developpeur SSI",
+            "telephone": "+33708182491",
+            "gender" : "Male",
+            "address" : "175 rue des Rivières, 28150 Berchères, France
         },
         "author": {
             "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
