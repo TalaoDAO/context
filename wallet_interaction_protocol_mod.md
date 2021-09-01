@@ -115,6 +115,9 @@ There are 2 possibilities to foresee for the value of query.type of the JSON of 
 ```
 
 or: 
+
+
+```javascript
 {
            "type": "VerifiablePresentationRequest",
            "query": [{
