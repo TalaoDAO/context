@@ -53,6 +53,8 @@ Currently when the wallet does a GET on the Issuer URL, a JSON is returned to th
 ```
 
 after agreement from the user, the wallet makes a POST request with a JSON:
+
+```javascript
 {
            “Subject_id”, ”did: tz: tz1e5YakmACgZZprF7YWHMqnSvcWVXZ2TsPW”,
          }
