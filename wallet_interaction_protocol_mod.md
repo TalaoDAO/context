@@ -3,7 +3,7 @@
 ## Prerequisite
 This is the interaction protocol between the wallet and an Issuer or Verifier. This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols .
 
-Talao proposes has lightly modified this protocol to adapt it to its own use cases. 
+Talao lightly modified this protocol to adapt it to its own use cases. 
 
 ## Verification of the identity of Issuer / Verifier 
 
