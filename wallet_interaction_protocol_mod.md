@@ -3,7 +3,7 @@
 ## Prerequisite
 This is the interaction protocol between the wallet and an Issuer or Verifier. This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols .
 
-Talao proposes to supplement or modify this protocol to adapt it to its own use cases. 
+Talao proposes has lightly modified this protocol to adapt it to its own use cases. 
 
 ## Verification of the identity of Issuer / Verifier 
 
@@ -30,7 +30,7 @@ JSON response:
 }
 ```
 
-### wallet implementation
+### Wallet implementation
 An option in the settings menu allows user to opt for a specific Issuer Registry. In this case if this register is used successfully, the area to access the confirmation request message will be enriched by the name of the Issuer. 
 
 Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its name from the registry. The wallet checks that the callback domain is identical to the QRCode domain if this is the case it adds the name of the Issuer (and possibly other issuer details)  to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
