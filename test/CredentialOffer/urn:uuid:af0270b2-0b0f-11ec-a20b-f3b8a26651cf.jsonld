@@ -1,0 +1,104 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "ProfessionalSkillAssessment": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "author": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name"
+                        },
+                        "@id": "schema:author"
+                    },
+                    "datePublished": "schema:datePublished",
+                    "recipient": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "familyName": "schema:familyName",
+                            "givenName": "schema:givenName",
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            }
+                        },
+                        "@id": "schema:recipient"
+                    },
+                    "schema": "https://schema.org/",
+                    "signatureLines": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "jobTitle": "schema:jobTitle",
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "https://github.com/blockchain-certificates/cert-schema/blob/master/docs/signatureLineExtension_schema.md"
+                    },
+                    "skills": "schema:skills"
+                },
+                "@id": "https://github.com/TalaoDAO/context#professionalSkillAssessment"
+            },
+            "Skill": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "description": "schema:description",
+                    "schema": "https://schema.org/"
+                },
+                "@id": "schema:Rating"
+            }
+        }
+    ],
+    "id": "urn:uuid:af0270b2-0b0f-11ec-a20b-f3b8a26651cf",
+    "type": [
+        "VerifiableCredential",
+        "ProfessionalSkillAssessment"
+    ],
+    "credentialSubject": {
+        "id": "",
+        "datePublished": "2020-09-01T10:11:59.393Z",
+        "type": "ProfessionalSkillAssessment",
+        "author": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        },
+        "recipient": {
+            "familyName": "Doe",
+            "givenName": "Albert",
+            "image": "https://talao.mypinata.cloud/ipfs/QmejpQ1ns8J1n8aBCRx16BcEKQ1Z66dEK2RnQV55ajkyJF"
+        },
+        "signatureLines": {
+            "image": "https://talao.mypinata.cloud/ipfs/QmawHhhLZayZRoQqpuNxm6uJX2MFoPgqPTj57hgvmWCXxu",
+            "jobTitle": "Director",
+            "name": "Nicolas Muller"
+        },
+        "skills": [
+            {
+                "@type": "Skill",
+                "description": "JSON-LD"
+            },
+            {
+                "@type": "Skill",
+                "description": "Verifiable Credential"
+            },
+            {
+                "@type": "Skill",
+                "description": "Flutter"
+            }
+        ]
+    },
+    "issuer": ""
+}
