@@ -135,6 +135,7 @@ or:
 ## Wallet implementation
 
 ### DIDAuth
+
 If Query.type = “DIDAuth” , then it is a basic authentication request that does not include a verifiable credential : there is no selection of credential to propose to the user in the wallet, call thefunction didkit.DIDAuth(did, “{“ challenge ”:“ .... ”,“ domain ”:“ ..... ”}”, key) which will create an empty presentation used only for authentication. The presentation passed with the POST request will look like this:
 
 ```javascript
@@ -146,11 +147,11 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
   "proof": {
     "type": "EcdsaSecp256k1Signature2019",
     "created": "2021-08-28T16: 13: 23.740Z",
-    “challenge”: “....”,
-    “domain”: “.....”
+    “challenge”: “d602e96d-08cb-11ec-a6fa-8d5c53eaebfb",
+    “domain”: “talao.co”
     "jws ":" eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..PgpEElB1tvcY9tdzK6EDKLvysj3vcH-zg5EIiGpk_q4m0NrAmjA81B7QdVvKllSzzfKw-1oTJuu4b4ihCvMXRwA
   "},"
-  holder ":" did: ETHR: 0xee09654eedaa79429f8d216fa51a129db0f72250
+  holder ":" did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
 "}
 ```
 
@@ -186,12 +187,12 @@ The Verifier wishes to receive VCs that the Issuer DID  did:tz:tz2NQkPq3FFA3zGAy
         "type": "QueryByExample",
         "credentialQuery": {
             "trustedIssuer": [
-                " did: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk "
+                "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk "
             ]
         }
     },
     "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
-    "domain": "http://192.168.0.20:3000/"
+    "domain": "talao.co"
 }
 ```
 
@@ -211,7 +212,7 @@ The Verifier wishes to receive a ResidentCard:
         }
     },
     "challenge": "d602e96d-08cb-11ec-a6fa-8d5c53eaebfb",
-    "domain" : "http://192.168.0.20:3000/"
+    "domain" : "talao.co"
 }
 ```
 
@@ -242,7 +243,7 @@ The Verifier accepts ResidentCard or IdentityPass signed by this did tz:tz2NQkPq
                 "IdentityPass"
             ],
             "trustedIssuer": [
-                "did: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
+                "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
             ]
         }
 ```
