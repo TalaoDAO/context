@@ -16,8 +16,8 @@
                 "@id": "https://w3id.org/vc-revocation-list-2020#RevocationList2020Status"
             }
         },
-        "description": "https://schema.org/description",
-        "name": "https://schema.org/name",
+        "description" : "https://schema.org/description",
+        "name" : "https://schema.org/name",
         {
             "ResidentCard": {
                 "@context": {
