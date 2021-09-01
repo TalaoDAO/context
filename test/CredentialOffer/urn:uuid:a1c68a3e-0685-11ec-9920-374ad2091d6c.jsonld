@@ -102,6 +102,7 @@
             "logo": "https://talao.mypinata.cloud/ipfs/QmW2Ph9WixNSPKsQKJmniUEXBzhe2aXV93s88GYeX5FbZ9",
             "name": "Minist\u00e8re de la Digitalisation du Luxembourg"
         },
+    },
     "credentialSchema" : {
         "id" : "https://....../schema/1234",
         "type" : "CTIEschema2021"
