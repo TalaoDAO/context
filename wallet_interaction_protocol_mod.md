@@ -89,6 +89,8 @@ If there are items other than“ subject_id ”, the actions of the wallet will 
 
 In the event that an attribute is missing in the profile saved in the wallet it would be replaced by “”.
 
+See https://talao.co/wallet/test/credentialOffer for testing.
+
 # presentationRequest
 
 ## Motivation
@@ -150,17 +152,16 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
 ```
 
 ### QueryByExemple
-IfQuery.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call).
 
+If Query.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call).
 
 If "credentialQuery": is an empty list, one keeps the current behavior of Credible. The user is asked to select credentials to send. Never mind the VCs.
 
-
 If "credentialQuery" contains {"reason": [......]}
-then the Verifier wishes to display an information message to the user (see languages ​​to be taken into account). This message will be displayed on the wallet at the time of selection.
+then the Verifier wishes to display an information message to the user (see languages to be taken into account). This message will be displayed on the wallet at the time of selection.
 
 
-Yes "credentialQuery" contains {"type": ["some_type", ...]}
+If "credentialQuery" contains {"type": ["some_type", ...]}
 then the Verifier wishes to receive VCs conforming to the specified type (s) and the wallet presents a list of VCs consisting only of the specified type (s)
 
 
@@ -169,11 +170,11 @@ then the Verifier wishes to receive VCs whose schema conforms to the specified t
 
 
 If "credentialQuery" contains { "trustedIssuer" : ["un_issuer", “un_autre_issuer”, ...]}
-then the Verifier wishes to receive VCs sent by the specified Issuers and the wallet presents a list consisting only of the specified type (s)
-Examples
+then the Verifier wishes to receive VCs sent by the specified Issuers and the wallet presents a list consisting only of the specified type (s).
 
+### Examples
 
-The Verifier wishes to receive VCs that the Issuer  dID: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk:
+The Verifier wishes to receive VCs that the Issuer DID  did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk:
 
 ```javascript
 {
@@ -211,7 +212,7 @@ The Verifier wishes to receive a ResidentCard:
 }
 ```
 
-The Verified accepts ResidentCard and IdentityPass signed by did: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk and attaches a message :
+The Verifier accepts ResidentCard or IdentityPass signed by this did tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk and attaches a message :
 
 ```javascript
 {
@@ -243,4 +244,4 @@ The Verified accepts ResidentCard and IdentityPass signed by did: tz: tz2NQkPq3F
         }
 ```
 
-See https://talao.co/wallet/test/presentationRequest for test games.
+See https://talao.co/wallet/test/presentationRequest for testing.
