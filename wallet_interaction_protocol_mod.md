@@ -18,7 +18,7 @@ It is necessary to create a registry (centralized or on a blockchain) to store i
 
 
 example: Talao Registry 
-GET https://talao.co/trusted-issuers-registry/v1/issuers/did: ethr: 0xee09654eedaa79429f8d216fa51a129db0f72250
+GET https://talao.co/trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
 
 JSON response:
 ```javascript
