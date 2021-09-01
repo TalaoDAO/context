@@ -44,46 +44,46 @@ For some VCs it is necessary to transfer the personal data of the user's profile
 ## Issuer implementation
 Currently when the wallet does a GET on the Issuer URL, a JSON is returned to the wallet (Issuer GET response):
 
-
+```javascript
 {
            "type": "CredentialOffer",
            "credentialPreview": credential,
            "expires" : 12/08 / 2021Z "
        })
-
+```
 
 after agreement from the user, the wallet makes a POST request with a JSON:
 {
            “Subject_id”, ”did: tz: tz1e5YakmACgZZprF7YWHMqnSvcWVXZ2TsPW”,
          }
-
+```
 
 The modification consists in adding a “scope” field to the JSON returned by the Issuer (Issuer GET response). This “scope” field is a list with at least the “subject_id” item and possibly other items from the following list: “givenName”, “familyName”, “telephone”, “email”, “address”.
 
 
 example:
 
-
+```javascript
 {
            "type": "CredentialOffer",
            "credentialPreview": credential,
            "expires" : 12/08 / 2021Z ",
                 " scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
        })
-
+```
 
 ## Wallet implementation
 If there are items other than“ subject_id ”, the actions of the wallet will be:
 1. ask the user for consent to transfer their personal data (a “consent screen”)
 2. add the attributes and their value saved in the wallet to the JSON (wallet POST request), in our example:
 
-
+```javascript
 {
            “Subject_id”, ”did: tz: tz1e5YakmACgZZprF7YWHMqnSvcWVXZ2TsPW”,
                 “familyName”: “Doe”,
                 “givenName”: “John”
        }
-
+```
 
 In the event that an attribute is missing in the profile saved in the wallet it would be replaced by “”
 
@@ -97,7 +97,7 @@ The following specifications are taken from a minimalist interpretation of the d
 Verifier implementation
 There are 2 possibilities to foresee for the value of query.type of the JSON of the GET response of the Verify (“DIDAuth” or “QueryByExample”):
 
-
+```javascript
 {
            "type": "VerifiablePresentationRequest",
            "query": [{
@@ -106,7 +106,7 @@ There are 2 possibilities to foresee for the value of query.type of the JSON of 
            "challenge": "a random uri",
            "domain" : "talao.co"
            }
-
+```
 
 or: 
 {
@@ -121,14 +121,14 @@ or:
            "challenge": "a random uri",
            "domain" : "talao.co"
            }
-
+```
 
 ## Wallet implementation
 
 ### DIDAuth
 If Query.type = “DIDAuth” , then it is a basic authentication request that does not include a credential: there is no selection of credential to propose to the user in the wallet, call thefunction didkit.DIDAuth(did, “{“ challenge ”:“ .... ”,“ domain ”:“ ..... ”}”, key) which will create a presentation empty used only for authentication. The presentation (wallet POST request) will look like this:
 
-
+```javascript
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1"
@@ -143,6 +143,7 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
   "},"
   holder ":" did: ETHR: 0xee09654eedaa79429f8d216fa51a129db0f72250
 "}
+```
 
 ### QueryByExemple
 IfQuery.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call).
@@ -170,7 +171,7 @@ Examples
 
 The Check wishes to receive VCs that the Issuer  dID: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk:
 
-
+```javascript
 {
     "type": "VerifiablePresentationRequest",
     "query": {
@@ -184,13 +185,13 @@ The Check wishes to receive VCs that the Issuer  dID: tz: tz2NQkPq3FFA3zGAyG8kLc
     "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
     "domain": "http://192.168.0.20:3000/"
 }
-
+```
 
 
 
 The Verifier wishes to receive a ResidentCard:
 
-
+```javascript
 {
     "type": "VerifiablePresentationRequest" ,
     "query": {
@@ -204,11 +205,11 @@ The Verifier wishes to receive a ResidentCard:
     "challenge": "d602e96d-08cb-11ec-a6fa-8d5c53eaebfb",
     "domain" : "http://192.168.0.20:3000/"
 }
-
+```
 
 The Verified accepts ResidentCard and IdentityPass signed by did: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk and attaches a message :
 
-
+```javascript
 {
     "type": "VerifiablePresentationRequest",
     "query": {
@@ -236,6 +237,6 @@ The Verified accepts ResidentCard and IdentityPass signed by did: tz: tz2NQkPq3F
                 "did: tz: tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
             ]
         }
-
+```
 
 See https://talao.co/wallet/test/presentationRequest for test games.
