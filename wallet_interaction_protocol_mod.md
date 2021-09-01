@@ -20,13 +20,16 @@ It is necessary to create a registry (centralized or on a blockchain) to store i
 example: Talao Registry 
 GET https://talao.co/trusted-issuers-registry/v1/issuers/did: ethr: 0xee09654eedaa79429f8d216fa51a129db0f72250
 
-
 JSON response:
+```javascript
+
 {
           "did": "did: ethr: 0xee09654eedaa79429f8d216fa51a129db0f72250",
           "name": “Talao SAS”,
           "callback" : ["talao.co”, ”192.168.0.8”]Wallet
-       }
+}
+```
+
 ### wallet implementation
 An option in the settings menu allows you to opt for the use of the Issuer Registry. In this case, it is requested the user to learn the API URL registry access. If this register is used, the area to access the confirmation request message will be enriched by the name of the Issuer. 
 
