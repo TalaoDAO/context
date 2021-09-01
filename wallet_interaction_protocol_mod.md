@@ -24,7 +24,7 @@ JSON response:
 ```javascript
 
 {
-          "did": "did: ethr: 0xee09654eedaa79429f8d216fa51a129db0f72250",
+          "did": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
           "name": “Talao SAS”,
           "callback" : ["talao.co”, ”192.168.0.8”]Wallet
 }
@@ -47,7 +47,7 @@ Currently when the wallet does a GET on the Issuer URL, a JSON is returned to th
 ```javascript
 {
            "type": "CredentialOffer",
-           "credentialPreview": credential,
+           "credentialPreview": {...},
            "expires" : 12/08 / 2021Z "
        })
 ```
@@ -68,7 +68,7 @@ example:
 ```javascript
 {
            "type": "CredentialOffer",
-           "credentialPreview": credential,
+           "credentialPreview": {...},
            "expires" : 12/08 / 2021Z ",
                 " scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
        })
