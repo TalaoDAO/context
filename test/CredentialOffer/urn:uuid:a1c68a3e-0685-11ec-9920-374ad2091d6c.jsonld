@@ -16,6 +16,8 @@
                 "@id": "https://w3id.org/vc-revocation-list-2020#RevocationList2020Status"
             }
         },
+        "description": "https://schema.org/description",
+        "name": "https://schema.org/name",
         {
             "ResidentCard": {
                 "@context": {
@@ -71,8 +73,35 @@
         "author": {
             "logo": "https://talao.mypinata.cloud/ipfs/QmW2Ph9WixNSPKsQKJmniUEXBzhe2aXV93s88GYeX5FbZ9",
             "name": "Minist\u00e8re de la Digitalisation du Luxembourg"
+        },
+        "description" : [
+        {
+            "@language": "en",
+            "@value": "This certificate proves the reality of your residence in Luxembourg."
+        },
+        {
+            "@language": "de",
+            "@value": "Diese Bescheinigung belegt die Realität Ihres Wohnsitzes in Luxemburg."
+        },
+        {
+            "@language": "fr",
+            "@value": "Cette attestation prouve la réalité de votre résidence au Luxembourg."
         }
-    },
+    ],
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Residence certificate"
+        },
+        {
+            "@language": "de",
+            "@value": "Wohnsitzbescheinigung"
+        },
+        {
+            "@language": "fr",
+            "@value": "Certificat de résidence"
+        }
+    ],
     "credentialSchema" : {
         "id" : "https://....../schema/1234",
         "type" : "CTIEschema2021"
