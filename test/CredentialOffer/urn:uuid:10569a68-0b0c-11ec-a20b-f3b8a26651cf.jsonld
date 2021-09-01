@@ -1,0 +1,51 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "LoyaltyCard": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "address": "schema:address",
+                    "email": "schema:email",
+                    "expires": "schema:expires",
+                    "familyName": "schema:familyName",
+                    "givenName": "schema:givenName",
+                    "id": "@id",
+                    "memberOf": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name"
+                        },
+                        "@id": "schema:memberOf"
+                    },
+                    "programName": "schema:programName",
+                    "schema": "https://schema.org/",
+                    "telephone": "schema:telephone",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#loyaltycard"
+            }
+        }
+    ],
+    "id": "urn:uuid:10569a68-0b0c-11ec-a20b-f3b8a26651cf",
+    "type": [
+        "VerifiableCredential",
+        "LoyaltyCard"
+    ],
+    "credentialSubject": {
+        "id": "",
+        "type": "LoyaltyCard",
+        "memberOf": {
+            "logo": "https://thewinespirit.co",
+            "name": "The Wine Spririt"
+        },
+        "givenName": "Thierry"
+    },
+    "issuer": ""
+}
