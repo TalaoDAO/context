@@ -292,3 +292,11 @@ en : Professional experience assessment
     }
 }
 ```
+## ProfessionalExperienceAssessment
+### Description
+### Example
+
+## LoyaltyCard
+### Description
+### Example
+
