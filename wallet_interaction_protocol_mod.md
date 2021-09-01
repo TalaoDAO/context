@@ -3,15 +3,15 @@
 ## Prerequisite
 This is the interaction protocol between the wallet and an Issuer or Verifier. This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols .
 
-Talao proposes to supplement or modify this protocol to adapt it to its own use cases.
+Talao proposes to supplement or modify this protocol to adapt it to its own use cases. 
 
 ## Verification of the identity of Issuer / Verifier 
 
 ### Motivation
-The protocol of interaction between the wallet and an Issuer or a Verifier currently used by Credible is light, simple and quick to implement, however it does not allow the user of the wallet to ensure the identity of the other party but only the domain name specified in the URL encoded in the QR Code. On the other hand, a simple solution based on access to a public register of Issuers / Verifier (EBSI framework for insta,ce...) makes it possible to obtain more precise information for the user and therefore better control without considerably increasing the complexity of the protocol.
+The protocol of interaction between the wallet and an Issuer or a Verifier currently used by Credible is light, simple and quick to implement, However it does not allow the user of the wallet to ensure the identity of the other party but only the domain name specified in the URL encoded in the QR Code. On the other hand, a simple solution based on access to a public register of Issuers / Verifier (EBSI framework for instance...) makes it possible to obtain more precise information for the user and therefore better control without considerably increasing the complexity of the protocol.
 
 ## Issuer / Verifier implementation
-The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL (? Issuer =did: ethr: 0xee09654eedaa79429f8d216fa51a129db0f72250).
+The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL examaple : https://talao.co/..../?issuer=did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250).
 
 ### Issuer Registry implementation
 It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL.
@@ -31,9 +31,9 @@ JSON response:
 ```
 
 ### wallet implementation
-An option in the settings menu allows you to opt for the use of a specific Issuer Registry. In this case. If this register is used successfully , the area to access the confirmation request message will be enriched by the name of the Issuer. 
+An option in the settings menu allows user to opt for a specific Issuer Registry. In this case if this register is used successfully, the area to access the confirmation request message will be enriched by the name of the Issuer. 
 
-Wallet makes a call to the API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its name from the registry. The wallet checks that the callback domain is identical to the QRCode domain if this is the case it adds the name of the Issuer(and other issuer details)  to the access confirmation request message. If this is not the case (or if there is no register available), it indicates that the name of the Issuer could not be obtained
+Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its name from the registry. The wallet checks that the callback domain is identical to the QRCode domain if this is the case it adds the name of the Issuer (and possibly other issuer details)  to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
 
 # credentialOffer
 
