@@ -58,23 +58,7 @@
         "VerifiableCredential",
         "ResidentCard"
     ],
-    "credentialSubject": {
-        "id": "",
-        "givenName": "John",
-        "nationality": "Fr",
-        "type": "ResidentCard",
-        "familyName": "Doe",
-        "maritalStatus": "single",
-        "identifier": "566GFJHF67876",
-        "gender": "male",
-        "address": "16 av de Bellevue, 75009 Paris, France",
-        "birthDate": "16/10/1995",
-        "birthPlace": "Paris",
-        "author": {
-            "logo": "https://talao.mypinata.cloud/ipfs/QmW2Ph9WixNSPKsQKJmniUEXBzhe2aXV93s88GYeX5FbZ9",
-            "name": "Minist\u00e8re de la Digitalisation du Luxembourg"
-        },
-        "description" : [
+    "description" : [
         {
             "@language": "en",
             "@value": "This certificate proves the reality of your residence in Luxembourg."
@@ -102,6 +86,22 @@
             "@value": "Certificat de résidence"
         }
     ],
+    "credentialSubject": {
+        "id": "",
+        "givenName": "John",
+        "nationality": "Fr",
+        "type": "ResidentCard",
+        "familyName": "Doe",
+        "maritalStatus": "single",
+        "identifier": "566GFJHF67876",
+        "gender": "male",
+        "address": "16 av de Bellevue, 75009 Paris, France",
+        "birthDate": "16/10/1995",
+        "birthPlace": "Paris",
+        "author": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmW2Ph9WixNSPKsQKJmniUEXBzhe2aXV93s88GYeX5FbZ9",
+            "name": "Minist\u00e8re de la Digitalisation du Luxembourg"
+        },
     "credentialSchema" : {
         "id" : "https://....../schema/1234",
         "type" : "CTIEschema2021"
