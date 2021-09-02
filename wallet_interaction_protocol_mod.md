@@ -75,6 +75,7 @@ example:
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
 }
 ```
+
 The "display" attribute is a descrption of the Issuer expectations about the UI design of the VC.
 ...TBD as a piece of information of global manifest...
 
@@ -88,6 +89,7 @@ example:
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
            "display" : { "backgroundColer : "#efefef"}
 }
+```
 
 ## Wallet implementation
 If there are items other than“ subject_id ”, the actions of the wallet will be:
