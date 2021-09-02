@@ -59,15 +59,15 @@
     "name": [
         {
             "@language": "en",
-            "@value": "Residence certificate"
+            "@value": "Identity Pass"
         },
         {
             "@language": "de",
-            "@value": "Wohnsitzbescheinigung"
+            "@value": ""
         },
         {
             "@language": "fr",
-            "@value": "Certificat de résidence"
+            "@value": "Pass entreprise"
         }
     ],
     "credentialSubject": {
