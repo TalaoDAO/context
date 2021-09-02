@@ -60,7 +60,9 @@ after agreement from the user, the wallet makes a POST request with a JSON:
          }
 ```
 
-The modification consists in adding a “scope” field to the JSON returned by the Issuer (Issuer GET response). This “scope” field is a list with at least the “subject_id” item and possibly other items from the following list: “givenName”, “familyName”, “telephone”, “email”, “address”.
+The modification consists in adding a “scope” attribute and a "display" attribute to the JSON returned by the Issuer (Issuer GET response).
+
+The “scope” attribute is a list with at least the “subject_id” item and possibly other items from the following list: “givenName”, “familyName”, “telephone”, “email”, “address”.
 
 
 example:
@@ -70,9 +72,22 @@ example:
            "type": "CredentialOffer",
            "credentialPreview": {...},
            "expires" : 12/08 / 2021Z ",
-                " scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
-       })
+           "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
+}
 ```
+The "display" attribute is a descrption of the Issuer expectations about the UI design of the VC.
+...TBD as a piece of information of global manifest...
+
+example:
+
+```javascript
+{
+           "type": "CredentialOffer",
+           "credentialPreview": {...},
+           "expires" : 12/08 / 2021Z ",
+           "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
+           "display" : { "backgroundColer : "#efefef"}
+}
 
 ## Wallet implementation
 If there are items other than“ subject_id ”, the actions of the wallet will be:
