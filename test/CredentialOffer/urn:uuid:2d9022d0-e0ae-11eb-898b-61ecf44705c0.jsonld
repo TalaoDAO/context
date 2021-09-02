@@ -56,15 +56,15 @@
     "name": [
         {
             "@language": "en",
-            "@value": "Residence certificate"
+            "@value": "Certificate of employment"
         },
         {
             "@language": "de",
-            "@value": "Wohnsitzbescheinigung"
+            "@value": ""
         },
         {
             "@language": "fr",
-            "@value": "Certificat de résidence"
+            "@value": "Attestation employeur"
         }
     ],
     "credentialSubject": {
