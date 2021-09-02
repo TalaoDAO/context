@@ -2,6 +2,8 @@
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         {
+            "name ": "https://schema.org/name",
+            "description" : "https://schema.org/description",
             "RevocationList2020Status": {
                 "@context": {
                     "@protected": true,
@@ -53,6 +55,21 @@
     "type": [
         "VerifiableCredential",
         "DriverLicense"
+    ],
+    "description" : "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Driver license"
+        },
+        {
+            "@language": "de",
+            "@value": ""
+        },
+        {
+            "@language": "fr",
+            "@value": "Permis de conduire"
+        }
     ],
     "credentialSubject": {
         "id": "",
