@@ -1,7 +1,9 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        {
+        {   
+            "name" : "https://schema.org/name",
+            "description" : "https://schema.org/description",
             "EmailPass": {
                 "@context": {
                     "@protected": true,
@@ -20,6 +22,21 @@
     "type": [
         "VerifiableCredential",
         "EmailPass"
+    ],
+    "description" : "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Email proof"
+        },
+        {
+            "@language": "de",
+            "@value": ""
+        },
+        {
+            "@language": "fr",
+            "@value": "Preuce d'email"
+        }
     ],
     "credentialSubject": {
         "id": "",
