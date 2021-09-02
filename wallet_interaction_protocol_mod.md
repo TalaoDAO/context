@@ -27,16 +27,16 @@ JSON response:
 ```javascript
 {
     "issuer": {
-        "preferredName": "Great Company",
+        "preferredName": "Talao",
         "did": [did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250, "did:ebsi:00005555"],
         "eidasCertificatePem": [{}],
         "serviceEndpoints": [{}, {}],
         "organizationInfo": {
             "id": "BE55555j",
-            "legalName": "Great Company",
-            "currentAddress": "Great Company Street 1, Brussels, Belgium",
+            "legalName": "Talao SAS",
+            "currentAddress": "Talao, 16 rue de Wattignies, 75012 Paris, France",
             "vatNumber": "BE05555555XX",
-            "domainName": "https://great.company.be"
+            "domainName": "https://talao.co"
         }
     }
 }
