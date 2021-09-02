@@ -174,73 +174,84 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
 
 ### QueryByExemple
 
-If Query.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call).
+If Query.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery.example". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call).
 
 If "credentialQuery": is an empty list, one keeps the current behavior of Credible. The user is asked to select credentials to send. Never mind the VCs.
 
-If "credentialQuery" contains {"reason": [......]}
+If "credentialQuery.example" contains {"reason": [......]}
 then the Verifier wishes to display an information message to the user (see languages to be taken into account). This message will be displayed on the wallet at the time of selection.
 
 
-If "credentialQuery" contains {"type": ["some_type", ...]}
+If "credentialQuery.example" contains {"type": ["some_type", ...]}
 then the Verifier wishes to receive VCs conforming to the specified type (s) and the wallet presents a list of VCs consisting only of the specified type (s)
 
 
-If " credentialQuery " contains { " credentialSchema " : [" un_schema ", ...]}
+If " credentialQuery.example " contains { " credentialSchema " : [" un_schema ", ...]}
 then the Verifier wishes to receive VCs whose schema conforms to the specified type (s) and the wallet presents a list consisting only of the specified schema (s)
 
 
-If "credentialQuery" contains { "trustedIssuer" : ["un_issuer", “un_autre_issuer”, ...]}
+If "credentialQueryexample" contains { "trustedIssuer" : ["un_issuer", “un_autre_issuer”, ...]}
 then the Verifier wishes to receive VCs sent by the specified Issuers and the wallet presents a list consisting only of the specified type (s).
 
 ### Examples
 
+#### Example 1
 The Verifier wishes to receive VCs that the Issuer DID  did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk:
 
 ```javascript
 {
     "type": "VerifiablePresentationRequest",
-    "query": {
-        "type": "QueryByExample",
-        "credentialQuery": {
-            "trustedIssuer": [
-                "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk "
-            ]
+    "query": [
+        {
+            "type": "QueryByExample",
+            "credentialQuery": {
+                "example" : {
+                    "trustedIssuer": [
+                        {
+                            "issuer" : "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
+                        }
+                    ]
+                }
+            }
         }
-    },
+    ],
     "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
     "domain": "talao.co"
 }
 ```
 
 
-
-The Verifier wishes to receive a ResidentCard:
+#### Example 2
+The Verifier requests a ResidentCard:
 
 ```javascript
 {
-    "type": "VerifiablePresentationRequest" ,
-    "query": {
-        "type": "QueryByExample",
-        "credentialQuery": {
-            "type": [
-                "ResidentCard"
-            ]
+    "type": "VerifiablePresentationRequest",
+    "query": [
+        {
+            "type": "QueryByExample",
+            "credentialQuery": {
+                "example" : {
+                    "type" : "ResidentCard"
+                }
+            }
         }
-    },
-    "challenge": "d602e96d-08cb-11ec-a6fa-8d5c53eaebfb",
-    "domain" : "talao.co"
+    ],
+    "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
+    "domain": "talao.co"
 }
 ```
 
-The Verifier accepts ResidentCard or IdentityPass signed by this did tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk and attaches a message :
+#### Example 3
+The Verifier requests a ResidentCard and a IdentityPass signed by this did tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk and attaches a message :
 
 ```javascript
 {
     "type": "VerifiablePresentationRequest",
     "query": {
         "type ":" QueryByExample ",
-        " credentialQuery ": {
+        " credentialQuery ": [
+          {
             " reason ": [
                 {
                     " @value ":" same text in English ... ",
@@ -255,8 +266,7 @@ The Verifier accepts ResidentCard or IdentityPass signed by this did tz:tz2NQkPq
                     " @language ":" De "
                 }
             ],
-            "type": [
-                "ResidentCard",
+            "type": "ResidentCard",
                 "IdentityPass"
             ],
             "trustedIssuer": [
