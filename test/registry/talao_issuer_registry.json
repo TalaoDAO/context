@@ -1,17 +1,32 @@
 [
   {
-    "did": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-     "name" : "Talao SAS",
-      "callback" : [ "talao.co" , "192.168.0.8"]
-   },
-   {
-    "did": "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk",
-     "name": "Talao SAS",
-     "callback" : [ "talao.co" , "192.168.0.8"]
-   },
-   {
-    "did": "did:web:talao.co",
-     "name": "Talao SAS",
-     "callback" : [ "talao.co" , "192.168.0.8"]
-   }
+    "issuer": {
+        "preferredName": "Great Company",
+        "did": ["did:ebsi:00003333", "did:ebsi:00005555"],
+        "eidasCertificatePem": [{}],
+        "serviceEndpoints": [{}, {}],
+        "organizationInfo": {
+            "id": "BE55555j",
+            "legalName": "Great Company",
+            "currentAddress": "Great Company Street 1, Brussels, Belgium",
+            "vatNumber": "BE05555555XX",
+            "domainName": "https://great.company.be"
+        }
+    }
+    },
+  {
+    "issuer": {
+        "preferredName": "Talao",
+        "did": ['did:web:talao.cp', 'did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250', 'did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk'],
+        "eidasCertificatePem": [{}],
+        "serviceEndpoints": [{}, {}],
+        "organizationInfo": {
+            "id": "837674480",
+            "legalName": "Talao SAS",
+            "currentAddress": "Talao, 16 rue de Wattignies, 75012 Paris, France",
+            "vatNumber": "FR26837674480",
+            "domainName": "https://talao.co"
+        }
+    }
+    }
  ]
