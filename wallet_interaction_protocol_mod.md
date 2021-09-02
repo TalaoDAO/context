@@ -14,13 +14,13 @@ The protocol of interaction between the wallet and an Issuer or a Verifier curre
 The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL examaple : https://talao.co/..../?issuer=did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250).
 
 ### Issuer Registry implementation
-It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. We will start with 2 registries
+It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. We will start with 2 registries ans same API for both :
 
 
 Talao Registry 
 GET https://talao.co/trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
 
-EBSI Trusted Issuers Registry```
+EBSI Trusted Issuers Registry
 GET https://....../trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
 
 JSON response:
@@ -61,7 +61,7 @@ Currently when the wallet does a GET on the Issuer URL, a JSON is returned to th
            "type": "CredentialOffer",
            "credentialPreview": {...},
            "expires" : 12/08/2021Z "
-       })
+ })
 ```
 
 after agreement from the user, the wallet makes a POST request with a JSON:
