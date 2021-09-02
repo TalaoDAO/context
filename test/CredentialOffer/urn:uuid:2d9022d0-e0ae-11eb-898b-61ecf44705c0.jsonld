@@ -1,8 +1,9 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        {   "description" : "",
-            "name" : "",
+        {   
+            "description" : "https://schema.org/description",
+            "name" : "https://schema.org/name",
             "CertificateOfEmployment": {
                 "@context": {
                     "@protected": true,
