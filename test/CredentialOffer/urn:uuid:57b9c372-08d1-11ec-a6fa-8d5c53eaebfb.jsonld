@@ -38,7 +38,7 @@
         "VerifiableCredential",
         "PaymentCard"
     ],
-    "descrition" : ""
+    "descrition" : "",
     "name": [
         {
             "@language": "en",
