@@ -2,8 +2,6 @@
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         {
-            "name ": "https://schema.org/name",
-            "description" : "https://schema.org/description",
             "RevocationList2020Status": {
                 "@context": {
                     "@protected": true,
@@ -19,6 +17,8 @@
             }
         },
         {
+            "name ": "https://schema.org/name",
+            "description" : "https://schema.org/description",
             "DriverLicense": {
                 "@context": {
                     "@protected": true,
