@@ -2,6 +2,8 @@
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         {
+            "name" : "hhtps://schema.org/name",
+            "description" : "https://schema.org/description",
             "LoyaltyCard": {
                 "@context": {
                     "@protected": true,
@@ -37,6 +39,21 @@
     "type": [
         "VerifiableCredential",
         "LoyaltyCard"
+    ],
+    "description : "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Loyalty Card"
+        },
+        {
+            "@language": "de",
+            "@value": ""
+        },
+        {
+            "@language": "fr",
+            "@value": "Carte de fidélité"
+        }
     ],
     "credentialSubject": {
         "id": "",
