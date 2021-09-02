@@ -193,6 +193,11 @@ then the Verifier wishes to receive VCs whose schema conforms to the specified t
 If "credentialQueryexample" contains { "trustedIssuer" : ["un_issuer", “un_autre_issuer”, ...]}
 then the Verifier wishes to receive VCs sent by the specified Issuers and the wallet presents a list consisting only of the specified type (s).
 
+NB : 
+- There is one credentialQuery.example for each type of VC requested
+- By default the credential is required ("required" : "True")
+- The reason attribute should be analysed as an array of different languages ("fr", "en", ...) 
+
 ### Examples
 
 #### Example 1
