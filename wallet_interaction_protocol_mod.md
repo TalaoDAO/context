@@ -14,19 +14,31 @@ The protocol of interaction between the wallet and an Issuer or a Verifier curre
 The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL examaple : https://talao.co/..../?issuer=did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250).
 
 ### Issuer Registry implementation
-It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL.
+It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. We will start with 2 registries
 
 
-example: Talao Registry 
+Talao Registry 
 GET https://talao.co/trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
+
+EBSI Trusted Issuers Registry```
+GET https://....../trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
 
 JSON response:
 ```javascript
-
 {
-          "did": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-          "name": “Talao SAS”,
-          "callback" : ["talao.co”, ”192.168.0.8”]
+    "issuer": {
+        "preferredName": "Great Company",
+        "did": [did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250, "did:ebsi:00005555"],
+        "eidasCertificatePem": [{}],
+        "serviceEndpoints": [{}, {}],
+        "organizationInfo": {
+            "id": "BE55555j",
+            "legalName": "Great Company",
+            "currentAddress": "Great Company Street 1, Brussels, Belgium",
+            "vatNumber": "BE05555555XX",
+            "domainName": "https://great.company.be"
+        }
+    }
 }
 ```
 
