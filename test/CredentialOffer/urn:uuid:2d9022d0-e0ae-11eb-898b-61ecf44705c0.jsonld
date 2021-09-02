@@ -1,7 +1,8 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        {
+        {   "description" : "",
+            "name" : "",
             "CertificateOfEmployment": {
                 "@context": {
                     "@protected": true,
@@ -50,6 +51,21 @@
     "type": [
         "VerifiableCredential",
         "CertificateOfEmployment"
+    ],
+    "description" : "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Residence certificate"
+        },
+        {
+            "@language": "de",
+            "@value": "Wohnsitzbescheinigung"
+        },
+        {
+            "@language": "fr",
+            "@value": "Certificat de résidence"
+        }
     ],
     "credentialSubject": {
         "id": "",
