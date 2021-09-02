@@ -204,15 +204,17 @@ The Verifier wishes to receive VCs that the Issuer DID  did:tz:tz2NQkPq3FFA3zGAy
     "query": [
         {
             "type": "QueryByExample",
-            "credentialQuery": {
-                "example" : {
-                    "trustedIssuer": [
-                        {
-                            "issuer" : "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
-                        }
-                    ]
+            "credentialQuery": [
+                {
+                    "example" : {
+                        "trustedIssuer": [
+                            {
+                                "issuer" : "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
+                            }
+                        ]
+                    }
                 }
-            }
+            ]
         }
     ],
     "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
@@ -230,11 +232,13 @@ The Verifier requests a ResidentCard:
     "query": [
         {
             "type": "QueryByExample",
-            "credentialQuery": {
-                "example" : {
-                    "type" : "ResidentCard"
+            "credentialQuery": [
+                {
+                    "example" : {
+                        "type" : "ResidentCard"
+                    }
                 }
-            }
+            ]
         }
     ],
     "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
@@ -243,36 +247,34 @@ The Verifier requests a ResidentCard:
 ```
 
 #### Example 3
-The Verifier requests a ResidentCard and a IdentityPass signed by this did tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk and attaches a message :
+The Verifier requests a ResidentCard and a DriverLicense and attaches messages for user :
 
 ```javascript
 {
     "type": "VerifiablePresentationRequest",
-    "query": {
-        "type ":" QueryByExample ",
-        " credentialQuery ": [
-          {
-            " reason ": [
+    "query": [
+        {
+            "type": "QueryByExample",
+            "credentialQuery": [
                 {
-                    " @value ":" same text in English ... ",
-                    " @language ":" en "
+                    "reason": "Join a Residency certificate.",
+                    "example" : {
+                        "type" : "ResidentCard"
+                    }
                 },
                 {
-                    " @value ":" Please give us your Resident Card or Identity Pass ",
-                    " @language ":" fr "
-                },
-                {
-                    " @value ":" same text in German… .... ",
-                    " @language ":" De "
+                    "reason": "Join a Driver License.",
+                    "example" : {
+                        "type" : "DriverLicense"
+                    }
                 }
-            ],
-            "type": "ResidentCard",
-                "IdentityPass"
-            ],
-            "trustedIssuer": [
-                "did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"
             ]
         }
+    ],
+    "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
+    "domain": "talao.co"
+}
+
 ```
 
 See https://talao.co/wallet/test/presentationRequest for testing.
