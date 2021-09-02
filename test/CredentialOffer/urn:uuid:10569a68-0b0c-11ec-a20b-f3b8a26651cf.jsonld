@@ -40,7 +40,7 @@
         "VerifiableCredential",
         "LoyaltyCard"
     ],
-    "description : "",
+    "description" : "",
     "name": [
         {
             "@language": "en",
