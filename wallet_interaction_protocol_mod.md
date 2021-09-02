@@ -3,12 +3,12 @@
 ## Prerequisite
 This is the interaction protocol between the wallet and an Issuer or Verifier. This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols .
 
-Talao lightly modified this protocol to adapt it to its own use cases. 
+Talao lightly modified this protocol to adapt it to its own use cases (business logic, EU/EBSI/ESSIF requirements,...).
 
 ## Verification of the identity of Issuer / Verifier 
 
 ### Motivation
-The protocol of interaction between the wallet and an Issuer or a Verifier currently used by Credible is light, simple and quick to implement, However it does not allow the user of the wallet to ensure the identity of the other party but only the domain name specified in the URL encoded in the QR Code. On the other hand, a simple solution based on access to a public register of Issuers / Verifier (EBSI framework for instance...) makes it possible to obtain more precise information for the user and therefore better control without considerably increasing the complexity of the protocol.
+The protocol of interaction between the wallet and an Issuer or a Verifier currently used by Credible is light, simple and quick to implement, However it does not allow the user of the wallet to ensure the identity of the other party but only the domain name specified in the URL encoded in the QR Code. On the other hand, a simple solution based on access to a public register of Issuers / Verifier (EBSI framework for instance...) makes it possible to obtain more precise information for the user and therefore better control without considerably increasing the complexity of the protocol. 
 
 ## Issuer / Verifier implementation
 The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL examaple : https://talao.co/..../?issuer=did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250).
