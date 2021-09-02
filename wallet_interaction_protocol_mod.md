@@ -89,7 +89,7 @@ example:
 ```
 
 The "display" attribute is a descrption of the Issuer expectations about the UI design of the VC.
-...TBD as a piece of information of global manifest...
+...TBD as a piece of information of global manifest...to be discussed....
 
 example:
 
@@ -99,7 +99,7 @@ example:
            "credentialPreview": {...},
            "expires" : 12/08/2021Z ",
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
-           "display" : { "backgroundColer : "#efefef"}
+           "display" : { "backgroundColor : "#efefef", "icon" : ""} to be discussed....
 }
 ```
 
