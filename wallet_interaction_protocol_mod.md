@@ -26,7 +26,7 @@ JSON response:
 {
           "did": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
           "name": “Talao SAS”,
-          "callback" : ["talao.co”, ”192.168.0.8”]Wallet
+          "callback" : ["talao.co”, ”192.168.0.8”]
 }
 ```
 
@@ -48,7 +48,7 @@ Currently when the wallet does a GET on the Issuer URL, a JSON is returned to th
 {
            "type": "CredentialOffer",
            "credentialPreview": {...},
-           "expires" : 12/08 / 2021Z "
+           "expires" : 12/08/2021Z "
        })
 ```
 
@@ -56,8 +56,8 @@ after agreement from the user, the wallet makes a POST request with a JSON:
 
 ```javascript
 {
-           “Subject_id”, ”did: tz: tz1e5YakmACgZZprF7YWHMqnSvcWVXZ2TsPW”,
-         }
+           “Subject_id”, ”did:tz:tz1e5YakmACgZZprF7YWHMqnSvcWVXZ2TsPW”,
+}
 ```
 
 The modification consists in adding a “scope” attribute and a "display" attribute to the JSON returned by the Issuer (Issuer GET response).
@@ -71,7 +71,7 @@ example:
 {
            "type": "CredentialOffer",
            "credentialPreview": {...},
-           "expires" : 12/08 / 2021Z ",
+           "expires" : 12/08/2021Z ",
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
 }
 ```
@@ -85,7 +85,7 @@ example:
 {
            "type": "CredentialOffer",
            "credentialPreview": {...},
-           "expires" : 12/08 / 2021Z ",
+           "expires" : 12/08/2021Z ",
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
            "display" : { "backgroundColer : "#efefef"}
 }
@@ -99,9 +99,9 @@ If there are items other than“ subject_id ”, the actions of the wallet will 
 ```javascript
 {
            “Subject_id”, ”did: tz: tz1e5YakmACgZZprF7YWHMqnSvcWVXZ2TsPW”,
-                “familyName”: “Doe”,
-                “givenName”: “John”
-       }
+            “familyName”: “Doe”,
+            “givenName”: “John”
+}
 ```
 
 In the event that an attribute is missing in the profile saved in the wallet it would be replaced by “”.
@@ -128,7 +128,7 @@ There are 2 possibilities to foresee for the value of query.type of the JSON of 
                }],
            "challenge": "a random uri",
            "domain" : "talao.co"
-           }
+}
 ```
 
 or: 
@@ -146,7 +146,7 @@ or:
                }],
            "challenge": "a random uri",
            "domain" : "talao.co"
-           }
+ }
 ```
 
 ## Wallet implementation
@@ -167,9 +167,9 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
     “challenge”: “d602e96d-08cb-11ec-a6fa-8d5c53eaebfb",
     “domain”: “talao.co”
     "jws ":" eyJhbGciOiJFUzI1NksiLCJjcml0IjpbImI2NCJdLCJiNjQiOmZhbHNlfQ..PgpEElB1tvcY9tdzK6EDKLvysj3vcH-zg5EIiGpk_q4m0NrAmjA81B7QdVvKllSzzfKw-1oTJuu4b4ihCvMXRwA
-  "},"
-  holder ":" did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250
-"}
+  "},
+  "holder": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250"
+}
 ```
 
 ### QueryByExemple
