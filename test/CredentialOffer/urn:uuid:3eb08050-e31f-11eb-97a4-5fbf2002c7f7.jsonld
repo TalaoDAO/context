@@ -2,6 +2,8 @@
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         {
+            "description" : "https://schema.org/description",
+            "name" : "https://schema.org/name",
             "IdentityPass": {
                 "@context": {
                     "@protected": true,
@@ -52,6 +54,21 @@
     "type": [
         "VerifiableCredential",
         "IdentityPass"
+    ],
+    "description" : "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Residence certificate"
+        },
+        {
+            "@language": "de",
+            "@value": "Wohnsitzbescheinigung"
+        },
+        {
+            "@language": "fr",
+            "@value": "Certificat de résidence"
+        }
     ],
     "credentialSubject": {
         "id": "",
