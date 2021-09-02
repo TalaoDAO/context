@@ -17,7 +17,7 @@
   {
     "issuer": {
         "preferredName": "Talao",
-        "did": ['did:web:talao.cp','did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250','did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk'],
+        "did": ["did:web:talao.cp","did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250","did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk"],
         "eidasCertificatePem": [{}],
         "serviceEndpoints": [{}, {}],
         "organizationInfo": {
