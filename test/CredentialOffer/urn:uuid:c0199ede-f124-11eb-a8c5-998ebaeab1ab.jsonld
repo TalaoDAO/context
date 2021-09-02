@@ -2,6 +2,8 @@
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
         {
+            "description" : "https://schema.org/description",
+            "name" : "https://schema.org/name",
             "PhonePass": {
                 "@context": {
                     "@protected": true,
@@ -20,6 +22,21 @@
     "type": [
         "VerifiableCredential",
         "PhonePass"
+    ],
+    "description" : "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Loyalty Card"
+        },
+        {
+            "@language": "de",
+            "@value": ""
+        },
+        {
+            "@language": "fr",
+            "@value": "Carte de fidélité"
+        }
     ],
     "credentialSubject": {
         "id": "",
