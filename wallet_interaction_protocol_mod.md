@@ -43,9 +43,9 @@ JSON response:
 ```
 
 ### Wallet implementation
-An option in the settings menu allows user to opt for a specific Issuer Registry. In this case if this register is used successfully, the area to access the confirmation request message will be enriched by the name of the Issuer. 
+An option in the settings menu allows user to opt for a specific Issuer Registry. In this case if this register is used successfully, the area to access the confirmation request message will be enriched by Issuer data (name,...). 
 
-Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its name from the registry. The wallet checks that the callback domain is identical to the QRCode domain if this is the case it adds the name of the Issuer (and possibly other issuer details)  to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
+Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its details (legalName,...) from the registry. The wallet checks that the callback domainName is identical to the QRCode domain if this is the case it adds the legalName of the Issuer (and possibly other issuer details)  to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
 
 # credentialOffer
 
