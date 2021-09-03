@@ -51,7 +51,10 @@ Wallet makes a call to the Registry API with the DID associated with the QRCode 
 
 ## Motivation
 
-For some VCs it is necessary to transfer the personal data of the user's profile to the Issuer. This information is accessible in the menu Profile of the wallet. These are: the user's last name, first name, telephone, address and email.
+For holders wishes to engage with Issuers to acquire credentials, there must exist a mechanism for assessing what inputs are required from an issuer to process a request for credential issuance. The Credential Manifest is a common data format for describing the inputs a Subject must provide to an Issuer and the way the VCs shopuild be presented. This draft has been inpired by the Credential Manfifest specification with a very limited implementations of 2 items :
+
+- user inputs : For some VCs it is necessary to transfer the personal data of the user's profile to the Issuer. This information is accessible in the menu Profile of the wallet. These are: the user's last name, first name, telephone, address and email.
+- display output descriptors.
 
 ## Issuer implementation
 Currently when the wallet does a GET on the Issuer URL, a JSON is returned to the wallet (Issuer GET response):
@@ -88,8 +91,7 @@ example:
 }
 ```
 
-The "display" attribute is a descrption of the Issuer expectations about the UI design of the VC.
-...TBD as a piece of information of global manifest...to be discussed....
+The "display" attribute is a description of the Issuer expectations about the UI design of the VC.
 
 example:
 
@@ -99,7 +101,13 @@ example:
            "credentialPreview": {...},
            "expires" : 12/08/2021Z ",
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
-           "display" : { "backgroundColor : "#efefef", "icon" : ""} to be discussed....
+           "display" : { "backgroundColor : "#efefef",
+                        "icon" : "",
+                        "nameFallback" : "",
+                        "descriptionFallback" : "",
+                        ...
+                        }
+                        to be discussed....
 }
 ```
 
