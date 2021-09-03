@@ -62,7 +62,11 @@
             "logo": "https://thewinespirit.co",
             "name": "The Wine Spririt"
         },
-        "givenName": "Thierry"
+        "givenName": "Thierry",
+        "familyName" : "Gardon",
+        "email" : "thierry.gardon@gmail.com",
+        "address" : "16 bd du Jeu de Paume, 34000 Montpellier, France",
+        "telephone" : "+33607182298"
     },
     "issuer": ""
 }
