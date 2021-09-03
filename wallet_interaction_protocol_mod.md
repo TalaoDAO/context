@@ -102,12 +102,11 @@ example:
            "expires" : 12/08/2021Z ",
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
            "display" : { "backgroundColor : "#efefef",
-                        "icon" : "",
-                        "nameFallback" : "",
-                        "descriptionFallback" : "",
-                        ...
+                        "icon" : "reference sur un icon flutter",
+                        "nameFallback" : "Ceci est le nom du VC par defaut",
+                        "descriptionFallback" : "Ceci est la description du VC par defaut"
                         }
-                        to be discussed....
+                       
 }
 ```
 
