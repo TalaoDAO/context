@@ -102,9 +102,9 @@ example:
            "expires" : 12/08/2021Z ",
            "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
            "display" : { "backgroundColor : "#efefef",
-                        "icon" : "reference sur un icon flutter",
-                        "nameFallback" : "Ceci est le nom du VC par defaut",
-                        "descriptionFallback" : "Ceci est la description du VC par defaut"
+                        "icon" : "Flutter icon reference",
+                        "nameFallback" : "By default this is the name of the VC",
+                        "descriptionFallback" : "By default this is the description of the VC."
                         }
                        
 }
@@ -124,6 +124,8 @@ If there are items other than“ subject_id ”, the actions of the wallet will 
 ```
 
 In the event that an attribute is missing in the profile saved in the wallet it would be replaced by “”.
+
+For display descriptors : "name" and "description" fallback will ne used if any attribute "name" or "description" exists in the VC. There is no internationalization support for those attributes. See "icon" and "color" values in examples. 
 
 See https://talao.co/wallet/test/credentialOffer for testing.
 
