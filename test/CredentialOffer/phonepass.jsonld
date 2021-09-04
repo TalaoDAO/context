@@ -36,8 +36,8 @@
         "PhonePass"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
-        "expires": "",
+        "id": "",
+        "expires": "2022-09-04T15:12:15.372Z",
         "type": "PhonePass",
         "phone": "+3360718229678",
         "issuedBy": {
@@ -45,19 +45,7 @@
             "name": "Talao"
         }
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-04T17:12:15Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-04T15:12:15.372Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..Jq5F3-iucScKhHOpjQuNuhI6eDgzTajC_di6mYqrCRVj-ZTdHldmwRnLU6k6va58MYJ3Ro2Imk1fcelifU1QaQA"
-    },
+    "issuer": "",
     "description": [
         {
             "@language": "en",
