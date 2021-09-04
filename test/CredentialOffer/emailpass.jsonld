@@ -36,7 +36,7 @@
         "EmailPass"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "type": "EmailPass",
         "expires": "",
         "email": "",
@@ -45,19 +45,7 @@
             "name": "Talao"
         }
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-04T17:09:05Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-04T15:09:05.809Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..PyWxEaxNIL1H97UkMYXWABxhMhqQ8991OxbSLCgXscsGQ4U74b9fIEICQoSBlW6-WMW-HVQXpJLePMR6aC7tKwA"
-    },
+    "issuer": "",
     "description": [
         {
             "@language": "en",
