@@ -1,0 +1,89 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "name": "https://schema.org/name",
+            "PhonePass": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "expires": "schema:expires",
+                    "id": "@id",
+                    "issuedBy": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name"
+                        },
+                        "@id": "schema:issuedBy"
+                    },
+                    "phone": "schema:phone",
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#phonepass"
+            },
+            "description": "https://schema.org/description"
+        }
+    ],
+    "id": "urn:uuid:7ce98248-0d92-11ec-9ef1-f37fc4c32c40",
+    "type": [
+        "VerifiableCredential",
+        "PhonePass"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "expires": "",
+        "type": "PhonePass",
+        "phone": "+3360718229678",
+        "issuedBy": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        }
+    },
+    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuanceDate": "2021-09-04T17:12:15Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
+        "created": "2021-09-04T15:12:15.372Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..Jq5F3-iucScKhHOpjQuNuhI6eDgzTajC_di6mYqrCRVj-ZTdHldmwRnLU6k6va58MYJ3Ro2Imk1fcelifU1QaQA"
+    },
+    "description": [
+        {
+            "@language": "en",
+            "@value": "This signed electronic certificate is proof that you are the owner of this telephone number."
+        },
+        {
+            "@language": "de",
+            "@value": "Dieses signierte elektronische Zertifikat ist der Nachweis, dass Sie der Inhaber dieser Telefonnummer sind."
+        },
+        {
+            "@language": "fr",
+            "@value": "Cette attestation électronique signée est la preuve que vous êtes le propriétaire de ce numéro de téléphone."
+        }
+    ],
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Phone Proof"
+        },
+        {
+            "@language": "de",
+            "@value": "Telefonnachweis"
+        },
+        {
+            "@language": "fr",
+            "@value": "Preuve de téléphone"
+        }
+    ]
+}
