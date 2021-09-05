@@ -96,7 +96,7 @@
         "ProfessionalExperienceAssessment"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "endDate": "2021-05-15T12:11:59Z",
         "recipient": {
             "familyName": "Doe",
@@ -209,19 +209,7 @@
             "name": "Nicolas Muller"
         }
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-04T19:39:47Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-04T17:39:47.473Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..UAflHxLrCCQHkgbt1a5hTHqqGu5Us44_zxo198cl5LoE21_ugn7ZWYG_ThEW7NUwp8HrapwnSW0RmN066Uua0AE"
-    },
+    "issuer": "",
     "name": [
         {
             "@language": "en",
