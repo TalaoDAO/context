@@ -59,7 +59,7 @@
         "ResidentCard"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "identifier": "566GFJHF67876",
         "gender": "male",
         "familyName": "Doe",
@@ -75,19 +75,7 @@
             "name": "Ministère de la Digitalisation du Luxembourg"
         }
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-05T10:23:23Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-05T08:23:23.503Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..PMcKr8XuPwOtc0j0fhHFm69sPBXKf5xkMKzTsiUvp0Qy4AvZmOGSfpJPBEG7GOr9y6_kx8bScbr37tf_PD24VwE"
-    },
+    "issuer": "",
     "credentialStatus": {
         "id": "https://....../TrustMyData-proto/blob/main/credential/status/1#1234",
         "type": "RevocationList2020Status",
