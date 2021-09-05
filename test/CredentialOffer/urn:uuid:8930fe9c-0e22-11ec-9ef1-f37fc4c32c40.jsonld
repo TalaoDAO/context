@@ -1,0 +1,129 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "RevocationList2020Status": {
+                "@context": {
+                    "@protected": true,
+                    "id": "@id",
+                    "revocationListCredential": {
+                        "@id": "https://w3id.org/vc-revocation-list-2020#revocationListCredential",
+                        "@type": "@id"
+                    },
+                    "revocationListIndex": "https://w3id.org/vc-revocation-list-2020#revocationListIndex",
+                    "type": "@type"
+                },
+                "@id": "https://w3id.org/vc-revocation-list-2020#RevocationList2020Status"
+            }
+        },
+        {
+            "description": "hhtps://chema.org/description",
+            "name": "https://schema.org/name",
+            "ResidentCard": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "address": "schema:address",
+                    "birthDate": "schema:birthDate",
+                    "birthPlace": "schema:birthPlace",
+                    "familyName": "schema:familyName",
+                    "gender": "schema:gender",
+                    "givenName": "schema:givenName",
+                    "id": "@id",
+                    "identifier": "schema:identifier",
+                    "issuedBy": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:logo",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "schema:issuedBy"
+                    },
+                    "maritalStatus": "https://github.com/TalaoDAO/TrustMyData-proto/blob/main/vocab",
+                    "nationality": "schema:nationality",
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/TrustMyData-proto/blob/main/vocab"
+            }
+        }
+    ],
+    "id": "urn:uuid:8930fe9c-0e22-11ec-9ef1-f37fc4c32c40",
+    "type": [
+        "VerifiableCredential",
+        "ResidentCard"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "identifier": "566GFJHF67876",
+        "gender": "male",
+        "familyName": "Doe",
+        "givenName": "John",
+        "address": "16 av de Bellevue, 75009 Paris, France",
+        "birthPlace": "Paris",
+        "nationality": "Fr",
+        "type": "ResidentCard",
+        "birthDate": "16/10/1995",
+        "maritalStatus": "single",
+        "issuedBy": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmW2Ph9WixNSPKsQKJmniUEXBzhe2aXV93s88GYeX5FbZ9",
+            "name": "Ministère de la Digitalisation du Luxembourg"
+        }
+    },
+    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuanceDate": "2021-09-05T10:23:23Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
+        "created": "2021-09-05T08:23:23.503Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..PMcKr8XuPwOtc0j0fhHFm69sPBXKf5xkMKzTsiUvp0Qy4AvZmOGSfpJPBEG7GOr9y6_kx8bScbr37tf_PD24VwE"
+    },
+    "credentialStatus": {
+        "id": "https://....../TrustMyData-proto/blob/main/credential/status/1#1234",
+        "type": "RevocationList2020Status",
+        "revocationListIndex": "1234",
+        "revocationListCredential": "https://...../TrustMyData-proto/blob/main/credential/status/1"
+    },
+    "credentialSchema": {
+        "id": "https://...../tsr-vid/residentcard.jsonld",
+        "type": "JsonSchemaValidator2021"
+    },
+    "description": [
+        {
+            "@language": "en",
+            "@value": "This certificate proves the reality of your residence in Luxembourg."
+        },
+        {
+            "@language": "de",
+            "@value": "Diese Bescheinigung belegt die Realität Ihres Wohnsitzes in Luxemburg."
+        },
+        {
+            "@language": "fr",
+            "@value": "Cette attestation prouve la réalité de votre résidence au Luxembourg."
+        }
+    ],
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Residence certificate"
+        },
+        {
+            "@language": "de",
+            "@value": "Wohnsitzbescheinigung"
+        },
+        {
+            "@language": "fr",
+            "@value": "Certificat de résidence"
+        }
+    ]
+}
