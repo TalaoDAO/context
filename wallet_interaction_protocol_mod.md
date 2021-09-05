@@ -8,13 +8,13 @@ Talao lightly modified this protocol to adapt it to its own use cases (business 
 ## Verification of the identity of Issuer / Verifier 
 
 ### Motivation
-The protocol of interaction between the wallet and an Issuer or a Verifier currently used by Credible is light, simple and quick to implement, However it does not allow the user of the wallet to ensure the identity of the other party but only the domain name specified in the URL encoded in the QR Code. On the other hand, a simple solution based on access to a public register of Issuers / Verifier (EBSI framework for instance...) makes it possible to obtain more precise information for the user and therefore better control without considerably increasing the complexity of the protocol. 
+The protocol of interaction between the wallet and an Issuer or a Verifier currently used by Credible is light, simple and quick to implement, However it does not allow the user of the wallet to ensure the identity of the other party but only the domain name specified in the URL encoded in the QR Code. On the other hand, a simple solution based on access to a public register of Issuers / Verifier (EBSI registry for instance...) makes it possible to obtain more information for the user and therefore better control without considerably increasing the complexity of the protocol. 
 
 ## Issuer / Verifier implementation
 The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL examaple : https://talao.co/..../?issuer=did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250).
 
 ### Issuer Registry implementation
-It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. We will start with 2 registries ans same API for both :
+It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. We will start with 2 registries and same API for both :
 
 
 Talao Issuer Registry 
@@ -43,21 +43,21 @@ JSON response:
 ```
 
 ### Wallet implementation
-An option in the settings menu allows user to opt for one of the 2 specific Issuer Registry (mentionned above). In this case if this register is used successfully, the area to access the confirmation request message will be enriched by Issuer data (name,...). 
+An option in the settings menu allows user to opt for one of the specific Issuer Registries (mentionned above). In this case if this register is used successfully, the area to access the confirmation request message will be enriched by Issuer data (data to be defined). 
 
-Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its details (legalName,...) from the registry. The wallet checks that the callback domainName is identical to the QRCode domain if this is the case it adds the legalName of the Issuer (and possibly other issuer details)  to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
+Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its details from the registry. The wallet checks that the callback domain is identical to the QRCode domain if this is the case it adds Issuer data to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
 
 # credentialOffer
 
 ## Motivation
 
-For holders wishes to engage with Issuers to acquire credentials, there must exist a mechanism for assessing what inputs are required from an issuer to process a request for credential issuance. The Credential Manifest is a common data format for describing the inputs a Subject must provide to an Issuer and the way the VCs shopuild be presented. This draft has been inpired by the Credential Manfifest specification with a very limited implementations of 2 items :
+For holders wishes to engage with Issuers to acquire credentials, there must exist a mechanism for assessing what inputs are required from an issuer to process a request for credential issuance. A manifest is a common data format for describing the inputs a user must provide to an Issuer and the way the VCs shopuild be presented. This draft has been inpired by the Credential Manfifest specification with a very limited implementations of 2 items :
 
 - user inputs : For some VCs it is necessary to transfer the personal data of the user's profile to the Issuer. This information is accessible in the menu Profile of the wallet. These are: the user's last name, first name, telephone, address and email.
-- display output descriptors.
+- display output descriptors as labels (name, description) et templates objetcs (icon, color,...).
 
 ## Issuer implementation
-Currently when the wallet does a GET on the Issuer URL, a JSON is returned to the wallet (Issuer GET response):
+Currently (Credible 0.1) when the wallet makes a GET to the Issuer endpoint, a JSON is returned to the wallet (Issuer GET response):
 
 ```javascript
 {
@@ -123,7 +123,7 @@ If there are items other than“ subject_id ”, the actions of the wallet will 
 }
 ```
 
-In the event that an attribute is missing in the profile saved in the wallet it would be replaced by “”.
+In the event that an attribute is missing in the wallet profile it would be replaced by “”.
 
 For display descriptors : "name" and "description" fallback will ne used if any attribute "name" or "description" exists in the VC. There is no internationalization support for those attributes. See "icon" and "color" values in examples. 
 
@@ -219,10 +219,10 @@ NB :
 - By default the credential is required ("required" : "True")
 - The reason attribute should be analysed as an array of different languages ("fr", "en", ...) 
 
-### Examples
+### QBE Examples
 
 #### Example 1
-The Verifier wishes to receive VCs that the Issuer DID  did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk:
+Verifier requests VCs issued by did:tz:tz2NQkPq3FFA3zGAyG8kLcWatGbeXpHMu7yk:
 
 ```javascript
 {
@@ -250,7 +250,7 @@ The Verifier wishes to receive VCs that the Issuer DID  did:tz:tz2NQkPq3FFA3zGAy
 
 
 #### Example 2
-The Verifier requests a ResidentCard:
+Verifier requests a ResidentCard:
 
 ```javascript
 {
@@ -273,7 +273,7 @@ The Verifier requests a ResidentCard:
 ```
 
 #### Example 3
-The Verifier requests a ResidentCard and a DriverLicense and attaches messages for user :
+Verifier requests a ResidentCard and a DriverLicense and attaches messages for user :
 
 ```javascript
 {
@@ -283,13 +283,31 @@ The Verifier requests a ResidentCard and a DriverLicense and attaches messages f
             "type": "QueryByExample",
             "credentialQuery": [
                 {
-                    "reason": "Join a Residency certificate.",
+                    "reason": [
+                        {
+                            "@language": "en",
+                            "@value": "Join a resident card"
+                        },
+                        {
+                            "@language": "fr",
+                            "@value": "Joindre une carte de résidence"
+                        }
+                    ],
                     "example" : {
                         "type" : "ResidentCard"
                     }
                 },
                 {
-                    "reason": "Join a Driver License.",
+                    "reason": [
+                        {
+                            "@language": "en",
+                            "@value": "Join a driver license"
+                        },
+                        {
+                            "@language": "fr",
+                            "@value": "Joindre un permis de conduire"
+                        }
+                    ],
                     "example" : {
                         "type" : "DriverLicense"
                     }
@@ -303,4 +321,35 @@ The Verifier requests a ResidentCard and a DriverLicense and attaches messages f
 
 ```
 
-See https://talao.co/wallet/test/presentationRequest for testing.
+#### Example 4
+Verifier requests attaches messages for user but no credential criters :
+
+```javascript
+{
+    "type": "VerifiablePresentationRequest",
+    "query": [
+        {
+            "type": "QueryByExample",
+            "credentialQuery": [
+                {
+                    "reason": [
+                        {
+                            "@language": "en",
+                            "@value": "Join a resident card and your driver license"
+                        },
+                        {
+                            "@language": "fr",
+                            "@value": "Joindre une carte de résidence et votre permis de conduire"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "challenge": "9d0927c1-08cb-11ec-a6fa-8d5c53eaebfb",
+    "domain": "talao.co"
+}
+
+```
+
+See https://talao.co/wallet/test/presentationRequest for simulation and testing.
