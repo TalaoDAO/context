@@ -1,0 +1,82 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "name": "https://schema.org/name",
+            "description": "https://schema.org/description",
+            "LoyaltyCard": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "address": "schema:address",
+                    "email": "schema:email",
+                    "expires": "schema:expires",
+                    "familyName": "schema:familyName",
+                    "givenName": "schema:givenName",
+                    "id": "@id",
+                    "memberOf": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name"
+                        },
+                        "@id": "schema:memberOf"
+                    },
+                    "programName": "schema:programName",
+                    "schema": "https://schema.org/",
+                    "telephone": "schema:telephone",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#loyaltycard"
+            }
+        }
+    ],
+    "id": "urn:uuid:cd8a2a3c-0e22-11ec-9ef1-f37fc4c32c40",
+    "type": [
+        "VerifiableCredential",
+        "LoyaltyCard"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "type": "LoyaltyCard",
+        "familyName": "Thevenet",
+        "memberOf": {
+            "logo": "https://thewinespirit.co",
+            "name": "The Wine Spririt"
+        },
+        "expires": "2022-09-04T15:12:15.372Z",
+        "givenName": "Thierry"
+    },
+    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuanceDate": "2021-09-05T10:25:18Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
+        "created": "2021-09-05T08:25:18.172Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..4hLLsawS9nmJEDfkOJba3oWRrJdG0UbAtbVh9CXg3_ECbyNrBPz0X1IzjhyQIRm2GkuBj17BLlLljOibgLXgTgA"
+    },
+    "description": "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Loyalty card"
+        },
+        {
+            "@language": "de",
+            "@value": "Kundenkarte"
+        },
+        {
+            "@language": "fr",
+            "@value": "Carte de fidélité"
+        }
+    ]
+}
