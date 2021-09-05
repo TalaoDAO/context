@@ -57,7 +57,7 @@
         "DriverLicense"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "identifier": "566GFJHF67876",
         "author": {
             "logo": "https://talao.mypinata.cloud/ipfs/QmW2Ph9WixNSPKsQKJmniUEXBzhe2aXV93s88GYeX5FbZ9",
@@ -71,19 +71,7 @@
         "gender": "male",
         "birthPlace": "Paris"
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-05T10:33:03Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-05T08:33:03.619Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..YoXvaqvvPa8kGg8eWRT2kGH26F7bsxe9io8diP8naqEGG955TblG0WamXZc5ZMtTHp6qJSv8Q-maZaqjIANQ8wA"
-    },
+    "issuer": "",
     "credentialStatus": {
         "id": "https://github.com/TalaoDAO/TrustMyData-proto/blob/main/credential/status/1#1234",
         "type": "RevocationList2020Status",
