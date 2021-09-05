@@ -133,9 +133,7 @@ See https://talao.co/wallet/test/credentialOffer for testing.
 
 ## Motivation
 
-When interacting with a Verifier it is likely that it wants to get a presentation made up of specific VCs. It is therefore necessary to be able to specify to the wallet the conditions to be applied to the choice of VCs. 
-
-The following specifications are taken from a minimalist interpretation of the draft  https://w3c-ccg.github.io/vp-request-spec/#query-by-example 
+When interacting with a Verifier it is likely that it wants to get a presentation made up of specific VCs. It is therefore necessary to be able to specify to the wallet the conditions to be applied to the choice of VCs. The following specifications are taken from a minimalist interpretation of the draft  https://w3c-ccg.github.io/vp-request-spec/#query-by-example 
 
 ## Verifier implementation
 
@@ -174,7 +172,7 @@ or:
 
 ### DIDAuth
 
-If Query.type = “DIDAuth” , then it is a basic authentication request that does not include a verifiable credential : there is no selection of credential to propose to the user in the wallet, call thefunction didkit.DIDAuth(did, “{“ challenge ”:“ .... ”,“ domain ”:“ ..... ”}”, key) which will create an empty presentation used only for authentication. The presentation passed with the POST request will look like this:
+If Query.type = “DIDAuth” , then it is a basic authentication request that does not include a verifiable credential : there is no selection of credential to propose to the user, call the function didkit.DIDAuth(did, “{“ challenge ”:“ .... ”,“ domain ”:“ ..... ”}”, key) which will create an empty presentation used only for authentication. The presentation passed with the POST request will look like this:
 
 ```javascript
 {
@@ -195,28 +193,22 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
 
 ### QueryByExemple
 
-If Query.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery.example". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call).
+If Query.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery.example". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call). Refer to https://w3c-ccg.github.io/vp-request-spec/#query-by-example for more information.
 
 If "credentialQuery": is an empty list, one keeps the current behavior of Credible. The user is asked to select credentials to send. Never mind the VCs.
 
 If "credentialQuery.example" contains {"reason": [......]}
-then the Verifier wishes to display an information message to the user (see languages to be taken into account). This message will be displayed on the wallet at the time of selection.
+then the Verifier wishes to display an information message to the user. This message will be displayed on the wallet at the time of selection.
 
-
-If "credentialQuery.example" contains {"type": ["some_type", ...]}
-then the Verifier wishes to receive VCs conforming to the specified type (s) and the wallet presents a list of VCs consisting only of the specified type (s)
-
-
-If " credentialQuery.example " contains { " credentialSchema " : [" un_schema ", ...]}
-then the Verifier wishes to receive VCs whose schema conforms to the specified type (s) and the wallet presents a list consisting only of the specified schema (s)
-
+If "credentialQuery.example" contains {"type": "some_type"}
+then the Verifier wishes to receive VCs conforming to the specified type and the wallet presents a list of VCs consisting only of the specified type.
 
 If "credentialQueryexample" contains { "trustedIssuer" : ["un_issuer", “un_autre_issuer”, ...]}
-then the Verifier wishes to receive VCs sent by the specified Issuers and the wallet presents a list consisting only of the specified type (s).
+then the Verifier wishes to receive VCs sent by the specified Issuers and the wallet presents a list consisting only of the specified issuers.
 
-NB : 
+Nota Bene : 
 - There is one credentialQuery.example for each type of VC requested
-- By default the credential is required ("required" : "True")
+- By default the credential is required ("required" : "True"), it does not support the other option.
 - The reason attribute should be analysed as an array of different languages ("fr", "en", ...) 
 
 ### QBE Examples
@@ -322,7 +314,7 @@ Verifier requests a ResidentCard and a DriverLicense and attaches messages for u
 ```
 
 #### Example 4
-Verifier requests attaches messages for user but no credential criters :
+Verifier attaches messages for user but no credential criters :
 
 ```javascript
 {
