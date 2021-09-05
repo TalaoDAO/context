@@ -41,7 +41,7 @@
         "AffiliationCard"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "givenName": "Thierry",
         "memberOf": {
             "logo": "https://ftp.club",
@@ -49,19 +49,7 @@
         },
         "type": "AffiliationCard"
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-05T10:39:04Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-05T08:39:04.851Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..bx29ep2gTrxtutc6bbw7YJwPLNsm4l5xRrUStbWqkGZ1MDs59c_bwBm0tUVDqod-Fba9-2JsYjfx3Qhqj8svRQE"
-    },
+    "issuer": "",
     "description": [
         {
             "@language": "en",
