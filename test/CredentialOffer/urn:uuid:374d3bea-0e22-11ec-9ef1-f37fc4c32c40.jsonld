@@ -1,0 +1,114 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "name": "https://schema.org/name",
+            "description": "https://schema.org/description",
+            "IdentityPass": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "expires": "schema:expires",
+                    "id": "@id",
+                    "issuedBy": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:logo",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "schema:issuedBy"
+                    },
+                    "recipient": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "address": "schema:address",
+                            "birthDate": "schema:birthDate",
+                            "email": "schema:email",
+                            "familyName": "schema:familyName",
+                            "gender": "schema:gender",
+                            "givenName": "schema:givenName",
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "jobTitle": "schema:jobTitle",
+                            "schema": "https://schema.org/",
+                            "telephone": "schema:telephone"
+                        },
+                        "@id": "schema:recipient"
+                    },
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#identitypass"
+            }
+        }
+    ],
+    "id": "urn:uuid:374d3bea-0e22-11ec-9ef1-f37fc4c32c40",
+    "type": [
+        "VerifiableCredential",
+        "IdentityPass"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "recipient": {
+            "email": "john.doe@talao.io",
+            "familyName": "Doe",
+            "givenName": "John",
+            "image": "",
+            "jobTitle": "Director"
+        },
+        "issuedBy": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        },
+        "type": "IdentityPass"
+    },
+    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
+    "issuanceDate": "2021-09-05T10:21:06Z",
+    "proof": {
+        "@context": [
+            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
+            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
+        ],
+        "type": "EcdsaSecp256k1RecoverySignature2020",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
+        "created": "2021-09-05T08:21:06.115Z",
+        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..GzB3MKI7HmEKQjIumjoOtzSybChwZPdintpEPIDxo5U4MCDkgUP4QmIZUOjGjk0tbIwBBpJQfttBGGWOXMtQDgA"
+    },
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Identity pass"
+        },
+        {
+            "@language": "de",
+            "@value": "Firmenpass"
+        },
+        {
+            "@language": "fr",
+            "@value": "Pass entreprise"
+        }
+    ],
+    "description": [
+        {
+            "@language": "en",
+            "@value": "It is a credential issued by a company or an organization. It can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees."
+        },
+        {
+            "@language": "de",
+            "@value": "Es ist ein von einem Unternehmen oder einer Organisation ausgestellter Berechtigungsnachweis. Es kann zur Authentifizierung bei Firmendiensten (Zugangsausweis, Informationssystem) oder bei Dritten, die Dienstleistungen für Firmenmitarbeiter anbieten, verwendet werden."
+        },
+        {
+            "@language": "fr",
+            "@value": "Il s'agit d'un titre délivré par une entreprise ou une organisation. Il permet de s'authentifier auprès des services de l'entreprise (badge d'accès, système d'information) ou auprès de tiers proposant des services aux salariés de l'entreprise."
+        }
+    ]
+}
