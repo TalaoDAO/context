@@ -39,7 +39,7 @@
         "PaymentCard"
     ],
     "credentialSubject": {
-        "id": "did:tz:tz1gvdiw7GZR99xwUtJ5tDmh5EVe9RhYHzqq",
+        "id": "",
         "expires": "2025-09-04T15:12:15.372Z",
         "identifier": "jhgfjhgfkfkjhf",
         "type": "PaymentCard",
@@ -50,19 +50,7 @@
             "name": "SSI Bank"
         }
     },
-    "issuer": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250",
-    "issuanceDate": "2021-09-05T10:35:36Z",
-    "proof": {
-        "@context": [
-            "https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/lds-ecdsa-secp256k1-recovery2020-0.0.jsonld",
-            "https://demo.spruceid.com/EcdsaSecp256k1RecoverySignature2020/esrs2020-extra-0.0.jsonld"
-        ],
-        "type": "EcdsaSecp256k1RecoverySignature2020",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250#controller",
-        "created": "2021-09-05T08:35:36.465Z",
-        "jws": "eyJhbGciOiJFUzI1NkstUiIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..W3MSeN2dOKLwoKQvs6pt_OCkCulozK-IYcghTRLQK_8IPzQeUYf8EnT2HRCpQSbbzMoEpmycGQDZ-5Ya_DF9FgA"
-    },
+    "issuer": "",
     "name": [
         {
             "@language": "en",
