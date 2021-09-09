@@ -120,7 +120,7 @@
     "description": [
         {
             "@language": "en",
-            "@value": "It is a credential issued by a company to its employees, service providers or freelancers. This certificate is produced at the request of a Talent to prove the skills and know-how implemented during a project or a mission. "
+            "@value": "This certificate is produced at the request of a Talent to prove the skills and know-how implemented during a project or a mission. "
         },
         {
             "@language": "de",
@@ -128,7 +128,7 @@
         },
         {
             "@language": "fr",
-            "@value": "Il s'agit d'un justificatif délivré par une entreprise à ses salariés, prestataires ou indépendants. Cette attestation est produite à la demande d'un Talent pour justifier des compétences et savoir-faire mis en œuvre lors d'un projet ou d'une mission."
+            "@value": "Cette attestation est produite à la demande d'un Talent pour justifier des compétences et savoir-faire mis en œuvre lors d'un projet ou d'une mission."
         }
     ]
 }
