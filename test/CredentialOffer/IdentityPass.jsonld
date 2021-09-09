@@ -88,7 +88,7 @@
     "description": [
         {
             "@language": "en",
-            "@value": "It is a credential issued by a company or an organization. It can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees."
+            "@value": "This credential can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees."
         },
         {
             "@language": "de",
@@ -96,7 +96,7 @@
         },
         {
             "@language": "fr",
-            "@value": "Il s'agit d'un titre délivré par une entreprise ou une organisation. Il permet de s'authentifier auprès des services de l'entreprise (badge d'accès, système d'information) ou auprès de tiers proposant des services aux salariés de l'entreprise."
+            "@value": "Ce pass permet de s'authentifier auprès des services de l'entreprise (badge d'accès, système d'information) ou auprès de tiers proposant des services aux salariés de l'entreprise."
         }
     ]
 }
