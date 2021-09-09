@@ -213,7 +213,7 @@
     "name": [
         {
             "@language": "en",
-            "@value": "Professional experience assessment"
+            "@value": "Experience assessment"
         },
         {
             "@language": "de",
@@ -221,7 +221,7 @@
         },
         {
             "@language": "fr",
-            "@value": "Attestation d'expérience professionnelle"
+            "@value": "Attestation d'expérience"
         }
     ],
     "description": [
