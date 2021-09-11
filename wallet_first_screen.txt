@@ -3,11 +3,10 @@
 
 
 
+
 Collect credentials issued by institutions and companies. These signed electronic documents prove your identity.
 
-
 With those credentials you can now connect to an internet service without even having an account and password and access by teleworking in a secure context to the digital services of companies.  Soon you will be able to buy online, apply for a loan from your bank in a few minutes, use your smartpĥone to access offices, an auditorium, a concert, … 
-
 
 Your credentials are stored only on your device. Your personal information cannot be seen by anyone.
 
@@ -22,8 +21,6 @@ Your credentials are stored only on your device. Your personal information canno
 
 Collectez les attestations émises par les institutions et les entreprises. Ces documents électroniques signés prouvent votre identité.
 
-
 Avec ces attestations vous pouvez désormais vous connecter à un service internet sans même avoir de compte et de mot de passe et accéder en télétravail dans un contexte sécurisé aux services numériques des entreprises. Bientôt vous pourrez acheter en ligne, demander un prêt auprès de votre banque en quelques minutes, utiliser votre smartphone pour accéder à des bureaux, une salle, un concert, …
-
 
 Vos informations personnelles sont stockées uniquement sur votre appareil, elles ne peuvent être vues par personne.
