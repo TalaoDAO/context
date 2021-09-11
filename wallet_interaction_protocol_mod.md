@@ -14,14 +14,11 @@ The protocol of interaction between the wallet and an Issuer or a Verifier curre
 The Issuer (or Verifier) DID is passed as an argument in the QRcode callback URL examaple : https://talao.co/..../?issuer=did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250).
 
 ### Issuer Registry implementation
-It is necessary to create a registry (centralized or on a blockchain) to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. We will start with 2 registries and same API for both :
+It may be necessary to create a registry to store information about the Issuer and to define an API allowing access with a DID on behalf of the Issuer and its callback URL. There are several solutions to implement this service (see EBSI frameworkk, ToIP gov stack, LinkedDomains,...), to keep it simple we will use a gateway : https://talao.co/trusted-issuers-registry/v1/issuers/<did> 
 
-
-Talao Issuer Registry 
+Example :
+    
 GET https://talao.co/trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250 
-
-EBSI Trusted Issuer Registry
-GET https://ebsi.....eu/trusted-issuers-registry/v1/issuers/did:ethr:0xee09654eedaa79429f8d216fa51a129db0f72250 
 
 JSON response:
 ```javascript
@@ -36,16 +33,15 @@ JSON response:
             "legalName": "Talao SAS",
             "currentAddress": "Talao, 16 rue de Wattignies, 75012 Paris, France",
             "vatNumber": "BE05555555XX",
-            "domainName": "https://talao.co"
+            "domainName": "https://talao.co",
+            "issuerDomain : "["talao.co", "talao.io"]
         }
     }
 }
 ```
 
 ### Wallet implementation
-An option in the settings menu allows user to opt for one of the specific Issuer Registries (mentionned above). In this case if this register is used successfully, the area to access the confirmation request message will be enriched by Issuer data (data to be defined). 
-
-Wallet makes a call to the Registry API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its details from the registry. The wallet checks that the callback domain is identical to the QRCode domain if this is the case it adds Issuer data to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer could not be obtained and verified.
+Wallet makes a call to the gateway API with the DID associated with the QRCode “issuer” argument to read the Issuer callback and its details from the registry. The wallet checks that the QRCode domain is in the "issuerDomain" list, if this is the case it adds Issuer data to the access confirmation request message. If this is not the case or if there is no register available, it indicates that the name of the Issuer cannot not be obtained and verified.
 
 # credentialOffer
 
