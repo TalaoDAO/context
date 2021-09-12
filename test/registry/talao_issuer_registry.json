@@ -10,7 +10,8 @@
             "legalName": "Great Company",
             "currentAddress": "Great Company Street 1, Brussels, Belgium",
             "vatNumber": "BE05555555XX",
-            "domainName": "https://great.company.be"
+            "website": "https://great.company.be",
+            "issuerDomain" : []
         }
     }
     },
@@ -25,7 +26,8 @@
             "legalName": "Talao SAS",
             "currentAddress": "Talao, 16 rue de Wattignies, 75012 Paris, France",
             "vatNumber": "FR26837674480",
-            "domainName": "https://talao.co"
+            "website": "https://talao.co",
+            "issuerDomain" : ["talao.co", "talao.io"]
         }
     }
     }
