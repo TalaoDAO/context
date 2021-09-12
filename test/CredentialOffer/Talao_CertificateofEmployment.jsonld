@@ -59,7 +59,7 @@
     "description": [
         {
             "@language": "en",
-            "@value": "A certificate of employment is a document by which an employer certifies that his employee is indeed employed by his company."
+            "@value": "This certificate is a document by which an employer certifies that his employee is indeed employed by his company."
         },
         {
             "@language": "de",
@@ -67,7 +67,7 @@
         },
         {
             "@language": "fr",
-            "@value": "Cette attestation employeur est un document par lequel un employeur atteste que son salarié est bien employé par son entreprise."
+            "@value": "Cette attestation est un document par lequel un employeur atteste que son salarié est bien employé par son entreprise."
         }
     ],
     "name": [
