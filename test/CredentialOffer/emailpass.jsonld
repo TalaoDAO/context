@@ -38,8 +38,8 @@
     "credentialSubject": {
         "id": "",
         "type": "EmailPass",
-        "expires": "",
-        "email": "",
+        "expires": "2022-06-12",
+        "email": "john.doe@gmail.com",
         "issuedBy": {
             "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
             "name": "Talao"
