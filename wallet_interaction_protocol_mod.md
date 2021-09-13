@@ -126,7 +126,7 @@ For display descriptors : "name" and "description" fallback will ne used if any 
 
 See https://talao.co/wallet/test/credentialOffer for testing.
 
-# presentationRequest
+# presentationRequest Query types
 
 ## Motivation
 
@@ -188,7 +188,9 @@ If Query.type = “DIDAuth” , then it is a basic authentication request that d
 }
 ```
 
-### QueryByExemple
+# presentationRequest QueryByExample
+    
+## Wallet implementation
 
 If Query.type ="QueryByExample "then it will take the user selects credentials in a list constituted according to the criteria specified in "credentialQuery.example". Then it will be necessary to call the didkit.issuePresentation (...) function as what is currently done (there is no change in the function call). Refer to https://w3c-ccg.github.io/vp-request-spec/#query-by-example for more information.
 
