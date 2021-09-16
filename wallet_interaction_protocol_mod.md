@@ -1,6 +1,6 @@
 # Interaction between the wallet and an Issuer / Verifier
 
-## definition
+## Definition
 
 Wallet: Most often it is a smartphone application in which we can keep certificates (driving license, identity card, bank cards, loyalty cards, diplomas, etc.) in the form of electronic documents.
 
@@ -14,7 +14,7 @@ DID: DID is the acronym for Decentralized Identifier. It's a new generation of i
 
 This is the protocol for interaction between the wallet and an issuer or auditor. This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols. Talao has slightly modified this protocol to adapt it to its own use cases (business logic, governance requirements, etc.). This protocol occurs when a user wishes to use his wallet to collect credentials or use them to access resources. 
 
-## Collecting a VC
+## Collecting a Verifiable Credential (VC)
 
 When the user wants to collect VCs, it is very likely that he will access this service after a first authentication. The wallet protocol does not automatically integrate this first authentication. The user must either authenticate with a pre-existing means of authentication (login / password, openID Connect, ...) or possibly use a VC already collected to introduce himself. This process will be used for most of the VCs to be collected such as the identity card, a professional certificate, an electronic bank card, a membership card,…. However, there are special cases where the sender collects information in an anonymous session just before issuing a VC. This is the case of proof of email, phone, .... 
  
@@ -24,7 +24,7 @@ If the user agrees, the issuer transfers a “preview” of the VC with presenta
 
 This protocol is carried by a GET request and a POST request on the URL indicated in the QRCode.
 
-## Verifiable Presentation request (VP)
+## Requestiong a Verifiable Presentation (VP)
 
 The presentation of a VC or without any VC  can be used for authentication.
 
@@ -35,10 +35,6 @@ Authentication with a VC can be used on the first interaction between the user a
 This protocol called Presentation Request is as follows: the verifier displays a QR code which indicates a service URL to which its own DID is added. The wallet requests authorization to the user to access the URL possibly by retrieving information about the verifier from a trusted registry. Verifying the identity of the verifier is critical to prevent the user from disclosing personal data to untrusted websites.
 
 If the user agrees, the sender transfers his request specifying the type of VC expected. In the case of authentication by DID, the user can accept and send his empty presentation, in the case of a request from particular VCs, the wallet offers the user to select the VCs he wishes to add to his presentation. The list of VCs offered to the user is produced on the basis of the criteria of the verifier's request.
-
-## Technical implementation
-
-This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols . Talao lightly modified this protocol to adapt it to its own use cases (business logic, EU/EBSI/ESSIF requirements,...).
 
 ## Verification of the identity of Issuer / Verifier 
 
