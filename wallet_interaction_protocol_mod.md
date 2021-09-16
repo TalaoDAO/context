@@ -12,7 +12,11 @@ DID: DID is the acronym for Decentralized Identifier. It's a new generation of i
 
 ## Context
 
-This is the protocol for interaction between the wallet and an issuer or auditor. This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols. Talao has slightly modified this protocol to adapt it to its own use cases (business logic, governance requirements, etc.). This protocol occurs when a user wishes to use his wallet to collect credentials or use them to access resources. 
+For the interaction of the wallet with Issuers and Verifier, which is a decisive function in the implementation of this type of solution, we have retained the specifications of the W3C Presentation Request as well as the Spruce protocol for the management of the QR Code on a HTTPS transport layer. This protocol has the advantage of being quick and easy to implement while providing most of the necessary functions. There are currently several very promising protocols that are being defined or even in production but these seemed to us too complex and ultimately unnecessary for the current use cases which remain simple.
+
+This protocol is described by Spruce: https://github.com/spruceid/credible#supported-protocols. Talao has slightly modified this protocol to adapt it to its own use cases (business logic, governance requirements, etc.). 
+
+This protocol occurs when a user wishes to use his wallet to collect credentials or use them to access resources. 
 
 ## Collecting a Verifiable Credential (VC)
 
