@@ -24,9 +24,9 @@ If the user agrees, the issuer transfers a “preview” of the VC with presenta
 
 This protocol is carried by a GET request and a POST request on the URL indicated in the QRCode.
 
-## Requestiong a Verifiable Presentation (VP)
+## Requesting a Verifiable Presentation (VP)
 
-The presentation of a VC or without any VC  can be used for authentication.
+The presentation of a VC or without any VC can be used for authentication or to request very specific and different services as submit a file, open a bank account, buy online ...
 
 Authentication without VC consists of transferring an empty but signed VP. It is only possible if the verifier already has knowledge of the user's DID, therefore after prior enrollment. 
 
