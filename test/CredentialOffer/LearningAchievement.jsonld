@@ -39,7 +39,7 @@
             }
         }
     ],
-    "id": "",
+    "id": "urn:uuid:dd8a2a3c-0e22-34ec-9ef1-f37fc4c32c88",
     "type": ["VerifiableCredential","LearningAchievement"],
     "issuer": "",
     "issuanceDate": "2019-06-22T14:11:44Z",
