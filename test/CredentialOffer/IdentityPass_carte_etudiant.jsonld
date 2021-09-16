@@ -59,9 +59,10 @@
     "credentialSubject": {
         "id": "",
         "recipient": {
-            "email": "john.doe@talao.io",
+            "email": "jane.doe@talao.io",
             "familyName": "Doe",
-            "givenName": "John"
+            "givenName": "Jane",
+            "image" : "https://talao.mypinata.cloud/ipfs/QmajEMBXDe12qjNakrprpKRVTB6HmXWSVGVpioNvTiHpDG"
         },
         "issuedBy" : {
             "name": "The Adecco Groupe",
