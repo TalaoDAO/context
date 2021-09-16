@@ -43,8 +43,18 @@
     "type": ["VerifiableCredential","LearningAchievement"],
     "issuer": "",
     "issuanceDate": "2019-06-22T14:11:44Z",
-    "name" : "Diplome",
-    "description" : "Une qualification, un diplome, un titre reconnu",
+    "name" :[ 
+        {
+            "@language": "fr",
+            "@value": "Diplome"
+        }
+    ],
+     "description" :[ 
+        {
+            "@language": "fr",
+            "@value": "Diplome, qualification, etc...reconnu par l'état"
+        }
+    ],
     "credentialSubject": {
         "type" : "LearningAchievement",
         "id": "",
