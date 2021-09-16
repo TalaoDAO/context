@@ -42,7 +42,7 @@
     "id": "urn:uuid:dd8a2a3c-0e22-34ec-9ef1-f37fc4c32c88",
     "type": ["VerifiableCredential","LearningAchievement"],
     "issuer": "",
-    "name" : "Certification Chargé(e) de recrutement"
+    "name" : "Certification Chargé(e) de recrutement",
     "issuanceDate": "2019-06-22T14:11:44Z",
     "credentialSubject": {
         "type" : "LearningAchievement",
