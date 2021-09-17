@@ -91,6 +91,7 @@ For holders wishes to engage with Issuers to acquire credentials, there must exi
 
 - user inputs : For some VCs it is necessary to transfer the personal data of the user's profile to the Issuer. This information is accessible in the menu Profile of the wallet. These are: the user's last name, first name, telephone, address and email.
 - display output descriptors as labels (name, description) et templates objetcs (icon, color,...).
+- share link : a way to use the wallet to link to a cloud service (vault, etc).
 
 ## Issuer implementation
 Currently (Credible 0.1) when the wallet makes a GET to the Issuer endpoint, a JSON is returned to the wallet (Issuer GET response):
@@ -114,6 +115,8 @@ after agreement from the user, the wallet makes a POST request with a JSON:
 The modification consists in adding a “scope” attribute and a "display" attribute to the JSON returned by the Issuer (Issuer GET response).
 
 The “scope” attribute is a list with at least the “subject_id” item and possibly other items from the following list: “givenName”, “familyName”, “telephone”, “email”, “address”.
+ 
+The "shareLink" attribute is an URL
 
 
 example:
@@ -123,7 +126,8 @@ example:
            "type": "CredentialOffer",
            "credentialPreview": {...},
            "expires" : 12/08/2021Z ",
-           "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”]
+           "scope ": [“ subject_id ”,“ familyName ”,“ givenName ”],
+           "shareLink" : "https://talao.co/shareLink"
 }
 ```
 
