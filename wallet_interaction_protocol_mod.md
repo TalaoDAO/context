@@ -2,13 +2,17 @@
 
 ## Definition
 
-Wallet: Most often it is a smartphone application in which we can keep certificates (driving license, identity card, bank cards, loyalty cards, diplomas, etc.) in the form of electronic documents.
+Wallet (user wallet) : Most often it is a smartphone application in which we can keep certificates (driving license, identity card, bank cards, loyalty cards, diplomas, etc.) in the form of electronic documents.
 
-Verifiable Credential (VC): A “Verifiable Credential” is a digitally signed electronic document. VCs make it possible to prove a competence, a title, a capacity, a quality… and most often give rights of access. Ultimately, it is these credentials that constitute our identity in internet transactions. The digital version of a driver's license, a bank card, a diploma, a loyalty card, an employer certificate or even a car key are credentials.
+Verifiable Credential (VC) : A “Verifiable Credential” is a digitally signed electronic document. VCs make it possible to prove a competence, a title, a capacity, a quality… and most often give rights of access. Ultimately, it is these credentials that constitute our identity in internet transactions. The digital version of a driver's license, a bank card, a diploma, a loyalty card, an employer certificate or even a car key are credentials.
 
 Verifiable Presentation (VP): a Verifiable Presentation is made up of one or more VCs which are countersigned by the wallet user. This makes it possible in particular to prove to the verifier that the subject of the VCs is indeed the user.
 
-DID: DID is the acronym for Decentralized Identifier. It's a new generation of identifiers that have the property of being unique, that you can create yourself on your smartphone and whose possession you can electronically prove. Technically, a DID is an association between an algorithm and a trusted register (blockchain, server network, ...). For each DID, we have a private electronic signature key in our wallet which allows us to prove this DID to a third party by signing a message. 
+Issuer : A private company, an organization or an institution which issues VCs. It maybe a person in some very specific use cases. 
+
+Verfier : A private company, an organization or an institution which requests a VP to provide users with an authorization to access resources or services. Most of the time a verifier is a website but a physical access control to enter offices may also be a verifier. A natural person could be a verifier in some use cases.  
+
+DID : DID is the acronym for Decentralized Identifier. It's a new generation of identifiers that have the property of being unique, that you can create yourself on your smartphone and whose possession you can electronically prove. Technically, a DID is an association between an algorithm and a trusted register (blockchain, server network, ...). For each DID, we have a private electronic signature key in our wallet which allows us to prove this DID to a third party by signing a message. 
 
 ## Context
 
