@@ -1,0 +1,102 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "name": "https://schema.org/name",
+            "description": "https://schema.org/description",
+            "IdentityPass": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "expires": "schema:expires",
+                    "id": "@id",
+                    "issuedBy": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "logo": {
+                                "@id": "schema:logo",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "schema:issuedBy"
+                    },
+                    "recipient": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "address": "schema:address",
+                            "birthDate": "schema:birthDate",
+                            "email": "schema:email",
+                            "familyName": "schema:familyName",
+                            "gender": "schema:gender",
+                            "givenName": "schema:givenName",
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "jobTitle": "schema:jobTitle",
+                            "schema": "https://schema.org/",
+                            "telephone": "schema:telephone"
+                        },
+                        "@id": "schema:recipient"
+                    },
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context#identitypass"
+            }
+        }
+    ],
+    "id": "urn:uuid:374d3bea-0e22-11ec-9ef1-f37fc4c32c40",
+    "type": [
+        "VerifiableCredential",
+        "IdentityPass"
+    ],
+    "credentialSubject": {
+        "id": "",
+        "recipient": {
+            "email": "thierry.thevenet@talao.io",
+            "familyName": "Thierry",
+            "givenName": "Thevenet",
+            "image" : "https://talao.mypinata.cloud/ipfs/QmTJ2ZMFMBTD2wNndsP4z3GpZzGDDJRXM4gBix1Egf2N9e",
+            "jobTitle": "Director"
+        },
+        "issuedBy": {
+            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao"
+        },
+        "type": "IdentityPass"
+    },
+    "issuer": "",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Talao pass"
+        },
+        {
+            "@language": "de",
+            "@value": "Firmenpass"
+        },
+        {
+            "@language": "fr",
+            "@value": "Talao Pass"
+        }
+    ],
+    "description": [
+        {
+            "@language": "en",
+            "@value": "This credential can be used to authenticate with Talao web services (access badge, information system)."
+        },
+        {
+            "@language": "de",
+            "@value": "Es ist ein von einem Unternehmen oder einer Organisation ausgestellter Berechtigungsnachweis. Es kann zur Authentifizierung bei Firmendiensten (Zugangsausweis, Informationssystem) oder bei Dritten, die Dienstleistungen für Firmenmitarbeiter anbieten, verwendet werden."
+        },
+        {
+            "@language": "fr",
+            "@value": "Ce pass permet de s'authentifier auprès des services web de Talao."
+        }
+    ]
+}
