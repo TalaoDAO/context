@@ -9,7 +9,6 @@
                     "@protected": true,
                     "@version": 1.1,
                     "category": "schema:category",
-                    "expires": "schema:expires",
                     "id": "@id",
                     "identifier": "schema:identifier",
                     "name": "schema:name",
@@ -40,7 +39,6 @@
     ],
     "credentialSubject": {
         "id": "",
-        "expires": "2025-09-04T15:12:15.372Z",
         "identifier": "jhgfjhgfkfkjhf",
         "type": "PaymentCard",
         "category": "Debit Card",
