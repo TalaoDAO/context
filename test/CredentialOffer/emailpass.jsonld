@@ -8,7 +8,6 @@
                     "@protected": true,
                     "@version": 1.1,
                     "email": "schema:email",
-                    "expires": "schema:expires",
                     "id": "@id",
                     "issuedBy": {
                         "@context": {
@@ -38,7 +37,6 @@
     "credentialSubject": {
         "id": "",
         "type": "EmailPass",
-        "expires": "2022-06-12",
         "email": "john.doe@gmail.com",
         "issuedBy": {
             "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
