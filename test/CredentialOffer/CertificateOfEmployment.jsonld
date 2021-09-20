@@ -45,7 +45,7 @@
         "familyName": "Derangeot",
         "jobTitle": "Directeur de département",
         "employmentType": "Contrat à durée illimitée",
-        "startDate": "2019-09-04T18:42:42Z",
+        "startDate": "2019-09-04",
         "type": "CertificateOfEmployment",
         "givenName": "Paul",
         "workFor": {
@@ -53,7 +53,7 @@
             "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
             "name": "Talao"
         },
-        "baseSalary": "65000"
+        "baseSalary": "65000 euros"
     },
     "issuer": "",
     "description": [
