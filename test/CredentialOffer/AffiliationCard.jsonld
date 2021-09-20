@@ -10,7 +10,6 @@
                     "@version": 1.1,
                     "address": "schema:address",
                     "email": "schema:email",
-                    "expires": "schema:expires",
                     "familyName": "schema:familyName",
                     "givenName": "schema:givenName",
                     "id": "@id",
