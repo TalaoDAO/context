@@ -59,6 +59,9 @@ This is the legal certificate of employment issued by a company at employee requ
 * vc.credentialSubject.workFor.name,
 * vc.credentialSubject.workFor.address,
 * vc.credentialSubject.workFor.logo
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.address,
+* vc.credentialSubject.issuedBy.logo
 
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName.
 
