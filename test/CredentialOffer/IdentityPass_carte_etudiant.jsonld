@@ -58,10 +58,9 @@
     "credentialSubject": {
         "id": "",
         "recipient": {
-            "email": "jane.doe@talao.io",
             "familyName": "Doe",
             "givenName": "Jane",
-            "image" : "https://talao.mypinata.cloud/ipfs/QmajEMBXDe12qjNakrprpKRVTB6HmXWSVGVpioNvTiHpDG"
+            "image" : "https://talao.mypinata.cloud/ipfs/QmajQmUDPMMXp2oJeyZmsYWTTAwrCfAupT3uZaiMgctcAFxZ3K"
         },
         "issuedBy" : {
             "name": "The Adecco Groupe",
@@ -82,7 +81,7 @@
         },
         {
             "@language": "fr",
-            "@value": "Carte étudiant"
+            "@value": "Carte d'étudiant des Métiers"
         }
     ],
     "description": [
@@ -96,7 +95,7 @@
         },
         {
             "@language": "fr",
-            "@value": "Cette carte étudiant permet de s'authentifier auprès des services de l'université (badge d'accès, système d'information)."
+            "@value": "Délivrée par Adecco centre de formation d'apprentis."
         }
     ]
 }
