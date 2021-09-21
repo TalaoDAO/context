@@ -1,6 +1,7 @@
 {
     "@context": [
         "https://www.w3.org/2018/credentials/v1",
+         "https://w3id.org/vc-revocation-list-2020/v1",
         {
             "name": "https://schema.org/name",
             "description": "https://schema.org/description",
