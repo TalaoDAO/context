@@ -28,7 +28,7 @@ Company pass, Student Card, Access badge
 
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
 
-vc.expirationDates is displayed by default.
+vc.expirationDate is displayed by default.
 
 ### Schema
   
@@ -47,17 +47,18 @@ This is the legal certificate of employment issued by a company at employee requ
 
 ### Attributes
 
-* famailyName,
-* givenName
-* jobTitle
-* gender,
-* email
-* address,
-* telephone,
-* salary,
-* 
+* vc.credentialSubject.familyName,
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.jobTitle,
+* vc.credentialSubject.employmentType,
+* vc.credentialSubject.baseSalary,
+* vc.credentialSubject.workFor.name,
+* vc.credentialSubject.workFor.address,
+* vc.credentialSubject.workFor.logo
 
-All attributes are optional except givenName and familyName. expirationDates is displayed by default.
+All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName.
+
+vc.issuanceDate is displayed by default.
 
 ### Schema
 
