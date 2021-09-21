@@ -148,9 +148,8 @@ vc.signatureLines is only used for paper or online publishing.
 * vc.credentialSubject.review.reviewRating.ratingValue,
 * vc.credentialSubject.issuedby.name,
 * vc.credentialSubject.issuedBy.logo
-* vc.credentialSubject.recipient.givenName,
-* vc.credentialSubject.recipeint.familyName,
-* vc.credentialSubject.recipient.image,
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.familyName,
 * vc.issuanceDate.
 
 ### Schema
@@ -175,9 +174,8 @@ vc.signatureLines is only used for paper or online publishing.
 * vc.credentialSubject.skills.description,
 * vc.credentialSubject.issuedby.name,
 * vc.credentialSubject.issuedBy.logo
-* vc.credentialSubject.recipient.givenName,
-* vc.credentialSubject.recipeint.familyName,
-* vc.credentialSubject.recipient.image,
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.familyName,
 * vc.issuanceDate.
 
 ### Schema
