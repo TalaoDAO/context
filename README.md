@@ -92,7 +92,7 @@ Authentication
 
 * vc.name,
 * vc.description,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.credentialSubject.telephone,
 * vc.expirationDate.
