@@ -64,6 +64,10 @@ All attributes are optional except vc.credentialSubject.givenName and vc.credent
 
 This credential is used only for authentication by email. It is an email proof.
 
+### Use cases
+
+Authentication
+
 ### Displayed attributes
 
 * vc.name,
@@ -81,6 +85,9 @@ This credential is used only for authentication by email. It is an email proof.
 
 This credential is used only for authentication by phone number. It is a telephone proof.
 
+### Use cases
+
+Authentication
 
 ### Displayed attributes
 
