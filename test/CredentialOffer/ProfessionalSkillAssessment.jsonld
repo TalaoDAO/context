@@ -7,7 +7,6 @@
                 "@context": {
                     "@protected": true,
                     "@version": 1.1,
-                    "datePublished": "schema:datePublished",
                     "issuedBy": {
                         "@context": {
                             "@protected": true,
@@ -20,19 +19,8 @@
                         },
                         "@id": "schema:issuedBy"
                     },
-                    "recipient": {
-                        "@context": {
-                            "@protected": true,
-                            "@version": 1.1,
-                            "familyName": "schema:familyName",
-                            "givenName": "schema:givenName",
-                            "image": {
-                                "@id": "schema:image",
-                                "@type": "@id"
-                            }
-                        },
-                        "@id": "schema:recipient"
-                    },
+                    "familyName": "schema:familyName",
+                    "givenName": "schema:givenName",
                     "schema": "https://schema.org/",
                     "signatureLines": {
                         "@context": {
@@ -72,7 +60,6 @@
     "credentialSubject": {
         "id": "",
         "type": "ProfessionalSkillAssessment",
-        "datePublished": "2020-09-01T10:11:59.393Z",
         "skills": [
             {
                 "@type": "Skill",
@@ -91,11 +78,8 @@
             "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
             "name": "Talao"
         },
-        "recipient": {
-            "familyName": "Doe",
-            "givenName": "Albert",
-            "image": "https://talao.mypinata.cloud/ipfs/QmejpQ1ns8J1n8aBCRx16BcEKQ1Z66dEK2RnQV55ajkyJF"
-        },
+        "familyName": "Doe",
+         "givenName": "Albert",
         "signatureLines": {
             "image": "https://talao.mypinata.cloud/ipfs/QmawHhhLZayZRoQqpuNxm6uJX2MFoPgqPTj57hgvmWCXxu",
             "jobTitle": "Director",
