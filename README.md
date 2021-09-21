@@ -24,8 +24,7 @@ Company pass, Student Card, Access badge, Ticket
 * vc.credentialSubject.birthDate,
 * vc.credentialSubject.jobTitle,
 * vc.credentialSubject.image,
-* vc.credentialSubject.issuedby.name,
-* vc.credentialSubject.issuedBy.address,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.expirationDate.
 
@@ -51,7 +50,7 @@ This is the legal certificate of employment issued by a company at employee requ
 * vc.credentialSubject.workFor.name,
 * vc.credentialSubject.workFor.address,
 * vc.credentialSubject.workFor.logo
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.issuanceDate.
 
@@ -72,7 +71,7 @@ Authentication
 
 * vc.name,
 * vc.description,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.credentialSubject.email
 * vc.expirationDate.
@@ -125,7 +124,7 @@ Experience assessment, Mission report, Client review
 * vc.credentialSubject.review.reviewRating.bestRating,
 * vc.credentialSubject.review.reviewRating.worstRating,
 * vc.credentialSubject.review.reviewRating.ratingValue,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.familyName,
@@ -153,7 +152,7 @@ Skill assessment, Client review
 * vc.credentialSubject.title,
 * vc.credentialSubject.description,
 * vc.credentialSubject.skills.description,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.familyName,
@@ -179,7 +178,7 @@ A LoyaltyCard can be revoked.
 * vc.credentialSubject.address,
 * vc.credentialSubject.birthDate,
 * vc.credentialSubject.programName,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.expirationDate.
 
@@ -213,7 +212,7 @@ Membership's card, Club card, ...
 * vc.credentialSubject.memberOf.logo,
 * vc.credentialSubject.membershipNumber,
 * vc.credentialSubject.programName,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.expirationDate.
 
@@ -242,7 +241,7 @@ Diploma, Micro credentials, Certificates, Licence
 * vc.credentialSubject.birthDate,
 * vc.credentialSubject.hasCredential.title,
 * vc.credentialSubject.hasCredential.description,
-* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.issuanceDate.
 * vc.evidence.id
