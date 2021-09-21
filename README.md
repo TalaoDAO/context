@@ -33,15 +33,6 @@ Company pass, Student Card, Access badge
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
 
 
-### Schema
-  
-``` javascript
-
-
-
-```
-
-
 ## CertificateOfEmployment
 
 ### Description
@@ -67,13 +58,6 @@ This is the legal certificate of employment issued by a company at employee requ
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName.
 
 
-### Schema
-
-```javascript
-
-
-
-```
 ## EmailPass
 
 ### Description
@@ -90,14 +74,7 @@ This credential is used only for authentication by email. It is an email proof.
 * vc.expirationDate.
 
 
-### Schema
 
-``` javascript
-
-
-```
-
-`
 ## PhonePass
 
 ### Description
@@ -114,15 +91,6 @@ This credential is used only for authentication by phone number. It is a telepho
 * vc.credentialSubject.telephone,
 * vc.expirationDate.
 
-
-
-### Schema
-
-``` javascript
-
-
-
-```
 
 ## ProfessionalExperienceAssessment
 
@@ -152,11 +120,7 @@ vc.signatureLines is only used for paper or online publishing.
 * vc.credentialSubject.familyName,
 * vc.issuanceDate.
 
-### Schema
 
-```javascript
-
-```
 ## ProfessionalSkillAssessment
 
 ### Description
@@ -178,11 +142,6 @@ vc.signatureLines is only used for paper or online publishing.
 * vc.credentialSubject.familyName,
 * vc.issuanceDate.
 
-### Schema
-
-```javascript
-
-```
 
 ## LoyaltyCard
 
@@ -210,13 +169,6 @@ A LoyaltyCard can be revoked.
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
 
 
-### Schema
-
-```javascript
-
-
-```
-
 ### AffiliationCard
 
 ### Description
@@ -225,7 +177,7 @@ Materialized in the form of a nominative card, it makes it possible to identify 
 
 An AffiliationCard can be revoked.
 
-###  Use case
+###  Use cases
 
 Membership's card, Club card, ... 
 
