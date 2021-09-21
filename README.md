@@ -219,6 +219,39 @@ All attributes are optional except vc.credentialSubject.givenName and vc.credent
 
 ```
 
+### AffiliationCard
+
+### Description
+
+A loyalty card (often called a store card) is a marketing tool that helps build customer loyalty. Materialized in the form of a nominative card, it makes it possible to identify the most loyal customers and to grant them advantages in the form of services, gifts or discounts.
+
+An AffiliationCard can be revoked.
+
+###  Use case
+
+Membership's card, Club card 
+
+### Displayed attributes
+
+* vc.name,
+* vc.description,
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.familyName,
+* vc.credentialSubject.telephone,
+* vc.credentialSubject.email,
+* vc.credentialSubject.address,
+* vc.credentialSubject.birthDate,
+* vc.credentialSubject.memberOf.name,
+* vc.credentialSubject.memberOf.address,
+* vc.credentialSubject.membershipNumber,
+* vc.credentialSubject.programName,
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.logo,
+* vc.expirationDate.
+
+All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
+
+
 ## LearningAchievement
 
 ### Description
