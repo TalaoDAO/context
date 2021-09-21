@@ -243,6 +243,7 @@ Membership's card, Club card, ...
 * vc.credentialSubject.birthDate,
 * vc.credentialSubject.memberOf.name,
 * vc.credentialSubject.memberOf.address,
+* vc.credentialSubject.memberOf.logo,
 * vc.credentialSubject.membershipNumber,
 * vc.credentialSubject.programName,
 * vc.credentialSubject.issuedby.name,
