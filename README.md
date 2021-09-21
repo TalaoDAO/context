@@ -13,6 +13,8 @@ Company pass, Student Card, Access badge
 
 ### Displayed attributes
 
+* vc.name,
+* vc.description,
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.familyName,
 * vc.credentialSubject.gender,
@@ -47,6 +49,8 @@ This is the legal certificate of employment issued by a company at employee requ
 
 ### Displayed attributes
 
+* vc.name,
+* vc.description,
 * vc.credentialSubject.familyName,
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.jobTitle,
@@ -75,6 +79,10 @@ This credential is used only for authentication by email. It is an email proof.
 
 ### Displayed attributes
 
+* vc.name,
+* vc.description,
+* vc.issuedBy.name
+* vc.issuedBy.logo
 * vc.credentialSubject.email
 
 vc.issuanceDate is displayed by default.
@@ -97,6 +105,10 @@ This credential is used only for authentication by phone number. It is a telepho
 
 ### Displayed attributes
 
+* vc.name,
+* vc.description,
+* vc.issuedBy.name
+* vc.issuedBy.logo
 * vc.credentialSubject.telephone
 
 vc.issuanceDate is displayed by default.
@@ -116,20 +128,41 @@ vc.issuanceDate is displayed by default.
 
 It is a credential issued by a company to its employees, service providers or freelancers. This certificate is produced at the request of a Talent to prove the skills and know-how implemented during a project or a mission. It is generally produced after review and validation by the manager of the company. This certificate is most often offered in the form of a draft by the Talent then it is then completed by the company which adds an assessment on 4 particular themes which are communication, quality, respect for deadlines and a recommendation. .
 
-### Name
+vc.signatureLines is only used for paper publishing.
 
-* fr : Attestation d'expérience professionnelle
-* en : Professional experience assessment
-* de : 
+### Displayed attributes
+
+* vc.name,
+* vc.description,
+* vc.credentialSubject.startDate,
+* vc.credentialSubject.endDate,
+* vc.credentialSubject.title,
+* vc.credentialSubject.description,
+* vc.credentialSubject.skills.description,
+* vc.credentialSubject.review.name,
+* vc.credentialSubject.review.reviewBody,
+* vc.credentialSubject.review.reviewRating.bestRating,
+* vc.credentialSubject.review.reviewRating.worstRating,
+* vc.credentialSubject.review.reviewRating.ratingValue,
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.address,
+* vc.credentialSubject.issuedBy.logo
+* vc.credentialSubject.recipient.givenName,
+* vc.credentialSubject.recipeint.familyName,
+* vc.credentialSubject.recipient.image
+
 
 ### Schema
 
 ```javascript
 
 ```
-## ProfessionalExperienceAssessment
+## ProfessionalSkillAssessment
 
 ### Description
+
+
+vc.signatureLines is only used for paper publishing.
 
 ### Name
 
@@ -153,6 +186,8 @@ A LoyaltyCard can be revoked.
 
 ### Displayed attributes
 
+* vc.name,
+* vc.description,
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.familyName,
 * vc.credentialSubject.telephone,
