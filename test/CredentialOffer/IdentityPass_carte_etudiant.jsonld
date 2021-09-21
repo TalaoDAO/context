@@ -60,7 +60,7 @@
         "recipient": {
             "familyName": "Doe",
             "givenName": "Jane",
-            "image" : "https://talao.mypinata.cloud/ipfs/QmajQmUDPMMXp2oJeyZmsYWTTAwrCfAupT3uZaiMgctcAFxZ3K"
+            "image" : "https://talao.mypinata.cloud/ipfs/QmUDPMMXp2oJeyZmsYWTTAwrCfAupT3uZaiMgctcAFxZ3K"
         },
         "issuedBy" : {
             "name": "The Adecco Groupe",
