@@ -223,13 +223,13 @@ All attributes are optional except vc.credentialSubject.givenName and vc.credent
 
 ### Description
 
-A loyalty card (often called a store card) is a marketing tool that helps build customer loyalty. Materialized in the form of a nominative card, it makes it possible to identify the most loyal customers and to grant them advantages in the form of services, gifts or discounts.
+Materialized in the form of a nominative card, it makes it possible to identify the members of an assoiation and to grant them advantages in the form of services, gifts or discounts.
 
 An AffiliationCard can be revoked.
 
 ###  Use case
 
-Membership's card, Club card 
+Membership's card, Club card, ... 
 
 ### Displayed attributes
 
