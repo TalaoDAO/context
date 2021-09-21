@@ -12,8 +12,9 @@
                     "email": "schema:email",
                     "familyName": "schema:familyName",
                     "givenName": "schema:givenName",
+                    "birthDate" : "schema:birthDate",
                     "id": "@id",
-                    "memberOf": {
+                    "issuedBy": {
                         "@context": {
                             "@protected": true,
                             "@version": 1.1,
@@ -43,8 +44,10 @@
         "id": "",
         "type": "LoyaltyCard",
         "familyName": "Thevenet",
-        "memberOf": {
+        "programName" ! "Excellent",
+        "issuedBy": {
             "logo": "https://thewinespirit.co",
+            "address" : "28, rue du Saint Esprit, 31000 Toulouse, France",
             "name": "The Wine Spririt"
         },
         "givenName": "Thierry"
