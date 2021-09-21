@@ -147,11 +147,26 @@ It is a credential issued by a company to its employees, service providers or fr
 
 ### Description
 
-### name
+A loyalty card (often called a store card) is a marketing tool that helps build customer loyalty. Materialized in the form of a nominative card, it makes it possible to identify the most loyal customers and to grant them advantages in the form of services, gifts or discounts.
 
-* fr : Carte de fidélité
-* en : Loyalty card
-* de : 
+A LoyaltyCard can be revoked.
+
+### Displayed attributes
+
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.familyName,
+* vc.credentialSubject.telephone,
+* vc.credentialSubject.email,
+* vc.credentialSubject.address,
+* vc.credentialSubject.birthDate,
+* vc.credentialSubject.programName,
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.address,
+* vc.credentialSubject.issuedBy.logo
+
+All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
+
+vc.expirationDate is displayed by default.
 
 ### Schema
 
