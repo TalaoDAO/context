@@ -21,19 +21,8 @@
                         },
                         "@id": "schema:issuedBy"
                     },
-                    "recipient": {
-                        "@context": {
-                            "@protected": true,
-                            "@version": 1.1,
-                            "familyName": "schema:familyName",
-                            "givenName": "schema:givenName",
-                            "image": {
-                                "@id": "schema:image",
-                                "@type": "@id"
-                            }
-                        },
-                        "@id": "schema:recipient"
-                    },
+                    "familyName": "schema:familyName",
+                    "givenName": "schema:givenName",
                     "review": "schema:review",
                     "schema": "https://schema.org/",
                     "signatureLines": {
@@ -98,11 +87,8 @@
     "credentialSubject": {
         "id": "",
         "endDate": "2021-05-15T12:11:59Z",
-        "recipient": {
-            "familyName": "Doe",
-            "givenName": "John",
-            "image": "https://talao.mypinata.cloud/ipfs/QmejpQ1ns8J1n8aBCRx16BcEKQ1Z66dEK2RnQV55ajkyJF"
-        },
+        "familyName": "Doe",
+        "givenName": "John",
         "title": "Lead Developper",
         "skills": [
             {
