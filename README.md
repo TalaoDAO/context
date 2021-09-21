@@ -11,7 +11,7 @@ An IdentityPass can be revoked.
 
 Company pass, Student Card, Access badge
 
-### Displayed Attributes
+### Displayed attributes
 
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.familyName,
@@ -45,7 +45,7 @@ vc.expirationDate is displayed by default.
 
 This is the legal certificate of employment issued by a company at employee request.
 
-### Attributes
+### Displayed attributes
 
 * vc.credentialSubject.familyName,
 * vc.credentialSubject.givenName,
@@ -73,11 +73,11 @@ vc.issuanceDate is displayed by default.
 
 This credential is used only for authentication by email. All properties are required.
 
-### Name
+### Displayed attributes
 
-* fr : Preuve d'email
-* en : Email pass
-* de :  
+* vc.credentialSubject.email
+
+vc.issuanceDate is displayed by default.
 
 ### Schema
 
@@ -94,11 +94,13 @@ This credential is used only for authentication by email. All properties are req
 
 This credential is used only for authentication by phone number. All properties are required.
 
-### Name
 
-* fr : Preuve de téléphone
-* en : Phone pass
-* de : 
+### Displayed attributes
+
+* vc.credentialSubject.telephone
+
+vc.issuanceDate is displayed by default.
+
 
 ### Schema
 
