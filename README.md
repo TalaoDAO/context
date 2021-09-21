@@ -276,6 +276,6 @@ Diploma, Micro credentials, Certificates
 * vc.credentialSubject.issuedby.name,
 * vc.credentialSubject.issuedBy.logo,
 * vc.issuanceDate.
-* vc.evidence
+* vc.evidence.id
 
 
