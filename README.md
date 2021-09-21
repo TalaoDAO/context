@@ -26,11 +26,12 @@ Company pass, Student Card, Access badge
 * vc.credentialSubject.image,
 * vc.credentialSubject.issuedby.name,
 * vc.credentialSubject.issuedBy.address,
-* vc.credentialSubject.issuedBy.logo
+* vc.credentialSubject.issuedBy.logo,
+* vc.expirationDate.
+
 
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
 
-vc.expirationDate is displayed by default.
 
 ### Schema
   
@@ -60,12 +61,11 @@ This is the legal certificate of employment issued by a company at employee requ
 * vc.credentialSubject.workFor.address,
 * vc.credentialSubject.workFor.logo
 * vc.credentialSubject.issuedby.name,
-* vc.credentialSubject.issuedBy.address,
-* vc.credentialSubject.issuedBy.logo
+* vc.credentialSubject.issuedBy.logo,
+* vc.issuanceDate.
 
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName.
 
-vc.issuanceDate is displayed by default.
 
 ### Schema
 
@@ -84,16 +84,15 @@ This credential is used only for authentication by email. It is an email proof.
 
 * vc.name,
 * vc.description,
-* vc.issuedBy.name
-* vc.issuedBy.logo
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.logo,
 * vc.credentialSubject.email
+* vc.expirationDate.
 
-vc.issuanceDate is displayed by default.
 
 ### Schema
 
 ``` javascript
-
 
 
 ```
@@ -110,11 +109,11 @@ This credential is used only for authentication by phone number. It is a telepho
 
 * vc.name,
 * vc.description,
-* vc.issuedBy.name
-* vc.issuedBy.logo
-* vc.credentialSubject.telephone
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.logo,
+* vc.credentialSubject.telephone,
+* vc.expirationDate.
 
-vc.issuanceDate is displayed by default.
 
 
 ### Schema
@@ -129,9 +128,9 @@ vc.issuanceDate is displayed by default.
 
 ### Description
 
-It is a credential issued by a company to its employees, service providers or freelancers. This certificate is produced at the request of a Talent to prove the skills and know-how implemented during a project or a mission. It is generally produced after review and validation by the manager of the company. This certificate is most often offered in the form of a draft by the Talent then it is then completed by the company which adds an assessment on 4 particular themes which are communication, quality, respect for deadlines and a recommendation. .
+It is a credential issued by a company to its employees, service providers or freelancers. This certificate is produced at the request of a Talent to prove the know-how implemented during a project or a mission. It is generally produced after review and validation by the manager of the company. This certificate is most often offered in the form of a draft by the Talent then it is then completed by the company which adds an assessment on 4 particular themes which are communication, quality, respect for deadlines and a recommendation. .
 
-vc.signatureLines is only used for paper publishing.
+vc.signatureLines is only used for paper or online publishing.
 
 ### Displayed attributes
 
@@ -148,12 +147,11 @@ vc.signatureLines is only used for paper publishing.
 * vc.credentialSubject.review.reviewRating.worstRating,
 * vc.credentialSubject.review.reviewRating.ratingValue,
 * vc.credentialSubject.issuedby.name,
-* vc.credentialSubject.issuedBy.address,
 * vc.credentialSubject.issuedBy.logo
 * vc.credentialSubject.recipient.givenName,
 * vc.credentialSubject.recipeint.familyName,
-* vc.credentialSubject.recipient.image
-
+* vc.credentialSubject.recipient.image,
+* vc.issuanceDate.
 
 ### Schema
 
@@ -164,14 +162,23 @@ vc.signatureLines is only used for paper publishing.
 
 ### Description
 
+It is a credential issued by a company to its employees, service providers or freelancers. This certificate is produced at the request of a Talent to prove the skills implemented during a project or a mission. It is generally produced after review and validation by the manager of the company. This certificate is most often offered in the form of a draft by the Talent then it is then validated by the company.
 
-vc.signatureLines is only used for paper publishing.
+vc.signatureLines is only used for paper or online publishing.
 
-### Name
-
-* fr : Attestation de compétence professionnelle
-* en : Professional skill assessment
-* de : 
+* vc.name,
+* vc.description,
+* vc.credentialSubject.startDate,
+* vc.credentialSubject.endDate,
+* vc.credentialSubject.title,
+* vc.credentialSubject.description,
+* vc.credentialSubject.skills.description,
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.logo
+* vc.credentialSubject.recipient.givenName,
+* vc.credentialSubject.recipeint.familyName,
+* vc.credentialSubject.recipient.image,
+* vc.issuanceDate.
 
 ### Schema
 
@@ -199,12 +206,11 @@ A LoyaltyCard can be revoked.
 * vc.credentialSubject.birthDate,
 * vc.credentialSubject.programName,
 * vc.credentialSubject.issuedby.name,
-* vc.credentialSubject.issuedBy.address,
-* vc.credentialSubject.issuedBy.logo
+* vc.credentialSubject.issuedBy.logo,
+* vc.expirationDate.
 
 All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
 
-vc.expirationDate is displayed by default.
 
 ### Schema
 
