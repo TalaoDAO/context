@@ -5,23 +5,30 @@
   
 It is a credential issued by a company or an organization. It can be used to authenticate with company services (access badge, information system) or with third parties who offer services for company employees (collective restaurant in an industrial zone, delivery to distributors for group purchases ...). The data contained on this credential is identical to that of a traditional identity card. This credential can be accepted by the company's partners with the same legitimacy as an identity card. 
 
+An IdentityPass can be revoked.
+
 ### Use cases
 
 Company pass, Student Card, Access badge
 
-### Attributes
+### Displayed Attributes
 
-* givenName,
-* familyName,
-* gender,
-* telephone,
-* email,
-* address,
-* birthDate,
-* jobTitle,
-* image
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.familyName,
+* vc.credentialSubject.gender,
+* vc.credentialSubject.telephone,
+* vc.credentialSubject.email,
+* vc.credentialSubject.address,
+* vc.credentialSubject.birthDate,
+* vc.credentialSubject.jobTitle,
+* vc.credentialSubject.image,
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.address,
+* vc.credentialSubject.issuedBy.logo
 
-All attributes are optional except givenName and familyName. expirationDates is displayed by default.
+All attributes are optional except vc.credentialSubject.givenName and vc.credentialSubject.familyName. 
+
+vc.expirationDates is displayed by default.
 
 ### Schema
   
@@ -38,11 +45,19 @@ All attributes are optional except givenName and familyName. expirationDates is 
 
 This is the legal certificate of employment issued by a company at employee request.
 
-### Name
+### Attributes
 
-* fr : Attestation employeur
-* en : Certificate of employment
-* de : 
+* famailyName,
+* givenName
+* jobTitle
+* gender,
+* email
+* address,
+* telephone,
+* salary,
+* 
+
+All attributes are optional except givenName and familyName. expirationDates is displayed by default.
 
 ### Schema
 
