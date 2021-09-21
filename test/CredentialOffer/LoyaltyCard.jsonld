@@ -44,7 +44,7 @@
         "id": "",
         "type": "LoyaltyCard",
         "familyName": "Thevenet",
-        "programName" ! "Excellent",
+        "programName" : "Excellent",
         "issuedBy": {
             "logo": "https://thewinespirit.co",
             "address" : "28, rue du Saint Esprit, 31000 Toulouse, France",
