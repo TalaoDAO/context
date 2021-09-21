@@ -71,7 +71,7 @@ vc.issuanceDate is displayed by default.
 
 ### Description
 
-This credential is used only for authentication by email. All properties are required.
+This credential is used only for authentication by email. It is an email proof.
 
 ### Displayed attributes
 
@@ -92,7 +92,7 @@ vc.issuanceDate is displayed by default.
 
 ### Description
 
-This credential is used only for authentication by phone number. All properties are required.
+This credential is used only for authentication by phone number. It is a telephone proof.
 
 
 ### Displayed attributes
