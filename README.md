@@ -9,7 +9,7 @@ An IdentityPass can be revoked.
 
 ### Use cases
 
-Company pass, Student Card, Access badge
+Company pass, Student Card, Access badge, Ticket
 
 ### Displayed attributes
 
@@ -221,7 +221,7 @@ A LearningAchievement can be revoked.
 
 ### Use cases
 
-Diploma, Micro credentials, Certificates
+Diploma, Micro credentials, Certificates, Licence
 
 ### Displayed attributes
 
