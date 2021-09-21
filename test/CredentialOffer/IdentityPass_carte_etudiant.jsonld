@@ -58,8 +58,8 @@
     "credentialSubject": {
         "id": "",
         "recipient": {
-            "familyName": "Doe",
-            "givenName": "Jane",
+            "familyName": "Jane",
+            "givenName": "Doe",
             "image" : "https://talao.mypinata.cloud/ipfs/QmUDPMMXp2oJeyZmsYWTTAwrCfAupT3uZaiMgctcAFxZ3K"
         },
         "issuedBy" : {
