@@ -9,13 +9,7 @@ It is a credential issued by a company or an organization. It can be used to aut
 
 Company pass, Student Card, Access badge
 
-### Name
-
-* fr : Pass entreprise
-* en : Identity pass
-* de : 
-
-### attributes
+### Attributes
 
 * givenName,
 * familyName,
