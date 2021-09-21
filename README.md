@@ -100,6 +100,10 @@ It is a credential issued by a company to its employees, service providers or fr
 
 vc.signatureLines is only used for paper or online publishing.
 
+### Use cases
+
+Experience assessment, Mission report, Client review
+
 ### Displayed attributes
 
 * vc.name,
@@ -141,6 +145,10 @@ vc.signatureLines is only used for paper or online publishing.
 * vc.credentialSubject.givenName,
 * vc.credentialSubject.familyName,
 * vc.issuanceDate.
+
+### Use cases
+
+Skill assessment, Client review
 
 
 ## LoyaltyCard
