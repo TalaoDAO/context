@@ -218,3 +218,32 @@ All attributes are optional except vc.credentialSubject.givenName and vc.credent
 
 
 ```
+
+## LearningAchievement
+
+### Description
+
+Learning achivement is an academic achievement or an academic performance which is the extent to which a student, teacher or institution has attained their short or long-term educational goals. Completion of educational benchmarks such as secondary school diplomas and bachelor's degrees represent academic achievement.
+
+A LearningAchievement can be revoked.
+
+### Use cases
+
+Diploma, Micro credentials, Certificates
+
+### Displayed attributes
+
+* vc.name,
+* vc.description,
+* vc.credentialSubject.givenName,
+* vc.credentialSubject.familyName,
+* vc.credentialSubject.email,
+* vc.credentialSubject.birthDate,
+* vc.credentialSubject.hasCredential.title,
+* vc.credentialSubject.hasCredential.description,
+* vc.credentialSubject.issuedby.name,
+* vc.credentialSubject.issuedBy.logo,
+* vc.issuanceDate.
+* vc.evidence
+
+
