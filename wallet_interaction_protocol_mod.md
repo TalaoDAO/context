@@ -90,7 +90,7 @@ If option is "on" wallet makes a call to the gateway API with the DID associated
 For holders wishes to engage with Issuers to acquire credentials, there must exist a mechanism for assessing what inputs are required from an issuer to process a request for credential issuance. A manifest is a common data format for describing the inputs a user must provide to an Issuer and the way the VCs shopuild be presented. This draft has been inpired by the Credential Manfifest specification with a very limited implementations of 2 items :
 
 - user inputs : For some VCs it is necessary to transfer the personal data of the user's profile to the Issuer. This information is accessible in the menu Profile of the wallet. These are: the user's last name, first name, telephone, address and email.
-- display output descriptors as labels (name, description) et templates objetcs (icon, color,...).
+- display output descriptors as labels (name, description) and templates objetcs (icon, color,...).
 - share link : a way to use the wallet to link to a cloud service (vault, etc).
 
 ## Issuer implementation
