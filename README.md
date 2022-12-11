@@ -123,6 +123,6 @@ Identifier of the KYC file.
 
 Method or tools to estimate age, or other personal attributes.
 
-## kycProvider
+### kycProvider
 
 The KYC provider legal company name.
