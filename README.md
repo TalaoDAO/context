@@ -4,6 +4,7 @@ You will find here all the credential types and specific vocab used by the Talao
  
 ## Credential types
 
+See also https://talao.co/sandbox/saas4ssi/credential_supported .
 
 ### AgeRange
 
