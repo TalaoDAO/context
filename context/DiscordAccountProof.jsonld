@@ -1,0 +1,51 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {  
+            "TwitterAccountProof" : {
+                "@id" : "https://github.com/TalaoDAO/context#discordaccountproof",
+                "@context" : {
+                    "@protected": true,
+                    "@version": 1.1,   
+                    "id": "@id",
+                    "type": "@type",    
+                    "sameAs": "http://schema.org/sameAs",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                }
+            },
+            "TwitterVerificationPublicTweet" : {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "id": "@id",
+                    "type": "@type",    
+                    "handle": "https://tzprofiles.com/handle",
+                    "timestamp": "https://tzprofiles.com/timestamp",
+                    "tweetId": "https://tzprofiles.com/tweetId"
+                },
+                "@id": "https://tzprofiles.com/TwitterVerificationPublicTweet"
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "DiscordAccountProof", "TwitterVerificationPublicTweet" ],
+    "credentialSubject": {
+        "id": "",
+        "sameAs": "",
+        "type" : "DiscordAccountProof",
+        "issuedBy": {
+            "name": "Altme"
+        }
+    },
+    "issuer": "",
+    "issuanceDate": "",
+    "evidence": {"type": ["TwitterVerificationPublicTweet"], "timestamp": "2021-05-27T02:27:09.138Z", "handle": "CopingCrypto", "tweetId": "1397741103747584000"}
+}

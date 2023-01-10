@@ -1,0 +1,54 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+      
+        {
+            "LinkedinCard" : {
+                "@id": "https://github.com/TalaoDAO/context#linkedincard",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "givenName" : "schema:givenName",
+                    "familyName" : "schema:familyName",
+                    "nationality" : "schema:nationality",
+                    "yearOfBirth" : "schema:number"
+                }
+            },
+        "DocumentVerification" : {
+          "@id": "https://github.com/TalaoDAO/context#documentverification",
+          "@context": {
+              "@version": 1.1,
+              "@protected": true,
+              "schema" : "https://schema.org/",
+              "id": "@id",
+              "type": "@type",
+              "verifier" : "schema:legalName",
+              "evidenceDocument" : "schema:credentialCategory",
+              "kycId" : "schema:identifier"
+            }
+      }
+        }
+    ],
+    "id": "urn:uuid:192cc5ca-0da7-11ec-9ef1-f37fc4c32c40",
+    "type": ["VerifiableCredential", "LinkedinCard"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "type" : "LinkedinCard",
+        "givenName" : "",
+        "familyName" : "",
+        "nationality" : "",
+        "yearOfBirth" : ""
+    },
+    "evidence": [{
+      "id": "https://github.com/TalaoDAO/context#evidence",
+      "type": ["DocumentVerification"],
+      "verifier": "Passbase",
+      "evidenceDocument": "",
+      "kycId": ""
+    }]
+}

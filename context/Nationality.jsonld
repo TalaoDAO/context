@@ -1,0 +1,46 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+      
+        {
+            "Nationality" : {
+                "@id": "https://github.com/TalaoDAO/context#nationality",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "kycProvider" : "schema:company",
+                    "kycId" : "schema:identifier",
+                    "kycMethod" : "https://github.com/TalaoDAO/context#kycMethod",
+                    "nationality" : "scheam:nationality",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "id": "urn:uuid:192cc5ca-0da7-11ec-9ef1-f37fc4c32c40",
+    "type": ["VerifiableCredential", "Nationality"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "nationality" : "",
+        "kycProvider" : "Passbase.com",
+        "kycId" : "",
+        "type" : "Nationality",
+        "issuedBy": {
+            "logo": "",
+            "name": "Altme"
+        }
+    }
+}

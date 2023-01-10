@@ -1,0 +1,60 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "Chainborn_MembershipCard" : {
+                "@id": "https://github.com/TalaoDAO/context#chainbornmembershipcard",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "email" : "schema:email",
+                    "associatedAddress" : {
+                        "@id": "https://schema.org/address",
+                        "@context" : {
+                            "@protected" : true,
+                            "blockchainTezos" : "https://schema.org/account"
+                        }
+                    },
+                    "offeredBy" : {
+                        "@id" : "schema:offeredBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "website" : "schema:website",
+                            "name" : "schema:legalName"         
+                        }
+                    },
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "website" : "schema:website",
+                            "name" : "schema:legalName"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "id": "urn:uuid:example",
+    "type": ["VerifiableCredential", "Chainborn_MembershipCard"],
+    "issuer": "did:issuer:example",
+    "credentialSubject" : {
+        "id" : "did:wallet:example",
+        "type" : "Chainborn_MembershipCard",
+        "email" : "",
+        "associatedAddress" : {"blockchainTezos" : ""},
+        "offeredBy": {
+            "name": "Chainborn",
+            "website" : "https://chainborn.xyz/"
+        },
+        "issuedBy": {
+            "name": "Altme",
+            "website" : "https://altme.io"
+        }
+    }
+}

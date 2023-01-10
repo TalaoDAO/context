@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+      
+        {
+            "AgeRange" : {
+                "@id": "https://github.com/TalaoDAO/context#agerange",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "ageRange" : "schema:ageRange",
+                    "kycProvider" : "schema:legalName",
+                    "kycId" : "schema:identifier",
+                    "kycMethod" : "https://github.com/TalaoDAO/context#kycMethod",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "id": "urn:uuid:192cc5ca-0da7-11ec-9ef1-f37fc4c32c40",
+    "type": ["VerifiableCredential", "AgeRange"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "ageRange" : "",
+        "kycProvider" : "",
+        "kycId" : "",
+        "type" : "AgeRange",
+        "issuedBy": {
+            "name": "Altme"
+        }
+    }
+}

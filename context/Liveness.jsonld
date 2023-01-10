@@ -1,0 +1,41 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "Liveness" : {
+                "@id": "https://github.com/TalaoDAO/context#liveness",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "kycProvider" : "schema:company",
+                    "kycId" : "schema:identifier",
+                    "kycMethod" : "https://github.com/TalaoDAO/context#kycMethod",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "Liveness"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "Liveness",
+        "kycProvider" : "Passbase",
+        "kycId" : "",
+        "issuedBy": {
+            "logo": "",
+            "name": "Altme"
+        }
+    }
+}

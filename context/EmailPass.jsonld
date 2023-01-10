@@ -1,0 +1,40 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "EmailPass" : {
+                "@id": "https://github.com/TalaoDAO/context#emailpass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "email": "schema:email",
+                    "emailVerified": "schema:email",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "EmailPass"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "EmailPass",
+        "email" : "",
+        "emailVerified" : false,
+        "issuedBy" : {
+            "name" : "Altme"
+        }
+    }
+}

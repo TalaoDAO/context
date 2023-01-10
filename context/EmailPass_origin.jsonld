@@ -1,0 +1,54 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "name" : "https://schema.org/name",
+            "description" : "https://schema.org/description",
+            "EmailPass" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.md#emailpass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "email": "schema:email",
+                    "passbaseMetadata" : "schema:identifier",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "EmailPass"],
+    "description": [
+        {
+            "@language": "en",
+            "@value": "This credential is a proof of ownership of :"
+        }
+    ],
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Email Proof"
+        }
+    ],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "EmailPass",
+        "email" : "",
+        "passbaseMetadata" : "",
+        "issuedBy" : {
+            "name" : "Altme"
+        }
+    }
+}

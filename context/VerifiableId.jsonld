@@ -17,7 +17,20 @@
                 "placeOfBirth" : "schema:birthPlace",
                 "personalIdentifier" : "schema:identifier"
               }
-        }
+        },
+        "DocumentVerification" : {
+          "@id": "https://github.com/TalaoDAO/context#documentverification",
+          "@context": {
+              "@version": 1.1,
+              "@protected": true,
+              "schema" : "https://schema.org/",
+              "id": "@id",
+              "type": "@type",
+              "verifier" : "schema:legalName",
+              "evidenceDocument" : "schema:credentialCategory",
+              "kycId" : "schema:identifier"
+            }
+      }
     }
     ],
     "id": "",
@@ -41,5 +54,12 @@
     "credentialSchema": {
       "id": "https://api-conformance.ebsi.eu/trusted-schemas-registry/v2/schemas/z22ZAMdQtNLwi51T2vdZXGGZaYyjrsuP1yzWyXZirCAHv",
       "type": "FullJsonSchemaValidator2021"
-    }
+    },
+    "evidence": [{
+      "id": "https://github.com/TalaoDAO/context#evidence",
+      "type": ["DocumentVerification"],
+      "verifier": "Passbase",
+      "evidenceDocument": "",
+      "kycId": ""
+    }]
   }
