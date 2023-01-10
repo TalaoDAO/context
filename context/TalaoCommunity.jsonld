@@ -1,0 +1,94 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "talaoAccount" : "https://schema.org/account",
+            "walletNotation" : "https://schema.org/notation",
+            "offers" : {
+                "@id" : "schema:offer",
+                "@context" : {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "startDate" : "schema:date",
+                    "category" : "schema:category",
+                    "endDate" : "schema:date",
+                    "duration" : "schema:duration", 
+                    "analytics" : "schema:website",
+                    "userGuide" : "schema:userGuide",
+                    "benefit" : {
+                        "@id" : "https://github.com/TalaoDAO/context/blob/main/README",
+                        "@context" : {
+                            "price" : "schema:value",
+                            "discount" : "schema:discount"
+                        }
+                    },
+                    "offeredBy" : {
+                        "@id" : "schema:offeredBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "description" : "schema:description",
+                            "website" : "schema:website",
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "did" : "schema:identifier",
+                            "name" : "schema:name"
+                        }
+                    }
+                }
+            },
+            "issuedBy" : {
+                "@id" : "schema:issuedBy",
+                "@context" : {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "website" : "schema:website",
+                    "logo": {"@id" : "schema:image", "@type" : "@id"},
+                    "did" : "schema:identifier",
+                    "name" : "schema:name"
+                }
+            },
+            "associatedAddress" : {
+                "@id": "https://schema.org/address",
+                "@context" : {
+                    "@protected" : true,
+                    "blockchainTezos" : "https://schema.org/blockchain",
+                    "blockchainEthereum" : "https://schema.org/blockchain",
+                    "blockchainPolygon" : "https://schema.org/blockchain"
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "TalaoCommunity"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject": 
+        {
+            "id": "did:key:z6MkftN6LL5DRTG8u5LjhQuwUconSp3wremHoMjcH1LP7Hxd",
+            "type": "TalaoCommunity",
+            "walletNotation" : "Gold",
+            "talaoAccount": "0x83E0481C1844Ed257efE1147218C125832F10236",
+            "offers" : [{
+                "startDate" : "2022-08-01T19:55:00Z",
+                "endDate" : "2022-12-31T19:55:00Z",
+                "duration" : "30",
+                "category" : "discounted_coupon",
+                "analytics" : "",
+                "userGuide" : "",
+                "benefit" : {
+                    "discount" : "25%"
+                },    
+                "offeredBy": {
+                    "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
+                    "name": "Gif Games",
+                    "description" : "Gaming platform of Tezotopia",
+                    "website" : "https://tezotopia.com"
+                }
+            }],
+            "associatedAddress" : {
+                    "blockchainTezos" : "",
+                    "blockchainEthereum" : "",
+                    "blockchainPolygon" : ""
+            }
+         }
+ }
+ 

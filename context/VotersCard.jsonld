@@ -1,0 +1,49 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "VotersCard" : {
+                "@id": "https://github.com/TalaoDAO/context#identitypass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "email" : "schema:email",
+                    "givenName" : "schema:givenName",
+                    "familyName" : "schema:familyName",
+                    "gender" : "schema:gender",
+                    "address" : "schema:address",
+                    "birthDate" : "schema:birthDate",
+                    "issuedBy": {
+                        "@id": "schema:issuedBy",
+                        "@context": {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "schema" : "https://schema.org/",
+                            "name" :  "schema:name",
+                            "website" : "schema:website"
+                        }
+                    }
+                }
+              }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "VotersCard"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "type" : "VotersCard",
+        "email" : "john.doe@talao.io",
+        "familyName" : "Doe",
+        "givenName" : "John",
+        "birthDate" : "1985-02-12T00:00:00Z",
+        "issuedBy" : {
+            "name" : "Peeble.vote",
+            "website" : "https://www.pebble.vote/"
+        }
+    }
+}

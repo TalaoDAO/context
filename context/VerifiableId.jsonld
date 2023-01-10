@@ -1,0 +1,45 @@
+{
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      {
+        "VerifiableId" : {
+            "@id": "https://github.com/TalaoDAO/context#verifiableid",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "schema" : "https://schema.org/",
+                "id": "@id",
+                "type": "@type",
+                "firstName" : "schema:givenName",
+                "familyName" : "schema:familyName",
+                "gender" : "schema:gender",
+                "dateOfBirth" : "schema:birthDate",
+                "placeOfBirth" : "schema:birthPlace",
+                "personalIdentifier" : "schema:identifier"
+              }
+        }
+    }
+    ],
+    "id": "",
+    "type": [
+      "VerifiableCredential",
+      "VerifiableAttestation",
+      "VerifiableId"
+    ],
+    "issuer": "",
+    "issuanceDate": "",
+    "validFrom": "",
+    "issued": "",
+    "credentialSubject": {
+      "type" : "VerifiableId",
+      "id": "",
+      "personalIdentifier": "",
+      "familyName": "",
+      "firstName": "",
+      "dateOfBirth": ""
+    },
+    "credentialSchema": {
+      "id": "https://api-conformance.ebsi.eu/trusted-schemas-registry/v2/schemas/z22ZAMdQtNLwi51T2vdZXGGZaYyjrsuP1yzWyXZirCAHv",
+      "type": "FullJsonSchemaValidator2021"
+    }
+  }

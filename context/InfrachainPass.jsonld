@@ -1,0 +1,40 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "InfrachainPass" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.mdidentitypass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "group" : "schema:group",
+                    "issuedBy": {
+                        "@id": "schema:issuedBy",
+                        "@context": {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "schema" : "https://schema.org/",
+                            "name" :  "schema:name",
+                            "website" : "schema:website"
+                        }
+                    }
+                }
+              }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "InfrachainPass"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "type" : "InfrachainPass",
+        "group" : "Default",
+        "issuedBy" : {
+            "name" : "Infrachain",
+            "website" : "https://infrachain.com"
+              }
+    }
+}

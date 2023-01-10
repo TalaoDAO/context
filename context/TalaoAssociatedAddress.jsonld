@@ -1,0 +1,24 @@
+{
+	"@context": [ "https://www.w3.org/2018/credentials/v1", 
+		{
+			"accountName" :  "https://schema.org/identifier",
+			"description" : "https://schema.org/description",
+      		"associatedAddress" : "https://schema.org/account",
+			"name" : "https://schema.org/name"
+       		}
+   	],
+	"id" : "urn:uuid:53d-bb37-0242ac130002",
+	"type": [
+        		"VerifiableCredential",
+           		"TalaoAssociatedAddress"
+	],
+	"issuer" : "did:key:crypto_wallet",
+	"description" : "to be defined",
+	"name" : "TALAO token account",
+	"credentialSubject" : {
+       		"id" : "did:key:wallet AltMe",
+       		"type" : "TalaoAssociatedAddress",
+          	"associatedAddress" : "tz1345765476547654",
+		    "accountName" : "Account 1"
+	}
+}

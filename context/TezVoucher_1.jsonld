@@ -1,0 +1,185 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "TezVoucher_1" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.md",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "associatedAddress" : {
+                        "@id": "https://schema.org/address",
+                        "@context" : {
+                            "@protected" : true,
+                            "blockchainTezos" : "https://schema.org/blockchain",
+                            "blockchainEthereum" : "https://schema.org/blockchain"
+                        }
+                    },
+                    "affiliate" : {
+                        "@id" : "https://github.com/TalaoDAO/context/blob/main/README.md",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "name" : "schema:name",
+                            "did" : "schema:identifier",
+                            "email" : "schema:email",
+                            "phone" : "schema:telephone",
+                            "pseudo" : "schema:givenName",
+                            "benefit" : {
+                                "@id" : "https://github.com/TalaoDAO/context/blob/main/README",
+                                "@context" : {
+                                    "price" : "schema:value",
+                                    "category" : "schema:category",
+                                    "incentiveCompensation" : "schema:incentiveCompensation"
+                                }
+                            },
+                            "paymentAccepted" : {
+                                "@id" : "schema:paymentAccepted",
+                                "@context" : {
+                                    "blockchain" : "schema:name",
+                                    "currency" : "schema:currency",
+                                    "blockchainAccount" : "schema:identifier"
+                                }
+                            }
+                        }
+                    },
+                    "offers" : {
+                        "@id" : "schema:offer",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "startDate" : "schema:date",
+                            "category" : "schema:category",
+                            "duration" : "schema:duration",
+                            "endDate" : "schema:date",
+                            "analytics" : "schema:website",
+                            "userGuide" : "schema:userGuide",
+                            "benefit" : {
+                                "@id" : "https://github.com/TalaoDAO/context/blob/main/README",
+                                "@context" : {
+                                    "price" : "schema:value",
+                                    "category" : "schema:category",
+                                    "discount" : "schema:discount"
+                                }
+                            },
+                            "offeredBy" : {
+                                "@id" : "schema:offeredBy",
+                                "@context" : {
+                                    "@version": 1.1,
+                                    "@protected": true,
+                                    "description" : "schema:description",
+                                    "website" : "schema:website",
+                                    "logo": {"@id" : "schema:image", "@type" : "@id"},
+                                    "did" : "schema:identifier",
+                                    "name" : "schema:name",
+                                    "paymentMethod" : {
+                                        "@id" : "schema:paymentMethod",
+                                        "@context" : {
+                                            "currency" : "schema:currency",
+                                            "blockchain" : "schema:name",
+                                            "blockchainAccount" : "schema:identifier"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "website" : "schema:website",
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "did" : "schema:identifier",
+                            "name" : "schema:name",
+                            "paymentAccepted" : {
+                                "@id" : "schema:paymentMethod",
+                                "@context" : {
+                                    "currency" : "schema:currency",
+                                    "blockchain" : "schema:name",
+                                    "blockchainAccount" : "schema:identifier"
+                                }
+                            },
+                            "paymentMethod" : {
+                                "@id" : "schema:paymentMethod",
+                                "@context" : {
+                                    "currency" : "schema:currency",
+                                    "blockchain" : "schema:name",
+                                    "blockchainAccount" : "schema:identifier"
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "id": "urn:uuid:random",
+    "type": ["VerifiableCredential", "TezVoucher_1"],
+    "expirationDate" : "2022-09-08T19:55:00Z",
+    "issuer": "did:tz:issuer",
+    "credentialSubject" : {
+        "id" : "did:wallet",
+        "type" : "TezVoucher_1",
+        "associatedAddress" : {
+                "blockchainTezos" : "tz1Q7zwo7fmRNyCL7jdz6hcPSsYukkWY66Q3",
+                "blockchainEthereum" : ""
+        },
+        "offers" : {
+            "startDate" : "2022-04-08T19:55:00Z",
+            "endDate" : "2022-06-08T19:55:00Z",
+            "category" : "discounted_coupon",
+            "duration" : "30",
+            "analytics" : "",
+            "userGuide" :  "https://altme.io/#steps-03-575161",
+            "benefit" : {
+                "category" : "discount",
+                "discount" : "15%"
+            },    
+            "offeredBy": {
+                "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
+                "name": "Gif Games",
+                "website" : "https://tezotopia.com/",
+                "description" : "https://tezotopia.com",
+                "paymentMethod" : {
+                    "blockchain" : "Tezos",
+                    "currency" : "XTZ",
+                    "blockchainAccount" : ""
+                }
+            }
+        },
+        "issuedBy": {
+            "logo": "ipfs://QmZmdndUVRoxiVhUnjGrKnNPn8ah3jT8fxTCLMnAzRAFFZ",
+            "name": "Talao",
+            "paymentAccepted" : {
+                "blockchain" : "Tezos",
+                "currency" : "XTZ",
+                "blockchainAccount" : "tz1Q7zwo7fmRNyCL7jdz6hcPSsYukkWY66Q3"
+            },
+            "paymentMethod" : {
+                "blockchain" : "Tezos",
+                "currency" : "XTZ",
+                "blockchainAccount" : "tz1NJrXkEhwcqNxkARvb44psCCb4VyJ4Qh1b"
+            }
+        },
+        "affiliate": {
+            "name": "to be filled or removed",
+            "email" : "to be filled or removed",
+            "phone" : "to be filled or removed",
+            "pseudo" : "to be filled or removed",
+            "paymentAccepted" : {
+                "blockchain" : "Tezos",
+                "currency" : "XTZ",
+                "blockchainAccount" : ""
+            },
+            "benefit" : {
+                "category" : "commission",
+                "incentiveCompensation" : "10%"
+            }   
+        }
+    }
+}

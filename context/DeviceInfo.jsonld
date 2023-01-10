@@ -1,0 +1,43 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "DeviceInfo" : {
+                "@id": "https://github.com/TalaoDAO/context#deviceinfo",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "systemName" : "schema:productName",
+                    "device" : "schema:productName",
+                    "systemVersion" : "schema:productName",
+                    "walletBuild" : "schema:identifier",
+                    "issuedBy": {
+                        "@id": "schema:issuedBy",
+                        "@context": {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "name" :  "https://schema.org/name"
+                        }
+                    }
+                }
+              }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "DeviceInfo"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "DeviceInfo",
+        "systemName" : "",
+        "device" : "",
+        "walletBuild" : "",
+        "systemVersion" : "",
+        "id": "",
+        "issuedBy" : {
+            "name" : "My wallet"
+             }
+    }
+}

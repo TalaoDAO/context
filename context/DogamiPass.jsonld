@@ -1,0 +1,53 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "DogamiPass" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.md",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "ageRange" : "schema:ageRange",
+                    "nationality" : "schema:nationality",
+                    "discount" : "schema:discount",
+                    "duration" : "schema:duration",
+                    "associatedAddress" : {
+                        "@id": "https://schema.org/address",
+                        "@context" : {
+                            "@protected" : true,
+                            "blockchainTezos" : "https://schema.org/blockchain",
+                        }
+                    },
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "website" : "schema:website",
+                            "name" : "schema:name"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "id": "urn:uuid:random",
+    "type": ["VerifiableCredential", "DogamiPass"],
+    "issuer": "did:tz:issuer",
+    "credentialSubject" : {
+        "id" : "did:wallet",
+        "type" : "MembershipCard_1",
+        "ageRange" : "",
+        "nationality" : "",
+        "associatedAddress" : {
+                "blockchainTezos" : ""
+        },
+        "discount" : "",
+        "issuedBy": {
+            "name": "Altme"
+        }
+    }
+}

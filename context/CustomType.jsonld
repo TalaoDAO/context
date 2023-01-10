@@ -1,0 +1,28 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "CustomType" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.me#pass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type"   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": [
+        "VerifiableCredential",
+        "CustomType"
+    ],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "type" : "CustomType"
+    }
+}

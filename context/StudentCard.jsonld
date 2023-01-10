@@ -1,0 +1,116 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "StudentCard": {
+                "@context": {
+                    "@protected": true,
+                    "@version": 1.1,
+                    "id": "@id",
+                    "issuedBy": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "address": "schema:address",
+                            "directorName": "schema:name",
+                            "logo": {
+                                "@id": "schema:logo",
+                                "@type": "@id"
+                            },
+                            "name": "schema:name",
+                            "schema": "https://schema.org/"
+                        },
+                        "@id": "schema:issuedBy"
+                    },
+                    "recipient": {
+                        "@context": {
+                            "@protected": true,
+                            "@version": 1.1,
+                            "birthDate": "schema:birthDate",
+                            "familyName": "schema:familyName",
+                            "givenName": "schema:givenName",
+                            "image": {
+                                "@id": "schema:image",
+                                "@type": "@id"
+                            },
+                            "schema": "https://schema.org/",
+                            "signatureLines": {
+                                "@context": {
+                                    "@protected": true,
+                                    "@version": 1.1,
+                                    "image": {
+                                        "@id": "schema:image",
+                                        "@type": "@id"
+                                    },
+                                    "schema": "https://schema.org/"
+                                },
+                                "@id": "https://github.com/blockchain-certificates/cert-schema/blob/master/docs/signatureLineExtension_schema.md"
+                            }
+                        },
+                        "@id": "schema:recipient"
+                    },
+                    "schema": "https://schema.org/",
+                    "type": "@type"
+                },
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.md"
+            },
+            "name": "https://schema.org/name",
+            "description": "https://schema.org/description"
+        }
+    ],
+    "id": "urn:uuid:55418a67-ea48-429f-af18-95137ccae635",
+    "type": [
+        "VerifiableCredential",
+        "StudentCard"
+    ],
+    "credentialSubject": {
+        "id": "did:tz:tz2E4kuaB9zHa1C3LqNeZncvZogYjQsXxvxz",
+        "type": "StudentCard",
+        "recipient": {
+            "birthDate": "1991-12-10T12:02:55.268Z",
+            "familyName": "Doe",
+            "givenName": "John",
+            "image": "https://gateway.pinata.cloud/ipfs/QmSSJooT2JFraZFNHavVLQzzxwSpg3ithJL4ztGYY9MpBY",
+            "signatureLines": {
+                "image": "https://gateway.pinata.cloud/ipfs/QmeMfck3z6K5p8xmCqQpjH3R7s3YddR5DsMNLewWvzQrFS"
+            }
+        },
+        "issuedBy": {
+            "address": "16 rue de Wattignies, 75012 Paris, France",
+            "directorName": "Nicolas Muller",
+            "logo": "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu",
+            "name": "Talao CFA"
+        }
+    },
+    "issuer": "",
+    "issuanceDate": "",
+    "expirationDate": "2023-01-31T16:04:32Z",
+    "name": [
+        {
+            "@language": "en",
+            "@value": "Student Card"
+        },
+        {
+            "@language": "de",
+            "@value": ""
+        },
+        {
+            "@language": "fr",
+            "@value": "Carte étudiant"
+        }
+    ],
+    "description": [
+        {
+            "@language": "en",
+            "@value": "This card allows to access student benefits and services."
+        },
+        {
+            "@language": "de",
+            "@value": ""
+        },
+        {
+            "@language": "fr",
+            "@value": "Cette carte permet de bénéficier des avantages de la carte étudiant."
+        }
+    ]
+}

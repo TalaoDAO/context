@@ -1,0 +1,22 @@
+{
+  "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            "origin": "https://identity.foundation/.well-known/resources/did-configuration/#origin",
+            "DomainLinkageCredential": "https://identity.foundation/.well-known/resources/did-configuration/#DomainLinkageCredential",
+            "LinkedDomains": "https://identity.foundation/.well-known/resources/did-configuration/#LinkedDomains",
+            "linked_dids": "https://identity.foundation/.well-known/resources/did-configuration/#linked_dids"
+        }
+    ],
+  "type": [
+    "VerifiableCredential",
+    "DomainLinkageCredential"
+  ],
+  "credentialSubject": {
+    "id": "did:web:talao.co",
+    "origin": "https://talao.co"
+  },
+  "issuer": "did:web:talao.co",
+  "issuanceDate": "2021-05-02T00:00:00Z",
+  "expirationDate": "2026-05-01T00:00:00Z"
+    }

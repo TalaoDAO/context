@@ -1,0 +1,40 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "over18" : "https://schema.org/typicalAgeRange",
+            "alternateName" : "https://schema.org/alternatName",
+            "over13" : "https://schema.org/typicalAgeRange",
+            "tezosAddress" : "https://schema.org/accountId",
+            "ethereumAddress" : "https://schema.org/accountId",
+            "solanaAddress" : "https://schema.org/accountId",
+            "duration" : "https://schema.org/duration",
+            "issuedBy": {
+                "@id": "https://schema.org/issuedBy",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "name" :  "schema:name",
+                    "address" : "schema:address",
+                    "logo" : { "@id" : "schema:logo", "@type" : "@id"}
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "BloometaPass"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "alternateName" : "skite",
+        "type" : "BloometaPass",
+        "over13" : true,
+        "over18" : true,
+        "tezosAddress" : "tz1YtKsJMx5FqhULTDzNxs9r9QYHBGsmz58o",
+        "ethereumAddress" : "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+        "solanaAddress" : "5cmCn6fXDRuLBpz8LSwzZWWYbUaZxWq2zMRcGkterSGP",
+        "duration" : "360",
+        "issuedBy" : {"name" : "Bloometa"}
+    }
+}

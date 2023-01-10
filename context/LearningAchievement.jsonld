@@ -1,0 +1,67 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+            
+            "LearningAchievement" : {
+                "@id": "https://github.com/TalaoDAO/context",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "familyName": "schema:familyName",
+                    "givenName": "schema:givenName",
+                    "birthDate": "schema:birthDate",
+                    "email": "schema:email",
+                    "hasCredential": {
+                        "@id": "https://hnc-path-to-facilities-management-definition",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "title": "schema:title",
+                            "description": "schema:description",
+                            "inDefinedTermSet" : "schema:inDefinedTermSet"
+                        }
+                    },
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name",
+                            "address" : "schema:address"
+                        }
+                    }                   
+                }
+            }
+        }
+    ],
+    "id": "urn:uuid:dd8a2a3c-0e22-34ec-9ef1-f37fc4c32c88",
+    "type": ["VerifiableCredential","LearningAchievement"],
+    "issuer": "",
+    "issuanceDate": "2019-06-22T14:11:44Z",
+    "credentialSubject": {
+        "type" : "LearningAchievement",
+        "id": "",
+        "familyName": "Skywalker",
+        "givenName": "Lea",
+        "birthDate": "2000-02-15",
+        "email" : "lea@sky.com",
+        "hasCredential": {
+            "title":  "Bachelor of Science",
+            "description" : ""
+        },
+        "issuedBy" : {
+            "name": "ENSAM ParisTech",
+            "address" : "4, rue Louis-Guérin, 69626 Villeurbanne, France",
+            "logo" : "https://talao.mypinata.cloud/ipfs/QmXytsKby4yF3TFDfo2KUZSmnkdc7hkFGAPDpTyd3pdBpx"
+        }
+    },
+    "evidence": {
+        "id": "https://artsetmetiers.fr/fr",
+        "type": ["DocumentVerification"]
+    }
+}

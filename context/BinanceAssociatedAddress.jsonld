@@ -1,0 +1,58 @@
+{
+	"@context": [ "https://www.w3.org/2018/credentials/v1", 
+		{
+			"BinanceAssociatedAddress" : {
+				"@id" : "https://github.com/TalaoDAO/context#binanceassociatedaddress",
+				"@context" : {
+					"@version": 1.1,
+					"@protected": true,
+					"id": "@id",
+                    "type": "@type",
+					"accountName" :  "https://github.com/TalaoDAO/context#accountname",
+      				"associatedAddress" : "https://w3id.org/security#blockchainAccountId",
+					"issuedBy": {
+						"@id": "https://schema.org/issuedBy",
+						"@context": {
+							"@version": 1.1,
+							"@protected": true,
+							"name" :  "https://schema.org/legalName"
+						}
+					}
+       			}
+			},
+			"WalletLink" : {
+				"@id" : "https://github.com/TalaoDAO/contex#walletlink",
+				"@context" : {
+					"@version": 1.1,
+					"@protected": true,
+					"id": "@id",
+                    "type": "@type",
+					"verifier" :  {"@id": "https://www.w3.org/2018/credentials#issuer", "@type": "@id"},
+					"cryptoWalletSignature" : "https://github.com/TalaoDAO/context#cryptowalletsignature",
+					"cryptoWalletPayload" : "https://github.com/TalaoDAO/context#cryptowalletpayload"
+				}
+			}
+		}
+   	],
+	"id" : "urn:uuid:xxxxxxxx",
+	"type": [
+        		"VerifiableCredential",
+           		"BinanceAssociatedAddress",
+				"walletLink"
+	],
+	"issuer" : "did:key:crypto_wallet",
+	"credentialSubject" : {
+       		"id" : "did:key:wallet AltMe",
+       		"type" : "BinanceAssociatedAddress",
+          	"associatedAddress" : "",
+		    "accountName" : "",
+			"issuedBy" : {"name" : ""}
+	},
+	"evidence": [{
+		"id": "https://github.com/TalaoDAO/contex#evidence",
+		"type": ["WalletLink"],
+		"verifier" : "did:web:app.altme.io:issuer",
+		"cryptoWalletSignature" : "",
+		"cryptoWalletPayload" : ""
+	  }]
+}

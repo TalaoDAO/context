@@ -1,0 +1,46 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "AragoPass" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/README.mdidentitypass",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "group" : "schema:group",
+                    "duration" : "schema:duration",
+                    "issuedBy": {
+                        "@id": "schema:issuedBy",
+                        "@context": {
+                            "@version": 1.1,
+                            "@protected": true,
+                            "schema" : "https://schema.org/",
+                            "name" :  "schema:name",
+                            "website": "schema:website",
+                            "address" : "schema:address",
+                            "logo" : { "@id" : "schema:logo", "@type" : "@id"}
+                        }
+                    }
+                }
+              }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "AragoPass"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "id": "",
+        "type" : "AragoPass",
+        "group" : "Default",
+        "duration" : "360",
+        "issuedBy" : {
+            "name" : "Arago",
+            "website" : "https://arago.studio",
+            "address" : "4, rue Louis-Guérin, 69626 Villeurbanne, France",
+            "logo" : "https://talao.mypinata.cloud/ipfs/QmNwbEEupT7jR2zmrA87FsN4hUS8eXnCxM8DsL9RXc25cu"
+              }
+    }
+}
