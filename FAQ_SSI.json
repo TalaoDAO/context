@@ -14,8 +14,7 @@
 },
 {
 "que": "How can I use my Altme SSI wallet to manage and share my verifiable credentials?",
-"ans": "When you receive a verifiable credential in the Altme wallet, it is added to your digital identity. You can then use this credential to prove your identity or access certain services. For example, you might use a membership credential to access a members-only area of a website, or an 'Over 18' proof to access a DeFi application.",
-"ans": "You can use the “scan” button in Altme to share credentials when it is requested. It’s super easy. Just scan the QR code, and accept the request to share your digital credentials."
+"ans": "When you receive a verifiable credential in the Altme wallet, it is added to your digital identity. You can then use this credential to prove your identity or access certain services. For example, you might use a membership credential to access a members-only area of a website, or an 'Over 18' proof to access a DeFi application. You can use the “scan” button in Altme to share credentials when it is requested. It’s super easy. Just scan the QR code, and accept the request to share your digital credentials."
 },
 {
 "que": "What is the level of security of Altme wallet ?",
