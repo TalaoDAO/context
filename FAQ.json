@@ -2,16 +2,15 @@
 "faq" : [
 {
 "que": "  Why is Altme called a Universal wallet and why is it different from other digital wallets ? ,            ",
-"ans": " Altme is called a 'Universal wallet' because just like a physical wallet in which you can carry your ID cards and funds, you can use the Altme wallet to gather digital credentials (Identity card, Age range proof, diploma, etc.) and digital assets (Cryptos, NFTs, tokens...).                ",
-"ans":" The future of digital identity is being build on Self-Sovereign Identity (SSI standard), which is the technology that powers Altme wallet and give its users the ability to manage digital credentials in a privacy-preserving and decentralized manner. "
+"ans": " Altme is called a 'Universal wallet' because just like a physical wallet in which you can carry your ID cards and funds, you can use the Altme wallet to gather digital credentials (Identity card, Age range proof, diploma, etc.) and digital assets (Cryptos, NFTs, tokens...). The future of digital identity is being build on Self-Sovereign Identity (SSI standard), which is the technology that powers Altme wallet and give its users the ability to manage digital credentials in a privacy-preserving and decentralized manner. "
 },
 {
 "que": " What can I do with Altme ?               ",
-"ans": " Altme give users the ability to take back control of their personal information and share these with Web 3 applications when its required. For example, with Altme users can present digital credentials (Over 18 proof, KYC...) in order to access certain services or take advantage of certain offers (membership card, loyalty card, Exclusive pass...).               "
+"ans": " Altme give users the ability to take back control of their personal information and share these with Web 3 applications when its required. For example, with Altme users can present digital credentials (Over 18 proof, KYC...) in order to access certain services or take advantage of certain offers (membership card, loyalty card, Exclusive pass...)."
 },
 {
 "que": " How can I use my existing crypto wallet with Altme ?               ",
-"ans": " Altme give users the ability to take back control of their personal information and share these with Web 3 applications when its required. For example, with Altme users can present digital credentials (Over 18 proof, KYC...) in order to access certain services or take advantage of certain offers (membership card, loyalty card, Exclusive pass...).               "
+"ans": " Altme give users the ability to take back control of their personal information and share these with Web 3 applications when its required. For example, with Altme users can present digital credentials (Over 18 proof, KYC...) in order to access certain services or take advantage of certain offers (membership card, loyalty card, Exclusive pass...)."
 },
 {
 "que": "How can I use my existing crypto wallet with Altme ?                ",
@@ -39,8 +38,7 @@
 },
 {
 "que": " How does Altme wallet protect my personal information?               ",
-"ans": " Altme is built on Self-Sovereign Identity (SSI) technology which is a new digital identity standard that enables the storage and management of personal information in a decentralized, secure and private way.   ",
-"ans":" All your personal information are encrypted and stored in your phone. Only you have the power to share credentials information that are encrypted in your wallet.  "
+"ans": " Altme is built on Self-Sovereign Identity (SSI) technology which is a new digital identity standard that enables the storage and management of personal information in a decentralized, secure and private way. All your personal information are encrypted and stored in your phone. Only you have the power to share credentials information that are encrypted in your wallet.  "
 },
 {
 "que": "  Where are my digital credentials stored in Altme ?              ",
@@ -48,13 +46,11 @@
 },
 {
 "que": "  How do I backup my keys and credentials in Altme ?              ",
-"ans": "  To backup your Altme wallet, you need to write down your passphrase and download your digital credentials. It's important to store these in a secure location, such as a password-protected file or a physical safe.    ",
-"ans":"    If you lose access to your Altme wallet, there is nothing we can do to help you. Altme is self-custodial which means only you can control your keys and your credentials. "
+"ans": "  To backup your Altme wallet, you need to write down your passphrase and download your digital credentials. It's important to store these in a secure location, such as a password-protected file or a physical safe. If you lose access to your Altme wallet, there is nothing we can do to help you. Altme is self-custodial which means only you can control your keys and your credentials. "
 },
 {
-"que": "  What is Self-Sovereign Identity (SSI) ?              ",
-"ans": "  Self-Sovereign Identity, or SSI, is a new technology compatible with blockchain that gives users and organizations the ability to control their own digital credentials and identity data, rather than relying on a central authority or central database to manage their personal information.   ",
-"ans": "  With SSI, users are able to store, manage and share their personal data in a decentralize manner, enabling greater privacy and security. SSI also uses Zero-Knowledge Proof and 'Selective Disclosure' to protect users privacy. "
+"que": "What is Self-Sovereign Identity (SSI) ?              ",
+"ans": "Self-Sovereign Identity, or SSI, is a new technology compatible with blockchain that gives users and organizations the ability to control their own digital credentials and identity data, rather than relying on a central authority or central database to manage their personal information. With SSI, users are able to store, manage and share their personal data in a decentralize manner, enabling greater privacy and security. SSI also uses Zero-Knowledge Proof and 'Selective Disclosure' to protect users privacy. "
 },
 {
 "que": "  What are Verifiable Credentials and why is it useful ?              ",
