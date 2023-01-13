@@ -59,8 +59,7 @@
 },
 {
 "que": "What are Altme's Terms of Service?",
-"ans": "Redirect to CGU.",
-"href":"https://altme.io/cgu/"
+"ans": "Redirect to CGU."
 },
 {
 "que": "Can I restore my wallet?",
@@ -92,9 +91,7 @@
 },
 {
 "que": "How do I deposit/receive/send money?",
-"ans": "You can deposit money using your credit card or Apple Pay.",
-"ans": "You can receive money in your crypto-wallet for each incoming transaction with your iD address for each cryptocurrency.",
-"ans": "You can send money to the crypto-wallet you want thanks to its ID address of the desired crypto-currency."
+"ans": "You can deposit money using your credit card or Apple Pay. You can receive money in your crypto-wallet for each incoming transaction with your iD address for each cryptocurrency. You can send money to the crypto-wallet you want thanks to its ID address of the desired crypto-currency."
 },
 {
 "que": "How do I send my ETH and tokens?",
