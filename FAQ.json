@@ -72,9 +72,7 @@
         },
         {
             "que": "What are Altme's Terms of Service?",
-            "ans":  [   
-                "Redirect to CGU." 
-            ],
+            "ans": "Redirect to CGU.",
             "href": "https://altme.io/cgu"
         },
         {

@@ -58,10 +58,8 @@
       },
       {
         "que": "What are Talao's Terms of Service?",
-        "ans": [
-          "Redirect to CGU."
-        ],
-        "href": "https://talao.io/"
+        "ans": "Redirect to CGU.",
+        "href":"https://talao.io/"
       }
     ]
 }
