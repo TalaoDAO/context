@@ -1,0 +1,265 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome8",
+    "definitions": {
+        "Welcome8": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@context": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ContextElement"
+                    }
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "issuer": {
+                    "type": "string"
+                },
+                "issuanceDate": {
+                    "type": "string"
+                },
+                "credentialSubject": {
+                    "$ref": "#/definitions/CredentialSubject"
+                }
+            },
+            "required": [
+                "@context",
+                "credentialSubject",
+                "id",
+                "issuanceDate",
+                "issuer",
+                "type"
+            ],
+            "title": "Welcome8"
+        },
+        "ContextContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Over18": {
+                    "$ref": "#/definitions/Over18"
+                }
+            },
+            "required": [
+                "Over18"
+            ],
+            "title": "ContextContext"
+        },
+        "Over18": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "@context": {
+                    "$ref": "#/definitions/Over18Context"
+                }
+            },
+            "required": [
+                "@context",
+                "@id"
+            ],
+            "title": "Over18"
+        },
+        "Over18Context": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@version": {
+                    "type": "number"
+                },
+                "@protected": {
+                    "type": "boolean"
+                },
+                "schema": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "kycProvider": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "kycMethod": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "ageOver": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "kycId": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "issuedBy": {
+                    "$ref": "#/definitions/ContextIssuedBy"
+                }
+            },
+            "required": [
+                "@protected",
+                "@version",
+                "ageOver",
+                "id",
+                "issuedBy",
+                "kycId",
+                "kycMethod",
+                "kycProvider",
+                "schema",
+                "type"
+            ],
+            "title": "Over18Context"
+        },
+        "ContextIssuedBy": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@context": {
+                    "$ref": "#/definitions/IssuedByContext"
+                }
+            },
+            "required": [
+                "@context",
+                "@id"
+            ],
+            "title": "ContextIssuedBy"
+        },
+        "IssuedByContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@protected": {
+                    "type": "boolean"
+                },
+                "logo": {
+                    "$ref": "#/definitions/Logo"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@protected",
+                "logo",
+                "name"
+            ],
+            "title": "IssuedByContext"
+        },
+        "Logo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@id",
+                "@type"
+            ],
+            "title": "Logo"
+        },
+        "CredentialSubject": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "ageOver": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "kycProvider": {
+                    "type": "string"
+                },
+                "kycId": {
+                    "type": "string"
+                },
+                "kycMethod": {
+                    "type": "string"
+                },
+                "issuedBy": {
+                    "$ref": "#/definitions/CredentialSubjectIssuedBy"
+                }
+            },
+            "required": [
+                "ageOver",
+                "issuedBy",
+                "kycId",
+                "kycMethod",
+                "kycProvider",
+                "type"
+            ],
+            "title": "CredentialSubject"
+        },
+        "CredentialSubjectIssuedBy": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "CredentialSubjectIssuedBy"
+        },
+        "ContextElement": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/ContextContext"
+                },
+                {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            ],
+            "title": "ContextElement"
+        }
+    }
+}
