@@ -1,0 +1,330 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome5",
+    "definitions": {
+        "Welcome5": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@context": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ContextElement"
+                    }
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "issuer": {
+                    "type": "string"
+                },
+                "issuanceDate": {
+                    "type": "string"
+                },
+                "validFrom": {
+                    "type": "string"
+                },
+                "issued": {
+                    "type": "string"
+                },
+                "credentialSubject": {
+                    "$ref": "#/definitions/CredentialSubject"
+                },
+                "credentialSchema": {
+                    "$ref": "#/definitions/CredentialSchema"
+                },
+                "evidence": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Evidence"
+                    }
+                }
+            },
+            "required": [
+                "@context",
+                "credentialSchema",
+                "credentialSubject",
+                "evidence",
+                "id",
+                "issuanceDate",
+                "issued",
+                "issuer",
+                "type",
+                "validFrom"
+            ],
+            "title": "Welcome5"
+        },
+        "ContextContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "VerifiableId": {
+                    "$ref": "#/definitions/VerifiableID"
+                },
+                "DocumentVerification": {
+                    "$ref": "#/definitions/DocumentVerification"
+                }
+            },
+            "required": [
+                "DocumentVerification",
+                "VerifiableId"
+            ],
+            "title": "ContextContext"
+        },
+        "DocumentVerification": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "@context": {
+                    "$ref": "#/definitions/DocumentVerificationContext"
+                }
+            },
+            "required": [
+                "@context",
+                "@id"
+            ],
+            "title": "DocumentVerification"
+        },
+        "DocumentVerificationContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@version": {
+                    "type": "number"
+                },
+                "@protected": {
+                    "type": "boolean"
+                },
+                "schema": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "verifier": {
+                    "type": "string"
+                },
+                "evidenceDocument": {
+                    "type": "string"
+                },
+                "kycId": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@protected",
+                "@version",
+                "evidenceDocument",
+                "id",
+                "kycId",
+                "schema",
+                "type",
+                "verifier"
+            ],
+            "title": "DocumentVerificationContext"
+        },
+        "VerifiableID": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "@context": {
+                    "$ref": "#/definitions/VerifiableIDContext"
+                }
+            },
+            "required": [
+                "@context",
+                "@id"
+            ],
+            "title": "VerifiableID"
+        },
+        "VerifiableIDContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@version": {
+                    "type": "number"
+                },
+                "@protected": {
+                    "type": "boolean"
+                },
+                "schema": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "familyName": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "dateOfBirth": {
+                    "type": "string"
+                },
+                "placeOfBirth": {
+                    "type": "string"
+                },
+                "personalIdentifier": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@protected",
+                "@version",
+                "dateOfBirth",
+                "familyName",
+                "firstName",
+                "gender",
+                "id",
+                "personalIdentifier",
+                "placeOfBirth",
+                "schema",
+                "type"
+            ],
+            "title": "VerifiableIDContext"
+        },
+        "CredentialSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "type"
+            ],
+            "title": "CredentialSchema"
+        },
+        "CredentialSubject": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "personalIdentifier": {
+                    "type": "string"
+                },
+                "familyName": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "dateOfBirth": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "dateOfBirth",
+                "familyName",
+                "firstName",
+                "id",
+                "personalIdentifier",
+                "type"
+            ],
+            "title": "CredentialSubject"
+        },
+        "Evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "type": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "verifier": {
+                    "type": "string"
+                },
+                "evidenceDocument": {
+                    "type": "string"
+                },
+                "kycId": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "evidenceDocument",
+                "id",
+                "kycId",
+                "type",
+                "verifier"
+            ],
+            "title": "Evidence"
+        },
+        "ContextElement": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/ContextContext"
+                },
+                {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            ],
+            "title": "ContextElement"
+        }
+    }
+}
