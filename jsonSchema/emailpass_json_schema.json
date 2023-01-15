@@ -1,0 +1,236 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome10",
+    "definitions": {
+        "Welcome10": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@context": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ContextElement"
+                    }
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "issuer": {
+                    "type": "string"
+                },
+                "issuanceDate": {
+                    "type": "string"
+                },
+                "credentialSubject": {
+                    "$ref": "#/definitions/CredentialSubject"
+                }
+            },
+            "required": [
+                "@context",
+                "credentialSubject",
+                "id",
+                "issuanceDate",
+                "issuer",
+                "type"
+            ],
+            "title": "Welcome10"
+        },
+        "ContextContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "EmailPass": {
+                    "$ref": "#/definitions/EmailPass"
+                }
+            },
+            "required": [
+                "EmailPass"
+            ],
+            "title": "ContextContext"
+        },
+        "EmailPass": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "@context": {
+                    "$ref": "#/definitions/EmailPassContext"
+                }
+            },
+            "required": [
+                "@context",
+                "@id"
+            ],
+            "title": "EmailPass"
+        },
+        "EmailPassContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@version": {
+                    "type": "number"
+                },
+                "@protected": {
+                    "type": "boolean"
+                },
+                "schema": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "id": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "emailVerified": {
+                    "type": "string"
+                },
+                "issuedBy": {
+                    "$ref": "#/definitions/ContextIssuedBy"
+                }
+            },
+            "required": [
+                "@protected",
+                "@version",
+                "email",
+                "emailVerified",
+                "id",
+                "issuedBy",
+                "schema",
+                "type"
+            ],
+            "title": "EmailPassContext"
+        },
+        "ContextIssuedBy": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@context": {
+                    "$ref": "#/definitions/IssuedByContext"
+                }
+            },
+            "required": [
+                "@context",
+                "@id"
+            ],
+            "title": "ContextIssuedBy"
+        },
+        "IssuedByContext": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@version": {
+                    "type": "number"
+                },
+                "@protected": {
+                    "type": "boolean"
+                },
+                "logo": {
+                    "$ref": "#/definitions/Logo"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@protected",
+                "@version",
+                "logo",
+                "name"
+            ],
+            "title": "IssuedByContext"
+        },
+        "Logo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "@id",
+                "@type"
+            ],
+            "title": "Logo"
+        },
+        "CredentialSubject": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "emailVerified": {
+                    "type": "boolean"
+                },
+                "issuedBy": {
+                    "$ref": "#/definitions/CredentialSubjectIssuedBy"
+                }
+            },
+            "required": [
+                "email",
+                "emailVerified",
+                "issuedBy",
+                "type"
+            ],
+            "title": "CredentialSubject"
+        },
+        "CredentialSubjectIssuedBy": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "CredentialSubjectIssuedBy"
+        },
+        "ContextElement": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/ContextContext"
+                },
+                {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            ],
+            "title": "ContextElement"
+        }
+    }
+}
