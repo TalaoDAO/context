@@ -139,6 +139,42 @@
             "que": "Will Altme charge for exchanges?",
             "ans": "Currently there is a fixed rate on sending tokens from the TEZOS blockchain at 0.0219XTZ (about 0.017€) and rates calculated on the ethereum blockchains."
              
+        },
+        {
+            "que": "Why do I need to Add an identity to your crypto wallet?",
+            "ans": "Start using secure and verifiable digital credentials with your favorite wallet by verifying your blockchain address and obtaining “Proof of ownership” in Altme wallet !"
+        },
+        {
+            "que": "Why is my request not progressing?",
+            "ans": "You must have the Altme application open on your device"
+        },
+        {
+            "que": "Why do you have to select the account?",
+            "ans": "You must select the account to be able to prove that it is your account/Crypto/NFT"
+        },
+        {
+            "que": "If I choose a wrong account can I start again?",
+            "ans": "You can repeat as many as necessary to select the desired account"
+        },
+        {
+            "que": "Why do I have to sign on the app?",
+            "ans": "Sign proof its ur own crypto address with your tokens and NFT"
+        },
+        {
+            "que": "Why scan the QRcode?",
+            "ans": "The QRcode allows proof of ownership thanks to the cards that you will obtain following the scan"
+        },
+        {
+            "que": "What is my card proof of ownership used for?",
+            "ans": "The card proves that it is your own crypto address"
+        },
+        {
+            "que": "How to recover my Pass Phrase from KuKai or Temple crypto wallet?",
+            "ans": "Go to Wallet Security then Show wallet recovery phrase to access your Pass Phrase"
+        },
+        {
+            "que": "How to recover my and private key from KuKai or Temple crypto wallet?",
+            "ans": "Go to Blockchain settings then blockchain account/ select your crutch wallet and click reveal private key"
         }
     ] 
 }
