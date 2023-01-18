@@ -97,7 +97,7 @@
         },
         {
             "que": "Which crypto wallets are compatible with Altme ?",
-            "ans": "Right now, you can easily prove ownership of any Tezos wallets like Temple, Kukai, Naan, Autonomy, Ait Gap, Umami...Soon, you will be able to do the same with Ethereum and EVM compatible wallets like Metamask, Trust wallet, etc."
+            "ans": "Right now, you can easily prove ownership of any Tezos wallets like Temple, Kukai, Naan, Autonomy, Ait Gap, Umami...Soon, you will be able to do the same with EVM compatible wallets like Metamask, Trust wallet, etc."
              
         },
         {
@@ -116,7 +116,7 @@
              
         },
         {
-            "que": "How do I send my ETH and tokens?",
+            "que": "How do I send my XTZ and tokens?",
             "ans": "To send tokens you have to go to CARDS then TOKENS, select your token and define how many and to whom and send (find your token ID on the reveice part."
              
         },
