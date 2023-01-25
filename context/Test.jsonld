@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    {
+    "boolean": "schema:identifer",
+    "website": "schema:website",
+    "email": "schema:familyName",
+    "number" :"schema:number",
+    "integer" : "schema:integer"
+    }
+  ],
+  "id": "urn:uuid:201cfb13-eec3-4767-9bcb-248529982010",
+  "type": [
+    "VerifiableCredential",
+    "Test"
+  ],
+  "credentialSubject": {
+    "id": "did:web:demo.talao.co",
+    "type": "Test",
+    "boolean": true,
+    "email": "thierry@altme.io",
+    "website": "https://altme.io",
+    "number" : 10.546,
+    "integer" : 12
+  },
+  "issuer": "did:web:demo.talao.co",
+  "issuanceDate": "2022-03-18T07:59:40Z"
+}
