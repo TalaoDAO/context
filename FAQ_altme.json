@@ -87,7 +87,7 @@
         },
         {
             "que": "18. Why my redirect does not go on the App? IOS/ANDROID",
-            "ans": "If the redirection is not done automatically you must go to your phone's settings > Settings > Apps > Altme/Talao > Set as default > Supported web addresses "
+            "ans": "If the redirection is not done automatically you must go to your phone's settings > Settings > Apps > Altme/Talao > Set as default > Supported web addresses > app.altme.io  -> On"
         }
     ] 
 }
