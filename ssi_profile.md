@@ -23,7 +23,7 @@ This document is not a specification, but a profile. It outlines existing specif
         
 
 
-Specific SSI use cases / scope
+## Specific SSI use cases / scope
 * interop 
 * Legal entity  vs natural person
 * No need to list all standard use cases but  
@@ -34,7 +34,7 @@ Specific SSI use cases / scope
 
 
 
-Decentralized identifiers (DID)
+## Decentralized identifiers (DID)
 * for natural persons
    * did:key, did:ebsi(v2), did:jwk
    * others for ledgers public key as did:pkh, did:ethr, ??
@@ -69,7 +69,7 @@ Decentralized identifiers (DID)
 
 
 
-Verifiable credentials 
+## Verifiable credentials 
 * interop ARF/EBSI/ALASTRIA/GAIAX ??
 * Format serialization : JWT vs JSON-LD or both
 * CBOR for mDL or IOT ?
@@ -85,7 +85,7 @@ Verifiable credentials
 
 
 
-Protocols
+## Protocols
 * to present verifiable credentials (and user authentication)  
    * SIOPv2
    * others ?
@@ -99,7 +99,7 @@ Protocols
    * others ?
 
 
-Wallet 
+## Wallet 
 * key management (generate?, export ?)
 * data management (export ?)
 * mobile wallet onboarding (instance, certificate, API check ?…) 
@@ -108,7 +108,7 @@ Wallet
 
 
 
-Verifiable data registries
+## Verifiable data registries
 * did registry ? not needed if no did:abf method ???
 * revocation list  VC  ?
 * trusted issuer/verifier registry
@@ -116,7 +116,7 @@ Verifiable data registries
 * ?
 
 
-Process 
+## Process 
 * legal entity onboarding
 * user onboarding
 * conformance (wallet, issuer, verifier) ?
@@ -125,7 +125,7 @@ Process
 
 
 
-APIs
+## APIs
 * for registries 
 * storage ? (out of scope ?)
 * timestamping, is it needed or out of scope  ?
@@ -134,14 +134,14 @@ APIs
    * do we need several implementations ?
 
 
-Implementations and libs
+## Implementations and libs
 * list of available libs
    * https://github.com/decentralized-identity
    * ?
 
 
  
-Privacy considerations
+## Privacy considerations
 * minimization of schema/data model
 * anonymization of VCs -> correlation, etc 
 
@@ -149,7 +149,7 @@ Privacy considerations
 
 
 
-References :
+# References :
 
 
 EU ARF : https://github.com/eu-digital-identity-wallet 
