@@ -6,7 +6,7 @@
 This document is not a specification, but a profile. It outlines existing specifications required for implementations to interoperate among each other. It also clarifies mandatory to implement features for the optionalities mentioned in the referenced specifications.
 
 
-## Profile examples  : 
+## Profile examples
          https://identity.foundation/jwt-vc-presentation-profile/
         https://api-pilot.ebsi.eu/docs
 
@@ -146,16 +146,16 @@ This document is not a specification, but a profile. It outlines existing specif
 # References :
 
 
-EU ARF : https://github.com/eu-digital-identity-wallet 
-W3C DID core : https://www.w3.org/TR/did-core/
-W3C VC/VP : https://www.w3.org/TR/vc-data-model/
-Presentation Exchange  https://identity.foundation/presentation-exchange/ 
-Credential Manifest :
+EU ARF : https://github.com/eu-digital-identity-wallet  
+W3C DID core : https://www.w3.org/TR/did-core/  
+W3C VC/VP : https://www.w3.org/TR/vc-data-model/  
+Presentation Exchange  https://identity.foundation/presentation-exchange/   
+Credential Manifest 
 DID registries 
-RFC JOSE https://www.rfc-editor.org/rfc/rfc7515 
-RFC algo https://www.rfc-editor.org/rfc/rfc7518  
-RFC JWK
+RFC JOSE https://www.rfc-editor.org/rfc/rfc7515  
+RFC algo https://www.rfc-editor.org/rfc/rfc7518   
+RFC JWK  
 Protocoles :  
-https://openid.net/specs/openid-connect-4-verifiable-presentations-1_0-07.html,
-https://openid.net/specs/openid-connect-self-issued-v2-1_0.html,
-https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html
+* https://openid.net/specs/openid-connect-4-verifiable-presentations-1_0-07.html,
+* https://openid.net/specs/openid-connect-self-issued-v2-1_0.html,
+* https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html
