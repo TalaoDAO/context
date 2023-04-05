@@ -1,6 +1,6 @@
 # ABF ssi profile v 0.0.1
-# Date 5/04/2023
-# Draft
+Date 5/04/2023
+Draft
 
 
 This document is not a specification, but a profile. It outlines existing specifications required for implementations to interoperate among each other. It also clarifies mandatory to implement features for the optionalities mentioned in the referenced specifications.
