@@ -1,5 +1,5 @@
-﻿ABF ssi profile v 0.0.1
-Date 5/04/2023
+# ABF ssi profile v 0.0.1
+# Date 5/04/2023
 # Draft
 
 
@@ -8,14 +8,14 @@ This document is not a specification, but a profile. It outlines existing specif
 
 
 
-Profile examples  : 
+## Profile examples  : 
          https://identity.foundation/jwt-vc-presentation-profile/
         https://api-pilot.ebsi.eu/docs
 
 
 
 
-Editors / contributors
+## Editors / contributors
 * Thierry Thevenet (Talao)
 * ?
 * ?
