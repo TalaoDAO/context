@@ -6,13 +6,9 @@
 This document is not a specification, but a profile. It outlines existing specifications required for implementations to interoperate among each other. It also clarifies mandatory to implement features for the optionalities mentioned in the referenced specifications.
 
 
-
-
 ## Profile examples  : 
          https://identity.foundation/jwt-vc-presentation-profile/
         https://api-pilot.ebsi.eu/docs
-
-
 
 
 ## Editors / contributors
@@ -21,9 +17,7 @@ This document is not a specification, but a profile. It outlines existing specif
 * ?
 * ?
         
-
-
-## Specific SSI use cases / scope
+## Specific SSI use cases / scope 
 * interop 
 * Legal entity  vs natural person
 * No need to list all standard use cases but  
