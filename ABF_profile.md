@@ -16,9 +16,9 @@ This document is not a specification, but a profile. It outlines existing specif
 ## Table of Contents
 
 - [Use cases](#use-cases)
-* IOT
-* Legal entities
-* Web3(#web3-use-case)
+* [IOT](#iot)
+* [Legal entity](#legal-entity)
+* [Web3](#web3)
 - [Open Standard Requirements](#open-standards-requirements)
 - [Decentralized Identifiers](#decentralized-identifiers-did)
 - [Verifiable Credentials](#verifiable-credentials)
@@ -30,11 +30,11 @@ This document is not a specification, but a profile. It outlines existing specif
 
 ## Use cases
 
-### legal entity use case(company consent, etc)
-* To be done 
-### IOT use case 
+### legal entity
+* To be done (company consent ?)
+### IOT 
 * To be done
-### Web3 use case
+### Web3
 A user of an ABF member goes to a service that offers the issuance of a loyalty card in the form of an NFT on the condition that this user is of French nationality and over 18 years old. The user presents the identity certificates he holds in his wallet which meet this requirement. Once identity checks are complete, the user will confirm that they are in control of a crypto account, then the company will issue a non-transferable, non-fungible token (NFT) to the user's crypto account. The NFT does not contain any user identity data; instead, the NFT symbolizes that the user has gone through the company's identity verification process and has a loyalty card. The user can then prove that he holds a loyalty card for all on-chain services of the issuing company and partners.
 
 ## Open Standards Requirements
