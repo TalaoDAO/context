@@ -53,21 +53,20 @@ To be defined
 ### Legal entities
 Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
  
-## keys
+### keys
 Supporeted digital signature :
 
 ECDSA	
-
-P-256 ES256 	Required
-P-384 ES384	Optional
-P-521 ES512     Optional
-secp256k1 ES256K        Optional
+* P-256 ES256 	Required
+* P-384 ES384	Optional
+* P-521 ES512     Optional
+* secp256k1 ES256K        Optional
 
 EdDSA
-Ed25519d OKP     Optional
+* Ed25519d OKP     Optional
 
-RSASSA	
-PKCS1-v1_5 RS256        Optional.
+RSA	
+* PKCS1-v1_5 RS256        Optional.
 
 For interoperability, the implementation of the P-256 curve is required.
 
