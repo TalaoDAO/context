@@ -17,11 +17,11 @@ This document is not a specification, but a profile. It outlines existing specif
 
 - [Use cases](#use-cases)
 - [Open Standard Requirements](#open-standards-requirements)
-- [Decentralized Identifiers](#decentralized-identifiers)
+- [Decentralized Identifiers](#decentralized-identifiers-did)
 - [Verifiable Credentials](#verifiable-credentials)
 - [Protocols](#protocols)
-- [Commercial Support](#commercial-support)
-- [License](#license)
+- [Wallet](#wallet)
+- [Verifiable Data Registries](#verifiable-data-registries)
 
 
 
