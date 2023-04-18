@@ -13,6 +13,17 @@ This document is not a specification, but a profile. It outlines existing specif
 * ?
 * ?
         
+## Table of Contents
+
+- [Use cases](#use-cases)
+- [Open Standard Requirements](#open-standard-requirements)
+- [Decentralized Identifiers](#decentralized-identifiers-(did))
+- [Verifiable Credentials](#verifiable-credntials)
+- [Contribute](#contribute)
+- [Commercial Support](#commercial-support)
+- [License](#license)
+
+
 
 ## Use cases
 
@@ -76,6 +87,8 @@ The 'did:key' method used by EBSI is based on a specific [multicodec](https://gi
 ### Legal entities
 Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
 
+Expliquer comment resoudre ces DIDs
+
 ### keys
 Supporeted digital signature :
 
@@ -97,7 +110,7 @@ x509 certificate use ?
 
 
 
-## Verifiable credentials/VP 
+## Verifiable Credentials 
 
 
 
