@@ -48,20 +48,28 @@ A complete description of this method is available  [here](https://w3c-ccg.githu
 The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
 ### Anonymization & multi DID
-    To be defined
+To be defined
 
 ### Legal entities
-Decentralized Identifiers (DIDs), as defined in [DID Core] (https://identity.foundation/jwt-vc-presentation-profile/#term:did-core), MUST be used as identifiers of the entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as a mandatory DID method as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
+Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
  
 ## keys
-- NIST keys (rsa, p-256, etc)
-- “Modern” EC  curves (secp256k1, ed25519 )
+Supporeted digital signature :
 
+ECDSA	
 
-- services …
+P-256 ES256 	Required
+P-384 ES384	Optional
+P-521 ES512     Optional
+secp256k1 ES256K        Optional
 
+EdDSA
+Ed25519d OKP     Optional
 
+RSASSA	
+PKCS1-v1_5 RS256        Optional.
 
+For interoperability, the implementation of the P-256 curve is required.
 
 ## Verifiable credentials/VP 
 * Format serialization : JWT
