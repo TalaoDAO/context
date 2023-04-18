@@ -41,19 +41,17 @@ ed25519 public key:
 ```
 did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH
 ```
-A complete description of this method is available  [`here`](https://w3c-ccg.github.io/did-method-key/)
+A complete description of this method is available  [here](https://w3c-ccg.github.io/did-method-key/)
 
 ### `did:key`for EBSI natural person
 
-The 'did:key' method used by EBSI is based on a specific ['multicodec'](https://github.com/multiformats/multicodec/blob/master/table.csv#L514).   
-
-A complete description of this method is available  [`here`](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
+The 'did:key' method used by EBSI is based on a specific ['multicodec'](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [`here`](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
 ### anonymization & multi DID
     To be defined
 
 ### Legal entities
-Decentralized Identifiers (DIDs), as defined in DID Core, MUST be used as identifiers of the entities. Implementations MUST support 'did:ebsi' or 'did:ala' or 'did:web'  as a mandatory DID method as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
+Decentralized Identifiers (DIDs), as defined in DID Core, MUST be used as identifiers of the entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as a mandatory DID method as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
  
 ## keys
 - NIST keys (rsa, p-256, etc)
