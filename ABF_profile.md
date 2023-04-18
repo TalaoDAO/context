@@ -41,6 +41,8 @@ ed25519 public key:
 ```
 did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH
 ```
+A complete description of this method is available  [`here`](https://w3c-ccg.github.io/did-method-key/)
+
 
    * did:key:public_key,
    * new did:ebsi -> did:key:(jwk)
