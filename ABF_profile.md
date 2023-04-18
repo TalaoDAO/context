@@ -45,7 +45,8 @@ A complete description of this method is available  [`here`](https://w3c-ccg.git
 
 ### `did:key`for EBSI natural person
 
-The 'did:key' method used by EBSI is based on specific ['multicodec'](https://github.com/multiformats/multicodec/blob/master/table.csv#L514) : 
+The 'did:key' method used by EBSI is based on specific ['multicodec'](https://github.com/multiformats/multicodec/blob/master/table.csv#L514) :   
+
 did-key-format := did:key:MULTIBASE(base58-btc, MULTICODEC(public-key-type, raw-public-key-bytes))  
 A complete description of this method is available  [`here`](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver) 
 
