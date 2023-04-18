@@ -19,8 +19,10 @@ This document is not a specification, but a profile. It outlines existing specif
         * [IOT](#iot)   
         * [Legal entity](#legal-entity)  
         * [Web3](#web3)  
-- [Open Standard Requirements](#open-standards-requirements)
-- [Decentralized Identifiers](#decentralized-identifiers-did)
+- [Open Standard Requirements](#open-standards-requirements)  
+- [Decentralized Identifiers](#decentralized-identifiers-did)  
+        * [Natural Persons](#natural-persons)   
+        * [Legal Entities](legal-entities)  
 - [Verifiable Credentials](#verifiable-credentials)
 - [Protocols](#protocols)
 - [Wallet](#wallet)
@@ -60,7 +62,7 @@ For Revocation of VCs, Status List 2021 as defined in [Status List 2021](https:/
 
 ## Decentralized identifiers (DID)
 
-### Natural person
+### Natural Persons
 
 Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of natural person entities. Implementations MUST support 'did:key', and 'did:ebsi'  as mandatory DID methods.
 
@@ -85,7 +87,7 @@ A complete description of this method is available  [here](https://w3c-ccg.githu
 
 The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
-### Legal entities
+### Legal Entities
 Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
 
 Expliquer comment resoudre ces DIDs
