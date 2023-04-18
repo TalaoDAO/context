@@ -16,9 +16,9 @@ This document is not a specification, but a profile. It outlines existing specif
 ## Table of Contents
 
 - [Use cases](#use-cases)
-        * [IOT](#iot)
-        * [Legal entity](#legal-entity)
-        * [Web3](#web3)
+        * [IOT](#iot)  
+        * [Legal entity](#legal-entity)  
+        * [Web3](#web3)  
 - [Open Standard Requirements](#open-standards-requirements)
 - [Decentralized Identifiers](#decentralized-identifiers-did)
 - [Verifiable Credentials](#verifiable-credentials)
