@@ -21,7 +21,7 @@ This document is not a specification, but a profile. It outlines existing specif
 ### IOT use case 
 * To be done
 ### Web3 use case
-A user of an ABF member goes to a service that offers the issuance of a loyalty card in the form of an NFT on the condition that this user is of French nationality and over 18 years old. The user presents the identity certificates he holds in his wallet which meet this requirement. Once identity checks are complete, the user will confirm that they are in control of a crypto account, then the company will issue a non-transferable, non-fungible token (NFT or SBT?) to the user's crypto account. The NFT does not contain any user identity data; instead, the NFT symbolizes that the user has gone through the company's identity verification process and has a loyalty card. The user can then prove that he holds a loyalty card for all on-chain services of the issuing company and partners.
+A user of an ABF member goes to a service that offers the issuance of a loyalty card in the form of an NFT on the condition that this user is of French nationality and over 18 years old. The user presents the identity certificates he holds in his wallet which meet this requirement. Once identity checks are complete, the user will confirm that they are in control of a crypto account, then the company will issue a non-transferable, non-fungible token (NFT) to the user's crypto account. The NFT does not contain any user identity data; instead, the NFT symbolizes that the user has gone through the company's identity verification process and has a loyalty card. The user can then prove that he holds a loyalty card for all on-chain services of the issuing company and partners.
 
 
 ## Decentralized identifiers (DID)
@@ -45,13 +45,13 @@ A complete description of this method is available  [here](https://w3c-ccg.githu
 
 ### `did:key`for EBSI natural person
 
-The 'did:key' method used by EBSI is based on a specific ['multicodec'](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [`here`](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
+The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
 ### anonymization & multi DID
     To be defined
 
 ### Legal entities
-Decentralized Identifiers (DIDs), as defined in DID Core, MUST be used as identifiers of the entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as a mandatory DID method as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
+Decentralized Identifiers (DIDs), as defined in [DID Core] (https://identity.foundation/jwt-vc-presentation-profile/#term:did-core), MUST be used as identifiers of the entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as a mandatory DID method as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
  
 ## keys
 - NIST keys (rsa, p-256, etc)
