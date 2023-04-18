@@ -1,4 +1,4 @@
-# ABF SSI profile v 0.0.1
+# ABF SSI profile v 0.0.2
 Date 18/04/2023
 
 Status : Draft
@@ -47,7 +47,7 @@ A complete description of this method is available  [here](https://w3c-ccg.githu
 
 The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
-### anonymization & multi DID
+### Anonymization & multi DID
     To be defined
 
 ### Legal entities
