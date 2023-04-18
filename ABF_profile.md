@@ -19,14 +19,14 @@ This document is not a specification, but a profile. It outlines existing specif
 ### legal entity use case(company consent, etc)
 * To be done 
 ### IOT use case 
-, To be done
+* To be done
 ### Web3 use case
 A user of an ABF member goes to a service that offers the issuance of a loyalty card in the form of an NFT on the condition that this user is of French nationality and over 18 years old. The user presents the identity certificates he holds in his wallet which meet this requirement. Once identity checks are complete, the user will confirm that they are in control of a crypto account, then the company will issue a non-transferable, non-fungible token (NFT or SBT?) to the user's crypto account. The NFT does not contain any user identity data; instead, the NFT symbolizes that the user has gone through the company's identity verification process and has a loyalty card. The user can then prove that he holds a loyalty card for all on-chain services of the issuing company and partners.
 
 
 ## Decentralized identifiers (DID)
 
-### `did:key`for aatural persons
+### `did:key`for natural persons
 
 The `did:key` method is used to express public keys in a way that doesn't
 require a DID Registry of any kind. Its general format is:
@@ -43,11 +43,14 @@ did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH
 ```
 A complete description of this method is available  [`here`](https://w3c-ccg.github.io/did-method-key/)
 
+### `did:key`for EBSI natural person
 
-   * did:key:public_key,
-   * new did:ebsi -> did:key:(jwk)
-   * anonymization & multi DID
-   * 
+The 'did:key' method used by EBSI is based on specific ['multicodec'](https://github.com/multiformats/multicodec/blob/master/table.csv#L514) : 
+did-key-format := did:key:MULTIBASE(base58-btc, MULTICODEC(public-key-type, raw-public-key-bytes))  
+A complete description of this method is available  [`here`](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver) 
+
+### anonymization & multi DID
+    To be defined
 
 ### Legal entities
    * did:ebsi, did:ala
