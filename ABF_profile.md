@@ -29,20 +29,21 @@ VCs MUST adhere to the [VC Data Model v1.1](https://www.w3.org/TR/vc-data-model/
     
 For key management and authentication, Self-Issued OpenID Connect Provider v2, an extension to OpenID Connect, MUST be used as defined in [SIOPv2 ID1](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html).
 
-For transportation of VCs, First Implementer’s Draft of OpenID for Verifiable Presentations MUST be used as defined in OpenID4VP ID1.
+For transportation of VCs, First Implementer’s Draft of OpenID for Verifiable Presentations MUST be used as defined in [OpenID4VP](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html).
 
-As the query language, Presentation Exchange v1.0.0 MUST be used and conform to the syntax defined in OpenID4VP ID1.
-Decentralized Identifiers (DIDs), as defined in DID Core, MUST be used as identifiers of the entities.
+As the query language, (Presentation Exchange v1.0.0)[https://identity.foundation/presentation-exchange/spec/v1.0.0/] MUST be used and conform to the syntax defined in OpenID4VP ID1.
 
-DID Documents MUST use JsonWebKey2020 as the type for Verification Material intended for use in the profile. (DID Core section 5.2.1)
+Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core), MUST be used as identifiers of the entities.
 
-Verification Material intended for use in the profile MUST use publicKeyJwk (DID Core section 5.2.1). 
+DID Documents MUST use [JsonWebKey2020](https://www.w3.org/community/reports/credentials/CG-FINAL-lds-jws2020-20220721/#json-web-key-2020) as the type for Verification Material intended for use in the profile. (DID Core section 5.2.1)
 
-DID Documents may contain Verification Material not intended for use with this profile of any Verification Material Type and any key format or algorithm.
-    To bind an owner of a DID to a controller of a certain origin, a Well Known DID Configuration MUST be used as defined in Well Known DID.
-    For Revocation of VCs, Status List 2021 as defined in Status List 2021 (0.0.1 Predraft) MUST be discovered using either DID Relative URLs stored in an Identity Hub as defined in Identity Hub (0.0.1 Predraft) or discovered using an HTTPS URL.
+Verification Material intended for use in the profile MUST use [publicKeyJwk](https://www.w3.org/TR/did-core/#dfn-publickeyjwk) (DID Core section 5.2.1). 
 
-The JWT VC Presentation Profile currently only supports response mode direct_post defined in OpenID4VP ID1, sending Authorization Response as HTTP POST request.
+To bind an owner of a DID to a controller of a certain origin, a Well Known DID Configuration MUST be used as defined in [Well Known DID](https://identity.foundation/.well-known/resources/did-configuration/).
+
+For Revocation of VCs, Status List 2021 as defined in [Status List 2021](https://w3c.github.io/vc-status-list-2021/) MUST be discovered using either DID Relative URLs stored in an Identity Hub as defined in Identity Hub (0.0.1 Predraft) or discovered using an HTTPS URL.
+
+This Presentation Profile currently supports response mode direct_post defined in OpenID4VP, sending Authorization Response as HTTP POST request.
 
 
 ## Decentralized identifiers (DID)
