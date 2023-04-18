@@ -25,7 +25,7 @@ A user of an ABF member goes to a service that offers the issuance of a loyalty 
 
 ## Open Standards Requirements
 
-VCs MUST adhere to the [VC Data Model v1.1(]https://www.w3.org/TR/vc-data-model/) and be encoded as JSON and signed as JWT as defined in 6.3.1 of VC Data Model v1.1. VCs encoded as JSON-LD and signed using Linked Data Proofs are NOT supported.
+VCs MUST adhere to the [VC Data Model v1.1](https://www.w3.org/TR/vc-data-model/) and be encoded as JSON and signed as JWT as defined in 6.3.1 of VC Data Model v1.1. VCs encoded as JSON-LD and signed using Linked Data Proofs are NOT supported.
     
 For key management and authentication, Self-Issued OpenID Connect Provider v2, an extension to OpenID Connect, MUST be used as defined in [SIOPv2 ID1](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html).
 
