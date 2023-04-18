@@ -16,6 +16,9 @@ This document is not a specification, but a profile. It outlines existing specif
 ## Table of Contents
 
 - [Use cases](#use-cases)
+* IOT
+* Legal entities
+* Web3(#web3-use-case)
 - [Open Standard Requirements](#open-standards-requirements)
 - [Decentralized Identifiers](#decentralized-identifiers-did)
 - [Verifiable Credentials](#verifiable-credentials)
@@ -53,8 +56,6 @@ Verification Material intended for use in the profile MUST use [publicKeyJwk](ht
 To bind an owner of a DID to a controller of a certain origin, a Well Known DID Configuration MUST be used as defined in [Well Known DID](https://identity.foundation/.well-known/resources/did-configuration/).
 
 For Revocation of VCs, Status List 2021 as defined in [Status List 2021](https://w3c.github.io/vc-status-list-2021/) MUST be discovered using either DID Relative URLs stored in an Identity Hub as defined in Identity Hub (0.0.1 Predraft) or discovered using an HTTPS URL.
-
-This Presentation Profile currently supports response mode direct_post defined in OpenID4VP, sending Authorization Response as HTTP POST request.
 
 
 ## Decentralized identifiers (DID)
