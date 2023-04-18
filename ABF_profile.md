@@ -16,10 +16,10 @@ This document is not a specification, but a profile. It outlines existing specif
 ## Table of Contents
 
 - [Use cases](#use-cases)
-- [Open Standard Requirements](#open-standard-requirements)
-- [Decentralized Identifiers](#decentralized-identifiers-(did))
-- [Verifiable Credentials](#verifiable-credntials)
-- [Contribute](#contribute)
+- [Open Standard Requirements](#open-standards-requirements)
+- [Decentralized Identifiers](#decentralized-identifiers)
+- [Verifiable Credentials](#verifiable-credentials)
+- [Protocols](#protocols)
 - [Commercial Support](#commercial-support)
 - [License](#license)
 
