@@ -1,4 +1,4 @@
-﻿ABF ssi profile v 0.0.1
+# ABF ssi profile v 0.0.1
 Date 5/04/2023
 Draft
 
@@ -16,7 +16,7 @@ Profile examples  :
 
 
 
-Editors / contributors
+## Editors / contributors
 * Thierry Thevenet (Talao)
 * ?
 * ?
@@ -24,30 +24,34 @@ Editors / contributors
         
 
 
-Specific SSI use cases / scope
-* legal entity use case to elaborate (company consent, etc)
+## Specific SSI use cases
+
+### legal entity use case(company consent, etc)
 * both legal entity  and natural person use cases  
-* IOT , maybe close to legal entity use cases
-* smart contract -> interaction (TT)
-* To be defined : 3 to 4 use cases
+### IOT use case 
+, maybe close to legal entity use cases
+### web3 use case
+A user of an ABF member goes to a service that offers the issuance of a loyalty card in the form of an NFT on the condition that this user is of French nationality and over 18 years old. The user presents the identity certificates he holds in his wallet which meet this requirement. Once identity checks are complete, the user will confirm that they are in control of a crypto account, then the company will issue a non-transferable, non-fungible token (NFT or SBT?) to the user's crypto account. The NFT does not contain any user identity data; instead, the NFT symbolizes that the user has gone through the company's identity verification process and has a loyalty card. The user can then prove that he holds a loyalty card for all on-chain services of the issuing company and partners.
 
 
 
 
-Decentralized identifiers (DID)
-* for natural persons
+
+## Decentralized identifiers (DID)
+
+### for natural persons
    * did:key:public_key,
    * new did:ebsi -> did:key:(jwk)
    * anonymization & multi DID
    * 
 
-* for legal entities
+### for legal entities
    * did:ebsi, did:ala
    * did:web as a starter solution ?
    * ??? public key -> eidas certificates (x509 certificate CA)
 
 
-* keys
+## keys
 - NIST keys (rsa, p-256, etc)
 - “Modern” EC  curves (secp256k1, ed25519 )
 
@@ -57,29 +61,30 @@ Decentralized identifiers (DID)
 
 
 
-Verifiable credentials/VP 
+## Verifiable credentials/VP 
 * Format serialization : JWT
 * Atomic credentials or data minimization
 * Localization UK
 * holder binding ? 
 
 
-Protocols
-* to present verifiable credentials (and user authentication)  
+## Protocols
+ 
+ ### to present verifiable credentials (and user authentication)  
    * SIOPv2
 
 
-* to exchange verifiable credentials/presentations 
+### to exchange verifiable credentials/presentations 
    * OIDC4VP
 
 
-* to issue credentials
+### to issue credentials
    * OIDC4VCI
 
 
 
 
-Wallet 
+## Wallet 
 * key management -> import/export
 * data(VC) management -> import/export 
 * No mobile wallet onboarding  
@@ -88,7 +93,7 @@ Wallet
 
 
 
-Verifiable data registries
+## Verifiable data registries
 * revocation VC  or issuer server ?
 * trusted issuer/verifier registry (company details)
 * accreditation  for registry updates -> gouvernance + paper 
@@ -96,33 +101,27 @@ Verifiable data registries
 
 
 
-Process  
+## Process  
 * legal entity onboarding -> verification status () 
 * user onboarding -> “ABF” VC ??
 * conformance -> wallet, issuer, verifier
 
 
-
-
-APIs
+## APIs
 * for registries 
 * vc attribute data on local ipfs node 
 * timestamping -> yes
 * ledger  implementation on ethereum 
 
 
-
-
-
-
-Implementations and libs
+## Implementations
 * list of available libs
    * https://github.com/decentralized-identity
    * ?
 
 
  
-Privacy considerations
+## Privacy considerations
 * minimization of schema/data model
 * anonymization of VCs -> correlation, etc 
 
@@ -130,7 +129,7 @@ Privacy considerations
 
 
 
-References :
+## References :
 
 
 EU ARF : https://github.com/eu-digital-identity-wallet 
