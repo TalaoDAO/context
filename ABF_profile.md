@@ -1,51 +1,53 @@
-# ABF ssi profile v 0.0.1
-Date 5/04/2023
-Draft
+# ABF SSI profile v 0.0.1
+Date 18/04/2023
 
+Status : Draft
 
 This document is not a specification, but a profile. It outlines existing specifications required for implementations to interoperate among each other. It also clarifies mandatory to implement features for the optionalities mentioned in the referenced specifications.
 
 
 
-
-Profile examples  : 
-         https://identity.foundation/jwt-vc-presentation-profile/
-        https://api-pilot.ebsi.eu/docs
-        https://github.com/alastria/alastria-identity 
-
-
-
-
-## Editors / contributors
+## Editors and contributors
 * Thierry Thevenet (Talao)
 * ?
 * ?
 * ?
         
 
-
-## Specific SSI use cases
+## Use cases
 
 ### legal entity use case(company consent, etc)
-* both legal entity  and natural person use cases  
+* To be done 
 ### IOT use case 
-, maybe close to legal entity use cases
-### web3 use case
+, To be done
+### Web3 use case
 A user of an ABF member goes to a service that offers the issuance of a loyalty card in the form of an NFT on the condition that this user is of French nationality and over 18 years old. The user presents the identity certificates he holds in his wallet which meet this requirement. Once identity checks are complete, the user will confirm that they are in control of a crypto account, then the company will issue a non-transferable, non-fungible token (NFT or SBT?) to the user's crypto account. The NFT does not contain any user identity data; instead, the NFT symbolizes that the user has gone through the company's identity verification process and has a loyalty card. The user can then prove that he holds a loyalty card for all on-chain services of the issuing company and partners.
-
-
-
 
 
 ## Decentralized identifiers (DID)
 
-### for natural persons
+### `did:key`for aatural persons
+
+The `did:key` method is used to express public keys in a way that doesn't
+require a DID Registry of any kind. Its general format is:
+
+```
+did:key:<multibase encoded, multicodec identified, public key>
+```
+
+So, for example, the following DID would be derived from a base-58 encoded
+ed25519 public key:
+
+```
+did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH
+```
+
    * did:key:public_key,
    * new did:ebsi -> did:key:(jwk)
    * anonymization & multi DID
    * 
 
-### for legal entities
+### Legal entities
    * did:ebsi, did:ala
    * did:web as a starter solution ?
    * ??? public key -> eidas certificates (x509 certificate CA)
@@ -130,6 +132,12 @@ A user of an ABF member goes to a service that offers the issuance of a loyalty 
 
 
 ## References :
+
+
+Profile examples  : 
+         https://identity.foundation/jwt-vc-presentation-profile/
+        https://api-pilot.ebsi.eu/docs
+        https://github.com/alastria/alastria-identity 
 
 
 EU ARF : https://github.com/eu-digital-identity-wallet 
