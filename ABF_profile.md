@@ -48,7 +48,11 @@ This Presentation Profile currently supports response mode direct_post defined i
 
 ## Decentralized identifiers (DID)
 
-### `did:key`for natural persons
+### Natural person
+
+Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of natural person entities. Implementations MUST support 'did:key', and 'did:ebsi'  as mandatory DID methods.
+
+#### `did:key`for natural persons
 
 The `did:key` method is used to express public keys in a way that doesn't
 require a DID Registry of any kind. Its general format is:
@@ -65,16 +69,13 @@ did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH
 ```
 A complete description of this method is available  [here](https://w3c-ccg.github.io/did-method-key/)
 
-### `did:key`for EBSI natural person
+#### `did:key`for EBSI natural person
 
 The 'did:key' method used by EBSI is based on a specific [multicodec](https://github.com/multiformats/multicodec/blob/master/table.csv#L514). A complete description of this method is available [here](https://api-pilot.ebsi.eu/docs/libraries/ebsi-did-resolver). 
 
-### Anonymization & multi DID
-To be defined
-
 ### Legal entities
 Decentralized Identifiers (DIDs), as defined in [DID Core](https://identity.foundation/jwt-vc-presentation-profile/#term:did-core) , MUST be used as identifiers of legal entities. Implementations MUST support 'did:ebsi', 'did:ala' and 'did:web'  as mandatory DID methods as defined in [did-web](https://w3c-ccg.github.io/did-method-web/),  [did-ala](https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification) and [did:ebsi]().
- 
+
 ### keys
 Supporeted digital signature :
 
@@ -93,6 +94,8 @@ RSA
 For interoperability, the implementation of the P-256 curve is required.
 
 x509 certificate use ?
+
+
 
 ## Verifiable credentials/VP 
 
