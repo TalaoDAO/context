@@ -1,0 +1,41 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "DefiCompliance" : {
+                "@id": "https://github.com/TalaoDAO/context#defi",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "sanctionListCheck" : "https://github.com/TalaoDAO/context#sanctionListCheck",
+                    "ageCheck" : "https://github.com/TalaoDAO/context#ageCheck",
+                    "amlComplianceCheck" : "https://github.com/TalaoDAO/context#amlComplianceCheck",
+                    "issuedBy" : {
+                        "@id" : "schema:issuedBy",
+                        "@context" : {
+                            "@protected": true,
+                            "logo": {"@id" : "schema:image", "@type" : "@id"},
+                            "name" : "schema:name"
+                        }
+                    }
+                   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "DefiCompliance"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "DefiCompliance",
+        "sanctionListCheck" : "",
+        "ageCheck" : "",
+        "amlComplianceCheck" : "",
+        "issuedBy": {
+            "name": "Altme"
+        }
+    }
+}
