@@ -11,6 +11,7 @@
                     "type": "@type",
                     "sanctionListCheck" : "https://github.com/TalaoDAO/context#sanctionListCheck",
                     "ageCheck" : "https://github.com/TalaoDAO/context#ageCheck",
+                    "countryCheck" : "https://github.com/TalaoDAO/context#countryCheck",
                     "amlComplianceCheck" : "https://github.com/TalaoDAO/context#amlComplianceCheck",
                     "issuedBy" : {
                         "@id" : "schema:issuedBy",
@@ -33,6 +34,7 @@
         "type" : "DefiCompliance",
         "sanctionListCheck" : "",
         "ageCheck" : "",
+        "countryCheck" : "",
         "amlComplianceCheck" : "",
         "issuedBy": {
             "name": "Altme"
