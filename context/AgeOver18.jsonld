@@ -1,0 +1,32 @@
+{
+    "@context": ["https://www.w3.org/2018/credentials/v1",
+        {
+            "AgeOver15" : {
+                "@id": "https://github.com/tobedefined/context#ageover18",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "kycProvider" : "schema:legalName",
+                    "kycMethod" : "schema:identifier",
+                    "ageOver" : "schema:suggestedMinAge",
+                    "kycId" : "schema:identifier"
+                   
+                }
+            }
+        }
+    ],
+    "id": "",
+    "type": ["VerifiableCredential", "AgeOver18"],
+    "issuer": "",
+    "issuanceDate": "",
+    "credentialSubject" : {
+        "type" : "Over18",
+        "ageOver" : 18,
+        "kycProvider" : "Docaposte",
+        "kycId" : "",
+        "kycMethod" : "",
+    }
+}
