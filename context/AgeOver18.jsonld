@@ -1,8 +1,8 @@
 {
     "@context": ["https://www.w3.org/2018/credentials/v1",
         {
-            "AgeOver15" : {
-                "@id": "https://github.com/tobedefined/context#ageover18",
+            "AgeOver18" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/context/AgeOver18.jsonld",
                 "@context": {
                     "@version": 1.1,
                     "@protected": true,
@@ -13,7 +13,6 @@
                     "kycMethod" : "schema:identifier",
                     "ageOver" : "schema:suggestedMinAge",
                     "kycId" : "schema:identifier"
-                   
                 }
             }
         }
@@ -23,10 +22,10 @@
     "issuer": "",
     "issuanceDate": "",
     "credentialSubject" : {
-        "type" : "Over18",
+        "type" : "AgeOver18",
         "ageOver" : 18,
         "kycProvider" : "Docaposte",
-        "kycId" : "",
-        "kycMethod" : "",
+        "kycId" : "123456",
+        "kycMethod" : "PVID"
     }
 }

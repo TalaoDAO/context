@@ -2,7 +2,7 @@
     "@context": ["https://www.w3.org/2018/credentials/v1",
         {
             "AgeOver15" : {
-                "@id": "https://github.com/tobedefined/context#ageover15",
+                "@id": "https://github.com/TalaoDAO/context/blob/main/context/AgeOver15.jsonld",,
                 "@context": {
                     "@version": 1.1,
                     "@protected": true,
@@ -22,10 +22,10 @@
     "issuer": "",
     "issuanceDate": "",
     "credentialSubject" : {
-        "type" : "Over15",
+        "type" : "AgeOver15",
         "ageOver" : 15,
         "kycProvider" : "Docaposte",
         "kycId" : "",
-        "kycMethod" : "",
+        "kycMethod" : ""
     }
 }
