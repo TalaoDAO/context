@@ -9,10 +9,20 @@
                     "schema" : "https://schema.org/",
                     "id": "@id",
                     "type": "@type",
-                    "kycProvider" : "schema:legalName",
-                    "kycMethod" : "schema:identifier",
-                    "ageOver" : "schema:suggestedMinAge",
-                    "kycId" : "schema:identifier"
+                    "ageOver" : "schema:suggestedMinAge"
+                }
+            },
+            "DocumentVerification" : {
+                "@id": "https://github.com/TalaoDAO/context/blob/main/context/VerificationMethod.jsonld",
+                "@context": {
+                    "@version": 1.1,
+                    "@protected": true,
+                    "schema" : "https://schema.org/",
+                    "id": "@id",
+                    "type": "@type",
+                    "verifier" : "schema:legalName",
+                    "verificationMethod" : "schema:identifier",
+                    "levelOfAssurance" : "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eIDAS+Levels+of+Assurance"
                 }
             }
         }
@@ -23,9 +33,13 @@
     "issuanceDate": "",
     "credentialSubject" : {
         "type" : "AgeOver18",
-        "ageOver" : 18,
-        "kycProvider" : "Docaposte",
-        "kycId" : "123456",
-        "kycMethod" : "PVID"
-    }
+        "ageOver" : 18
+    },
+    "evidence": [{
+        "id": "https://id36docaposte.com/jpma/evidence/<dossier_id>",
+        "type": ["DocumentVerification"],
+        "verifier" : "La Poste",
+        "verificationMethod" : "",
+        "levelOfAssurance" : ""
+      }]
 }
