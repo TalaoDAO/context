@@ -19,7 +19,7 @@
               }
         },
         "DocumentVerification" : {
-          "@id": "https://github.com/TalaoDAO/context#documentverification",
+          "@id": "https://github.com/TalaoDAO/context/blob/main/context/VerificationMethod.jsonld",
           "@context": {
               "@version": 1.1,
               "@protected": true,
@@ -27,16 +27,15 @@
               "id": "@id",
               "type": "@type",
               "verifier" : "schema:legalName",
-              "evidenceDocument" : "schema:credentialCategory",
-              "kycId" : "schema:identifier"
-            }
+              "verificationMethod" : "schema:identifier",
+              "levelOfAssurance" : "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eIDAS+Levels+of+Assurance"
+          }
       }
     }
     ],
     "id": "",
     "type": [
       "VerifiableCredential",
-      "VerifiableAttestation",
       "VerifiableId"
     ],
     "issuer": "",
@@ -56,10 +55,10 @@
       "type": "FullJsonSchemaValidator2021"
     },
     "evidence": [{
-      "id": "https://github.com/TalaoDAO/context#evidence",
+      "id": "https://github.com/TalaoDAO/context/blob/main/context/VerificationMethod.jsonld/<dossier_id>",
       "type": ["DocumentVerification"],
-      "verifier": "Passbase",
-      "evidenceDocument": "",
-      "kycId": ""
+      "verifier" : "La Poste - Docaposte",
+      "verificationMethod" : "",
+      "levelOfAssurance" : ""
     }]
   }
